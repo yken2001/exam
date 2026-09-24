@@ -22,8 +22,8 @@ export const MATH_112_QUESTIONS: Question[] = Array.from({ length: 23 }, (_, i) 
     year: 112,
     qNo,
     groupId: groupIdFor(qNo),
-    imagePath: `/questions/數學/112/q${padded}.png`,
-    explanationImagePath: `/explanations/數學/112/e${padded}.png`,
+    imagePath: `${import.meta.env.BASE_URL}questions/數學/112/q${padded}.png`,
+    explanationImagePath: `${import.meta.env.BASE_URL}explanations/數學/112/e${padded}.png`,
     correctAnswer: ANSWERS[qNo],
     optionCount: 4,
   };
