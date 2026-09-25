@@ -32,3 +32,4 @@ __pycache__/
 # reflowed full 解析 PDFs: regenerable by tools/build_bank.py, kept locally only
 tools/reflowed/
 tools/scratch/
+tools/source_pdfs/

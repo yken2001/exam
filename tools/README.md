@@ -23,4 +23,4 @@ python gen_ts.py                # 由 bank/*.json 產生 src/data/real/*.ts
 - `answer_keys/`:正解一覽(人工備查用)
 - `reflowed/`:重組後的解析 PDF(備查用,不進 git,可隨時重新產生)
 
-PDF 來源路徑寫死在 `build_bank.py` 的 `DL`。
+來源 PDF 放在 `source_pdfs/`(只需 15 份「xxx會考xx解析.pdf」,不進 git)。

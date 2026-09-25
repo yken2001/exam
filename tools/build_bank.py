@@ -15,8 +15,8 @@ import fitz
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import bank_lib as B
 
-DL = r'C:\Users\Ken\Downloads'
 HERE = os.path.dirname(os.path.abspath(__file__))
+DL = os.path.join(HERE, 'source_pdfs')      # the 15 解析 PDFs (not in git)
 APP = os.path.dirname(HERE)
 PUBLIC = os.path.join(APP, 'public')
 BANK_DIR = os.path.join(HERE, 'bank')
@@ -138,9 +138,10 @@ def build(year, subj, render=True):
         result['question_file'] = question_file
         result['explanation_file'] = explanation_file
 
-    os.makedirs(BANK_DIR, exist_ok=True)
-    with open(os.path.join(BANK_DIR, f'{year}_{SUBJ_EN[subj]}.json'), 'w', encoding='utf-8') as f:
-        json.dump(result, f, ensure_ascii=False, indent=1)
+    if render and not errors:      # --dry must not clobber the file gen_ts.py reads
+        os.makedirs(BANK_DIR, exist_ok=True)
+        with open(os.path.join(BANK_DIR, f'{year}_{SUBJ_EN[subj]}.json'), 'w', encoding='utf-8') as f:
+            json.dump(result, f, ensure_ascii=False, indent=1)
     return result
 
 
