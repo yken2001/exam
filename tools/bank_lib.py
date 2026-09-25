@@ -21,9 +21,10 @@ import unicodedata
 from dataclasses import dataclass, field
 
 import fitz
+import numpy as np
 from PIL import Image
 
-FOOTER_RE = re.compile(r'第\s*\d+\s*頁|請翻面|ehanlin|會考考完|翰林獨家|國三升高一|順利銜接|免費觀看|歡迎分享|試題結束')
+FOOTER_RE = re.compile(r'第\s*\d+\s*頁|請翻面|請翻頁|ehanlin|會考考完|翰林獨家|國三升高一|順利銜接|免費觀看|歡迎分享|試題結束')
 TITLE_RE = re.compile(r'國中教育會考|解析卷|姓名|座號')
 TITLE_WORDS = {'國文', '英語', '數學', '自然', '社會', '閱讀'}
 
@@ -85,6 +86,7 @@ class Question:
     qno: int
     marker: int              # stream index of marker line
     letter: str = ''         # letter printed in the marker, if any
+    letter_line: int = -1    # stream index of a separately drawn answer letter
     group: int = -1          # index into groups
     local: int = 0           # 1-based item number inside a local-numbered group
     stem: tuple = None       # (start, end) stream indices
@@ -140,6 +142,9 @@ def reflow(doc, rules, mask_docs=()):
         if pno == 0:
             hb = [bb[3] for bb, t, _ in plines
                   if bb[1] < 125 and (TITLE_RE.search(t) or t.replace(' ', '') in TITLE_WORDS)]
+            # the title block may also be one full-width image (113自然)
+            hb += [img['bbox'][3] for img in page.get_image_info()
+                   if img['bbox'][1] < 60 and img['bbox'][2] - img['bbox'][0] > W * 0.6]
             top = max(hb) + 1.0 if hb else 0.0
 
         footer = []
@@ -263,7 +268,7 @@ def parse(lines, rules):
             end = i
             break
 
-    questions, groups, sections = [], [], []
+    questions, groups, sections, notes = [], [], [], []
     next_q = 1
     local = None        # {'group': gi, 'k': next local index, 'count': K or None}
     in_group_section = False
@@ -367,13 +372,95 @@ def parse(lines, rules):
             if mm:
                 rng = (int(mm.group(1)), int(mm.group(2)))
                 break
+        if rng and rng[1] < rng[0]:
+            # misprinted range, e.g. 113社會 "回答第52至41題": take every
+            # question up to the next 題組 header / section instead
+            stop = min([h.header for h in groups if h.header > g.header] +
+                       [s for s in sections if s > g.header] + [end])
+            members = [q for q in questions if g.header < q.marker < stop]
+            notes.append(f'group header {lines[g.header].text!r} has an inverted range; '
+                         f'took Q{members[0].qno}-Q{members[-1].qno} up to the next header')
+            rng = (members[0].qno, members[-1].qno)
         if rng:
             for q in questions:
                 if rng[0] <= q.qno <= rng[1]:
                     q.group = gi
                     g.qnos.append(q.qno)
 
-    return questions, groups, sections, start, end
+    # 113數學: the marker's text is a blank "(     ) 1." and the red answer
+    # letter is a separate one-letter line drawn inside the parentheses. It
+    # is the answer (not the start of the explanation), and must be painted
+    # out of the question image like any printed letter.
+    for q in questions:
+        m = lines[q.marker]
+        # the letter can sit a hair above the marker text and sort before it;
+        # match by vertical overlap, not by top edge: a superscript on the
+        # marker's line (113數學 Q15 "10^a") pulls the line's top up by 8pt
+        for j in sorted(range(max(start, q.marker - 4), min(q.marker + 5, end)), key=lambda j: abs(j - q.marker)):
+            if j == q.marker:
+                continue
+            l = lines[j]
+            if l.piece == m.piece and l.red >= 0.5 and re.fullmatch(r'[A-D]', l.text) \
+                    and l.y0 < m.y1 - 2 and l.y1 > m.y0 + 2 and m.x0 <= l.x0 <= m.x0 + 30:
+                if q.letter and q.letter != l.text:
+                    notes.append(f'Q{q.qno}: marker text says {q.letter}, red letter says {l.text}')
+                q.letter = q.letter or l.text
+                q.letter_line = j
+                l.red = 0.0
+                break
+
+    marker_idx = {q.marker for q in questions}
+
+    def black_run_before(i):
+        """First index of the unbroken run of black (non-red) elements
+        right before line i -- stops at red text, a marker or a section."""
+        h = i
+        while h - 1 >= start and lines[h - 1].red < 0.5 and h - 1 not in marker_idx \
+                and h - 1 not in sections:
+            h -= 1
+        return h
+
+    # a header can be the tail of a sentence that starts on the line before
+    # (113國文 "…主角古阿明是 / 茶農家庭的小學生。請閱讀並回答36〜37題:").
+    # Only pull in text lines tight above it -- not e.g. a figure that ends
+    # the previous question's explanation (111英文 Q22's postcard).
+    for g in groups:
+        if rules.get('tag_groups'):
+            continue
+        h = g.header
+        while h - 1 >= start:
+            prev, cur = lines[h - 1], lines[h]
+            if prev.is_image or prev.red >= 0.5 or h - 1 in marker_idx or h - 1 in sections \
+                    or prev.piece != cur.piece or cur.y0 - prev.y1 > 8 or abs(prev.x0 - cur.x0) > 30:
+                break
+            h -= 1
+        g.header = h
+
+    # 113自然 prints no 題組 header at all: the passage (black text and
+    # figures) sits between one explanation and the next marker. From the
+    # first such passage on, every question belongs to the most recent one.
+    if rules.get('headerless_groups'):
+        current = None
+        for q in questions:
+            m = lines[q.marker]
+            h = black_run_before(q.marker)
+            # inline figures on the marker's own row sort just before it
+            # ("( D )25. 圖(十四)為[圖]…") -- they are stem, not a passage
+            run = [l for l in lines[h:q.marker] if not (l.piece == m.piece and l.y1 > m.y0 + 1)]
+            if run and (sum(len(l.text) for l in run) >= 20 or any(l.is_image for l in run)):
+                groups.append(Group(h))
+                current = len(groups) - 1
+            if current is not None:
+                q.group = current
+                groups[current].qnos.append(q.qno)
+
+    groups.sort(key=lambda g: g.header)
+    order = {id(g): k for k, g in enumerate(groups)}
+    by_qno = {n: g for g in groups for n in g.qnos}
+    for q in questions:
+        q.group = order[id(by_qno[q.qno])] if q.qno in by_qno else -1
+
+    return questions, groups, sections, start, end, notes
 
 
 # ---------------------------------------------------------------- regions
@@ -480,6 +567,28 @@ def _trim(im, pad=6):
     return im.crop((0, max(0, bbox[1] - pad), w, min(h, bbox[3] + pad)))
 
 
+def _drop_top_sliver(im, max_h=4):
+    """A region starts with a question/explanation line, never with a band
+    only a few pixels tall: such a band is a glyph of the line above (e.g. the
+    tall 【】 brackets, a red underline) poking out of its text box. Cut it
+    off -- unless it is a black rule, i.e. the bottom edge of a 題組 passage
+    box, which belongs to the picture."""
+    rgb = np.asarray(im.convert('RGB')).astype(int)[:, 4:-4]
+    g = rgb.min(axis=2) < 243
+    rows = g.any(axis=1)
+    if not rows[:max_h + 1].any():
+        return im
+    first_blank = next((y for y in range(rows.argmax(), min(len(rows), max_h + 2)) if not rows[y]), None)
+    if first_blank is None or not rows[first_blank:].any():
+        return im
+    band = rgb[:first_blank]
+    red = ((band[..., 0] > 150) & (band[..., 1] < 110) & (band[..., 2] < 110)).any()
+    rule = (g[:first_blank].sum(axis=1) > 0.3 * g.shape[1]).any()
+    if rule and not red:
+        return im
+    return im.crop((0, first_blank, im.width, im.height))
+
+
 def render_region(doc, pieces, lines, region, end, dpi):
     a, b = region
     if a >= b:
@@ -487,10 +596,13 @@ def render_region(doc, pieces, lines, region, end, dpi):
     pa = lines[a].piece
     # a little headroom above the first line, but never into the line above
     # it (that would leave a sliver of the previous region's last line)
-    y_start = lines[a].y0 - 3
-    above = [l.y1 for l in lines[max(0, a - 40):a] if l.piece == pa and l.y1 <= lines[a].y0 + 0.5]
+    # (with tight leading the line above's box can overlap this one's -- then
+    # start where the two boxes meet, never more than 0.5pt into this line)
+    top = lines[a].y0
+    y_start = top - 3
+    above = [l.y1 for l in lines[max(0, a - 40):a] if l.piece == pa and l.y0 < top - 2]
     if above:
-        y_start = max(y_start, min(max(above) + 0.3, lines[a].y0 - 0.5))
+        y_start = max(y_start, min(max(above), top + 0.5))
     if b < len(lines):
         pb, y_end = lines[b].piece, lines[b].y0 - 1.5
     else:
@@ -504,6 +616,8 @@ def render_region(doc, pieces, lines, region, end, dpi):
             continue
         pix = doc[p.pno].get_pixmap(dpi=dpi, clip=fitz.Rect(p.x0, ys, p.x1, ye))
         im = Image.frombytes('RGB', (pix.width, pix.height), pix.samples)
+        if pi == pa:
+            im = _drop_top_sliver(im)
         im = _trim(im)
         if im is not None:
             out.append(im)
@@ -529,6 +643,11 @@ def mask_answer_letters(qdoc, lines, questions):
     """Paint the printed answer letter of '( X )N.' markers white."""
     for q in questions:
         if not q.letter:
+            continue
+        if q.letter_line >= 0:        # drawn as its own line (113數學)
+            r = lines[q.letter_line]
+            qdoc[r.pno].draw_rect(fitz.Rect(r.x0 - 0.5, r.y0 - 0.5, r.x1 + 0.5, r.y1 + 0.5),
+                                  color=None, fill=(1, 1, 1), overlay=True)
             continue
         l = lines[q.marker]
         page = qdoc[l.pno]

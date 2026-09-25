@@ -1,14 +1,18 @@
-"""Synthesize the 112 英聽 audio from the transcripts in bank/112_listening.json.
+"""Synthesize the 英聽 audio of a year from the transcripts in
+bank/<year>_listening.json (written by build_listening.py).
 
 Uses the Windows SAPI voice Microsoft Zira (the only English voice on this
 machine). Male lines ("M:") use the same voice made deeper: synthesized
 28% faster at a low pitch, then resampled 1.28x slower, which lowers the
 pitch and formants (~180 Hz -> ~125 Hz) while keeping the original length.
-Output: ../public/audio/listening/112/aNN.wav (16 kHz mono).
+Output: ../public/audio/listening/<year>/aNN.wav (16 kHz mono).
+
+  python gen_audio.py 113
 """
 import json
 import os
 import subprocess
+import sys
 import tempfile
 import wave
 from xml.sax.saxutils import escape
@@ -16,7 +20,6 @@ from xml.sax.saxutils import escape
 import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(os.path.dirname(HERE), 'public', 'audio', 'listening', '112')
 RATE = 16000
 MALE_STRETCH = 1.28
 
@@ -50,8 +53,9 @@ def silence(sec):
     return np.zeros(int(RATE * sec))
 
 
-def main():
-    bank = json.load(open(os.path.join(HERE, 'bank', '112_listening.json'), encoding='utf-8'))
+def main(year):
+    bank = json.load(open(os.path.join(HERE, 'bank', f'{year}_listening.json'), encoding='utf-8'))
+    out = os.path.join(os.path.dirname(HERE), 'public', 'audio', 'listening', str(year))
     tmp = tempfile.mkdtemp()
     jobs, plan = [], {}
     for qno, segs in bank['transcripts'].items():
@@ -70,7 +74,7 @@ def main():
         fh.write(PS)
     subprocess.run(['powershell', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', ps_file, job_file], check=True)
 
-    os.makedirs(OUT, exist_ok=True)
+    os.makedirs(out, exist_ok=True)
     durations = {}
     for qno, parts in plan.items():
         audio = [silence(0.4)]
@@ -83,7 +87,7 @@ def main():
             audio.append(a)
         audio.append(silence(0.4))
         pcm = np.clip(np.concatenate(audio), -32768, 32767).astype('<i2')
-        path = os.path.join(OUT, f'a{int(qno):02d}.wav')
+        path = os.path.join(out, f'a{int(qno):02d}.wav')
         with wave.open(path, 'wb') as w:
             w.setnchannels(1)
             w.setsampwidth(2)
@@ -95,4 +99,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    main(int(sys.argv[1]) if len(sys.argv) > 1 else 112)

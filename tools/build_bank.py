@@ -24,7 +24,7 @@ REFLOW_DIR = os.path.join(HERE, 'reflowed')
 DPI = 150
 
 SUBJECTS = ['國文', '英文', '數學', '自然', '社會']
-YEARS = [110, 111, 112]
+YEARS = [110, 111, 112, 113]
 SUBJ_EN = {'國文': 'chinese', '英文': 'english', '數學': 'math', '自然': 'science', '社會': 'social'}
 
 # per-file page furniture that the generic header/footer rules don't cover
@@ -36,6 +36,8 @@ RULES = {
     (111, '國文'): {'drop_last_page': True},
     (111, '數學'): {'drop_last_page': True},
     (112, '英文'): {'start_after': '單一選擇題', 'bare_groups': True},  # skip the listening part
+    (113, '英文'): {'tag_groups': '文章翻譯'},          # like 110英文: passages are images, no headers
+    (113, '自然'): {'headerless_groups': True},         # 題組 passages have no "請閱讀…回答" line
 }
 
 # multiple-choice question counts of each paper (cross-checked against the
@@ -46,6 +48,7 @@ EXPECTED = {
     (110, '數學'): 26, (111, '數學'): 25, (112, '數學'): 25,
     (110, '自然'): 54, (111, '自然'): 50, (112, '自然'): 50,
     (110, '社會'): 63, (111, '社會'): 54, (112, '社會'): 54,
+    (113, '國文'): 42, (113, '英文'): 43, (113, '數學'): 25, (113, '自然'): 50, (113, '社會'): 54,
 }
 
 RANGE_IN_HEADER = re.compile(r'(\d{1,2})\s*[~〜～\-]\s*(\d{1,2})\s*題')
@@ -60,9 +63,9 @@ def build(year, subj, render=True):
     qdoc = fitz.open(pdf)      # stems (footer and printed answer letters painted out)
 
     pieces, lines, warnings = B.reflow(doc, rules, mask_docs=(edoc, qdoc) if render else ())
-    questions, groups, sections, start, end = B.parse(lines, rules)
+    questions, groups, sections, start, end, notes = B.parse(lines, rules)
     errors = B.compute_regions(lines, questions, groups, sections, end)
-    notes = B.extract_answers(lines, questions, groups)
+    notes += B.extract_answers(lines, questions, groups)
 
     expected = EXPECTED[(year, subj)]
     stated = [int(m.group(2)) for i in sections for m in RANGE_IN_HEADER.finditer(lines[i].text)]
@@ -77,8 +80,14 @@ def build(year, subj, render=True):
             stem_text = ''.join(lines[j].text for j in range(*q.stem)).replace(' ', '')
             if re.search(r'故選|答案[:：]|試題解析', stem_text):
                 errors.append(f'Q{q.qno}: stem region contains explanation text')
+            if not re.search(r'\(A\)|（A）', stem_text) and not any(lines[j].is_image for j in range(*q.stem)):
+                errors.append(f'Q{q.qno}: stem region has neither "(A)" nor a picture (cut short?)')
             if q.group < 0 and not re.search(r'\(D\)|（D）', stem_text):
                 notes.append(f'Q{q.qno}: no "(D)" option text in stem region (check image options)')
+        # a red answer letter printed in the "(   )" that was not recognized
+        # would end the stem right after the marker line (113數學 Q15 once)
+        if q.expl and re.fullmatch(r'[A-D]', lines[q.expl[0]].text) and lines[q.expl[0]].red >= 0.5:
+            errors.append(f'Q{q.qno}: explanation starts with a bare red letter (unrecognized answer letter?)')
 
     result = {
         'year': year, 'subject': subj, 'count': len(questions),

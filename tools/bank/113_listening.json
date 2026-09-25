@@ -1,0 +1,387 @@
+{
+ "year": 113,
+ "subject": "英聽",
+ "count": 21,
+ "answers": {
+  "1": "C",
+  "2": "C",
+  "3": "B",
+  "4": "C",
+  "5": "A",
+  "6": "C",
+  "7": "A",
+  "8": "B",
+  "9": "A",
+  "10": "C",
+  "11": "B",
+  "12": "A",
+  "13": "B",
+  "14": "B",
+  "15": "A",
+  "16": "A",
+  "17": "C",
+  "18": "B",
+  "19": "A",
+  "20": "B",
+  "21": "C"
+ },
+ "sections": {
+  "1": "辨識句意 第1題",
+  "2": "辨識句意 第2題",
+  "3": "辨識句意 第3題",
+  "4": "基本問答 第1題",
+  "5": "基本問答 第2題",
+  "6": "基本問答 第3題",
+  "7": "基本問答 第4題",
+  "8": "基本問答 第5題",
+  "9": "基本問答 第6題",
+  "10": "基本問答 第7題",
+  "11": "基本問答 第8題",
+  "12": "言談理解 第1題",
+  "13": "言談理解 第2題",
+  "14": "言談理解 第3題",
+  "15": "言談理解 第4題",
+  "16": "言談理解 第5題",
+  "17": "言談理解 第6題",
+  "18": "言談理解 第7題",
+  "19": "言談理解 第8題",
+  "20": "言談理解 第9題",
+  "21": "言談理解 第10題"
+ },
+ "transcripts": {
+  "1": [
+   [
+    "N",
+    "The bird is sitting on the girl's head."
+   ]
+  ],
+  "2": [
+   [
+    "N",
+    "The boy and the girl are sharing a glass of lemon tea."
+   ]
+  ],
+  "3": [
+   [
+    "N",
+    "When you look at the painting, you see a few houses near the bottom. The sky fills a large part of the painting."
+   ]
+  ],
+  "4": [
+   [
+    "N",
+    "Do you have brothers or sisters?"
+   ]
+  ],
+  "5": [
+   [
+    "N",
+    "Hurry up! The movie starts in 10 minutes."
+   ]
+  ],
+  "6": [
+   [
+    "N",
+    "What happened to your right leg? It looks terrible."
+   ]
+  ],
+  "7": [
+   [
+    "N",
+    "I want to order another cheesecake. Would you like one too?"
+   ]
+  ],
+  "8": [
+   [
+    "N",
+    "Can you tell me what your dog looks like? I can help you look for it."
+   ]
+  ],
+  "9": [
+   [
+    "N",
+    "When was the last time you saw Bill?"
+   ]
+  ],
+  "10": [
+   [
+    "N",
+    "Where have you decided to go for your vacation this year?"
+   ]
+  ],
+  "11": [
+   [
+    "N",
+    "What did Grandpa give you for winning the boat race?"
+   ]
+  ],
+  "12": [
+   [
+    "M",
+    "Why isn't the coffee machine working?"
+   ],
+   [
+    "W",
+    "It's not ? It was OK when I used it yesterday."
+   ],
+   [
+    "M",
+    "I pushed the button several times, but it just doesn't give me any coffee."
+   ],
+   [
+    "W",
+    "Did you check to see if there's still water inside?"
+   ],
+   [
+    "M",
+    "Yes."
+   ],
+   [
+    "W",
+    "Did you put coffee beans in?"
+   ],
+   [
+    "M",
+    "I did."
+   ],
+   [
+    "W",
+    "Let me see."
+   ],
+   [
+    "W",
+    "Well, next time, before you ask for help, make sure you've already turned the machine on."
+   ],
+   [
+    "Q",
+    "Why is the coffee machine not working?"
+   ]
+  ],
+  "13": [
+   [
+    "W",
+    "Hello."
+   ],
+   [
+    "M",
+    "Hey Grace, I'm now at Lompu train station. How do I get to Rainbow Art Park?"
+   ],
+   [
+    "W",
+    "You can take bus 703 to Lompu Elementary School. It takes about 15 minutes. Then you walk for about 10 minutes to the park."
+   ],
+   [
+    "M",
+    "What? A 10 minute walk in this hot weather will kill me!"
+   ],
+   [
+    "W",
+    "OK, OK. Take bus 941 then. It stops right in front of the park, but it takes about 40 minutes. If you think that will take too long, just get a taxi."
+   ],
+   [
+    "M",
+    "Well, 40 minutes sounds fine to me. Thanks."
+   ],
+   [
+    "Q",
+    "How will the man get to Rainbow Art Park?"
+   ]
+  ],
+  "14": [
+   [
+    "W",
+    "Harry, where are you? I just arrived."
+   ],
+   [
+    "M",
+    "I'm here already."
+   ],
+   [
+    "W",
+    "But I don't see you. Aren't we meeting in front of Galaxy Theater?"
+   ],
+   [
+    "M",
+    "Yes, on West Street, right?"
+   ],
+   [
+    "W",
+    "Don't tell me you're on West Street. The theater is not there."
+   ],
+   [
+    "M",
+    "What? Then what is this place? It looks like a theater, and there's a sign that says new opening Galaxy Theater."
+   ],
+   [
+    "W",
+    "It's not. They've been putting signs up everywhere to tell people about the opening. It's on South Street, next to the big pet shop."
+   ],
+   [
+    "M",
+    "Oh no. Is it far? How do I get there?"
+   ],
+   [
+    "W",
+    "It's OK. Just stay there. I'll come get you."
+   ],
+   [
+    "Q",
+    "Where is the man?"
+   ]
+  ],
+  "15": [
+   [
+    "W",
+    "Look at all these pencils! How many are there?"
+   ],
+   [
+    "M",
+    "Two hundred, I guess?"
+   ],
+   [
+    "W",
+    "Wow! You could open a store. I didn't know you collect pencils."
+   ],
+   [
+    "M",
+    "Well, I didn't use to, but my sister used to like pencils with pretty pictures on them. So when I was abroad, I'd visit shops and see if there were any special pencils I could get for her. Then I started to like them, too. Now I just collect them for myself."
+   ],
+   [
+    "W",
+    "Well, now I know what I can get you next time I'm abroad."
+   ],
+   [
+    "Q",
+    "What are the man and the woman talking about?"
+   ]
+  ],
+  "16": [
+   [
+    "M",
+    "How much did you pay for our dinner? Was it expensive?"
+   ],
+   [
+    "W",
+    "No worries. I didn't pay a cent."
+   ],
+   [
+    "M",
+    "You must be joking. Why?"
+   ],
+   [
+    "W",
+    "I just met my elementary school classmate, Tina. She is the owner of this restaurant! She said our meal was on the house."
+   ],
+   [
+    "M",
+    "That's so nice! And the food was really good. We must come again."
+   ],
+   [
+    "W",
+    "For sure."
+   ],
+   [
+    "Q",
+    "What did the woman mean when she said \"the meal was on the house\"?"
+   ]
+  ],
+  "17": [
+   [
+    "W",
+    "Early this year, Ping Ping invited me to a Chinese New Year's dinner with her family. They had so many dishes: fish, chicken, pork, hot pot, and rice cakes. While we were enjoying the big meal, I got red envelopes and cooking tips. We also played cards. It was so much fun. Maybe I should invite Ping Ping and her family to come over next month for Christmas."
+   ],
+   [
+    "Q",
+    "What is the woman mainly talking about?"
+   ]
+  ],
+  "18": [
+   [
+    "M",
+    "Hey, this is Charles from YY Dancing. I like what you did on the T-shirt for my dance club. It's nice that you put\"I love YY\"on the shirt. I'm also happy that you used a heart shape for the word\"love\"and didn't spell it out. But there's one thing I would like to change. Just putting \"YY\" is a little boring. I'm thinking of changing the Ys to two people dancing. Both of them are putting their hands on the ground, and their legs are up in the air, so each person looks like a Y. Please call me back if you have any questions. Thank you."
+   ],
+   [
+    "Q",
+    "What does the man want the T-shirt to look like?"
+   ]
+  ],
+  "19": [
+   [
+    "W",
+    "Good evening. Thank you for riding with City Metro. The train is full now. Please don't hold the doors open, or the train cannot leave the station. There is another train in two minutes. Please stand back and wait behind the yellow line. Thank you for your understanding."
+   ],
+   [
+    "Q",
+    "What is the woman telling people?"
+   ]
+  ],
+  "20": [
+   [
+    "W",
+    "So how was Sarah's party? John said she baked a lot of cakes and pies and cookies."
+   ],
+   [
+    "M",
+    "Oh, she did. Umm... Did John tell you what he thought about them?"
+   ],
+   [
+    "W",
+    "Well, he said he had never eaten anything like that before. Were they really that good?"
+   ],
+   [
+    "M",
+    "Well... I... Umm... There's really no word for Sarah's food."
+   ],
+   [
+    "W",
+    "Really? Wow! Now I feel sorry that I didn't go to the party."
+   ],
+   [
+    "M",
+    "I'm sorry that I did."
+   ],
+   [
+    "Q",
+    "What did the man think about the food at the party?"
+   ]
+  ],
+  "21": [
+   [
+    "M",
+    "Why haven't they called? Why haven't they called?"
+   ],
+   [
+    "W",
+    "Who hasn't called?"
+   ],
+   [
+    "M",
+    "A&C Foods. I had a job interview there last week, and they said they'd call this week."
+   ],
+   [
+    "W",
+    "It's only Tuesday. Maybe they'll call tomorrow."
+   ],
+   [
+    "M",
+    "Tomorrow? Why? Why?"
+   ],
+   [
+    "W",
+    "I don't know. Maybe they interviewed many people, and they need time to decide."
+   ],
+   [
+    "M",
+    "Need time to decide? Am I not good enough? I did very well at the interview and they liked me, and everyone was happy and smiling."
+   ],
+   [
+    "W",
+    "OK. Maybe I should stop talking."
+   ],
+   [
+    "Q",
+    "What is the man worried about?"
+   ]
+  ]
+ }
+}

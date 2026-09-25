@@ -9,11 +9,11 @@
   1. `python tools/build_bank.py --dry` 看 `tools/build_report.txt`，不能有 error
   2. 和改動前的 `tools/bank/*.json` 比對答案，任何差異都要回原始 PDF 查證
   3. 在瀏覽器實際跑：每份卷填正確答案 → 成績頁必須 100%、0 張破圖；再故意答錯幾題確認顯示「答錯」
-- 來源 PDF 放 `tools/source_pdfs/`（15 份解析卷，不進 git，從 README 的連結下載）。`tools/reflowed/` 是重組後的備查 PDF，也不進 git。
+- 來源 PDF 放 `tools/source_pdfs/`（110–113 各 5 份解析卷＋113 英聽解析卷，共 21 份，不進 git，從 README 的連結下載）。`tools/reflowed/` 是重組後的備查 PDF，也不進 git。
 - 成績存在各瀏覽器的 IndexedDB，沒有後端。
 - 題目版權屬原出版社，不要把 PDF 或重組 PDF 放進 repo。
 
 ## 常用指令
 - `npm run dev`（Claude Code 預覽設定：`.claude/launch.json` 的 exam-app-dev，port 5183）
 - `npm run build` → `dist/`（單一 index.html，可用 file:// 開）
-- 題庫：`python tools/build_bank.py` → `build_listening.py` → `gen_audio.py`（需 Windows 英文語音 Zira）→ `gen_ts.py`
+- 題庫：`python tools/build_bank.py` → `build_listening.py 112`、`113` → `gen_audio.py <年>`（需 Windows 英文語音 Zira）→ `gen_ts.py`
