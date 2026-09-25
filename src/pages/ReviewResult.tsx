@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { db } from '../db';
 import { QUESTION_BY_ID } from '../data/sampleQuestions';
 import type { AttemptRecord, ExamPaper, Question } from '../types';
-import { clusterByGroup } from '../utils/clusterByGroup';
+import { clusterByGroup, inUnitOrder } from '../utils/clusterByGroup';
 import ExamImage from '../components/ExamImage';
 import AudioPlayer from '../components/AudioPlayer';
 
@@ -41,7 +41,7 @@ export default function ReviewResult() {
 
   const questions: Question[] = useMemo(() => {
     if (!paper) return [];
-    return paper.questionIds.map((id) => QUESTION_BY_ID.get(id)!).filter(Boolean);
+    return inUnitOrder(paper.questionIds.map((id) => QUESTION_BY_ID.get(id)!).filter(Boolean));
   }, [paper]);
 
   const answerMap = useMemo(() => {

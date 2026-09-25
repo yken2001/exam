@@ -2,30 +2,11 @@ import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { db } from '../db';
 import { QUESTION_BY_ID } from '../data/sampleQuestions';
-import { pageSizeForWidth, useWindowWidth } from '../hooks/useWindowWidth';
 import type { AttemptRecord, ExamPaper, Question } from '../types';
-import { clusterByGroup } from '../utils/clusterByGroup';
+import { clusterByGroup, inUnitOrder } from '../utils/clusterByGroup';
 import { newId } from '../utils/newId';
 import ExamImage from '../components/ExamImage';
 import AudioPlayer from '../components/AudioPlayer';
-
-/** Packs whole clusters (shared-passage groups stay intact) onto pages of
- * roughly `pageSize` questions each. A cluster bigger than pageSize just
- * gets its own oversized page rather than being split. */
-function chunkKeepingGroups(qs: Question[], pageSize: number): Question[][] {
-  const clusters = clusterByGroup(qs);
-  const pages: Question[][] = [];
-  let current: Question[] = [];
-  for (const cluster of clusters) {
-    if (current.length > 0 && current.length + cluster.length > pageSize) {
-      pages.push(current);
-      current = [];
-    }
-    current.push(...cluster);
-  }
-  if (current.length > 0) pages.push(current);
-  return pages;
-}
 
 function formatTime(totalSec: number): string {
   const m = Math.floor(totalSec / 60).toString().padStart(2, '0');
@@ -36,8 +17,6 @@ function formatTime(totalSec: number): string {
 export default function ExamTaking() {
   const { examId } = useParams();
   const navigate = useNavigate();
-  const width = useWindowWidth();
-  const pageSize = pageSizeForWidth(width);
 
   const [paper, setPaper] = useState<ExamPaper | null>(null);
   const [attemptId] = useState(() => newId());
@@ -68,7 +47,7 @@ export default function ExamTaking() {
 
   const questions: Question[] = useMemo(() => {
     if (!paper) return [];
-    return paper.questionIds.map((id) => QUESTION_BY_ID.get(id)!).filter(Boolean);
+    return inUnitOrder(paper.questionIds.map((id) => QUESTION_BY_ID.get(id)!).filter(Boolean));
   }, [paper]);
 
   function handleFinishClick() {
@@ -139,8 +118,15 @@ export default function ExamTaking() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [remaining, finished]);
 
-  const pages = useMemo(() => chunkKeepingGroups(questions, pageSize), [questions, pageSize]);
+  // one page per unit: a single question, or a whole 題組 (its passage image
+  // plus every item's answer row) -- never split, whatever the screen size
+  const pages = useMemo(() => clusterByGroup(questions), [questions]);
   const currentPage = pages[pageIndex] ?? [];
+
+  // a new page starts at its top (a long 題組 image may have been scrolled)
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [pageIndex]);
 
   const pageIndexOfQuestion = useMemo(() => {
     const m = new Map<string, number>();
@@ -238,9 +224,27 @@ export default function ExamTaking() {
         })}
       </div>
 
-      <button className="primary" onClick={handleFinishClick}>
-        交卷
-      </button>
+      <div className="page-nav">
+        <button disabled={pageIndex === 0} onClick={() => setPageIndex((p) => Math.max(0, p - 1))}>
+          ‹ 上一題
+        </button>
+        <span className="page-count">
+          {pageIndex + 1} / {pages.length}
+        </span>
+        {pageIndex < pages.length - 1 ? (
+          <button onClick={() => setPageIndex((p) => Math.min(pages.length - 1, p + 1))}>下一題 ›</button>
+        ) : (
+          <button className="primary" onClick={handleFinishClick}>
+            交卷
+          </button>
+        )}
+      </div>
+
+      {pageIndex < pages.length - 1 && (
+        <button className="finish-early" onClick={handleFinishClick}>
+          交卷
+        </button>
+      )}
 
       {confirmDialog && (
         <div className="modal-overlay" onClick={() => setConfirmDialog(null)}>

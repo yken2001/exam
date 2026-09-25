@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { db } from '../db';
 import { QUESTION_BY_ID } from '../data/sampleQuestions';
 import type { AttemptRecord, ExamPaper } from '../types';
+import { backupFile, buildBackup, canShareFile, downloadFile, importBackup } from '../utils/backup';
 
 interface Row {
   attempt: AttemptRecord;
@@ -16,6 +17,9 @@ export default function History() {
   const [confirmDialog, setConfirmDialog] = useState<{ message: string; onConfirm: () => void } | null>(
     null
   );
+  const [notice, setNotice] = useState<string | null>(null);
+  const [shareable, setShareable] = useState(false);
+  const fileInput = useRef<HTMLInputElement>(null);
 
   const load = async () => {
     const attempts = await db.attempts.orderBy('startedAt').reverse().toArray();
@@ -35,7 +39,37 @@ export default function History() {
 
   useEffect(() => {
     load();
+    // probe once whether this device's share sheet takes files (Android does)
+    buildBackup().then((b) => setShareable(canShareFile(backupFile(b))));
   }, []);
+
+  const exportRecords = async () => {
+    downloadFile(backupFile(await buildBackup()));
+  };
+
+  const shareRecords = async () => {
+    const file = backupFile(await buildBackup());
+    try {
+      await navigator.share({ files: [file], title: file.name, text: '會考練習紀錄' });
+    } catch (e) {
+      if ((e as Error).name !== 'AbortError') downloadFile(file);    // cancelled: do nothing
+    }
+  };
+
+  const importRecords = async (file: File) => {
+    try {
+      const r = await importBackup(await file.text(), file.name);
+      await load();
+      setNotice(
+        `已匯入 ${r.added} 筆作答紀錄` +
+          (r.alreadyHad ? `（另有 ${r.alreadyHad} 筆先前已匯入過，略過）` : '') +
+          `。\n紀錄檔匯出時間：${new Date(r.exportedAt).toLocaleString()}，App 版本：${r.appVersion}` +
+          (r.unknownQuestions ? `\n注意：有 ${r.unknownQuestions} 題不在目前的題庫中，這些題不會計分。` : '')
+      );
+    } catch (e) {
+      setNotice((e as Error).message);
+    }
+  };
 
   const deleteOne = (attemptId: string, examPaperId: string) => {
     setConfirmDialog({
@@ -61,11 +95,27 @@ export default function History() {
 
   return (
     <div>
-      {rows.length > 0 && (
-        <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 12 }}>
-          <button onClick={deleteAll}>清除全部紀錄</button>
-        </div>
-      )}
+      <div className="history-toolbar">
+        <button onClick={exportRecords}>匯出紀錄</button>
+        {shareable && <button onClick={shareRecords}>分享（Email／LINE）</button>}
+        <button onClick={() => fileInput.current?.click()}>匯入紀錄</button>
+        <input
+          ref={fileInput}
+          type="file"
+          accept=".json,application/json"
+          style={{ display: 'none' }}
+          onChange={(e) => {
+            const f = e.target.files?.[0];
+            e.target.value = '';                      // allow picking the same file again
+            if (f) importRecords(f);
+          }}
+        />
+        {rows.length > 0 && (
+          <button className="toolbar-right" onClick={deleteAll}>
+            清除全部紀錄
+          </button>
+        )}
+      </div>
 
       {rows.length === 0 ? (
         <div className="empty-state">還沒有作答紀錄，先去「建立考卷」開始一次測驗吧。</div>
@@ -94,6 +144,11 @@ export default function History() {
                   <td>{rows.length - i}</td>
                   <td>
                     {r.paper.subjects.join('+')} {r.paper.years.join('、')}
+                    {r.attempt.importedFrom && (
+                      <span className="q-tag" title={r.attempt.importedFrom}>
+                        匯入
+                      </span>
+                    )}
                   </td>
                   <td>
                     {started.toLocaleDateString()}{' '}
@@ -117,6 +172,21 @@ export default function History() {
             })}
           </tbody>
         </table>
+      )}
+
+      {notice && (
+        <div className="modal-overlay" onClick={() => setNotice(null)}>
+          <div className="modal-box" onClick={(e) => e.stopPropagation()}>
+            <p className="modal-message" style={{ whiteSpace: 'pre-line' }}>
+              {notice}
+            </p>
+            <div className="modal-actions">
+              <button className="primary" onClick={() => setNotice(null)}>
+                確定
+              </button>
+            </div>
+          </div>
+        </div>
       )}
 
       {confirmDialog && (

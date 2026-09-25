@@ -184,6 +184,18 @@ button.primary {
 .q-num.current { border: 2px solid var(--accent); color: var(--accent); }
 .q-num.grouped { border-radius: 6px; }
 
+.page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.page-nav button { min-width: 108px; padding: 10px 16px; font-size: 15px; }
+.page-nav button:disabled { opacity: 0.4; cursor: default; }
+.page-count { font-size: 13px; color: var(--text-secondary); }
+.finish-early { display: block; margin-left: auto; font-size: 13px; }
+
 .q-stack {
   display: flex;
   flex-direction: column;
@@ -382,3 +394,11 @@ table.history-table td {
   color: var(--text-muted);
   padding: 48px 16px;
 }
+
+.history-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.history-toolbar .toolbar-right { margin-left: auto; }

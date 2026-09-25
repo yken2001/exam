@@ -51,4 +51,6 @@ export interface AttemptRecord {
   startedAt: number;
   finishedAt?: number;
   answers: AttemptAnswer[];
+  /** set on records brought in from another device's exported file */
+  importedFrom?: string;
 }
