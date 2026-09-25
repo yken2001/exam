@@ -28,8 +28,8 @@ export const SOCIAL_112_QUESTIONS: Question[] = Array.from({ length: 54 }, (_, i
     year: 112,
     qNo,
     groupId: groupIdFor(qNo),
-    imagePath: `${import.meta.env.BASE_URL}questions/社會/112/q${padded}.png`,
-    explanationImagePath: `${import.meta.env.BASE_URL}explanations/社會/112/e${padded}.png`,
+    imagePath: `${import.meta.env.BASE_URL}questions/social/112/q${padded}.png`,
+    explanationImagePath: `${import.meta.env.BASE_URL}explanations/social/112/e${padded}.png`,
     correctAnswer: ANSWERS[qNo],
     optionCount: 4,
   };

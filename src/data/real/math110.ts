@@ -18,8 +18,8 @@ export const MATH_110_QUESTIONS: Question[] = Array.from({ length: 26 }, (_, i) 
     subject: '數學',
     year: 110,
     qNo,
-    imagePath: `${import.meta.env.BASE_URL}questions/數學/110/q${padded}.png`,
-    explanationImagePath: `${import.meta.env.BASE_URL}explanations/數學/110/e${padded}.png`,
+    imagePath: `${import.meta.env.BASE_URL}questions/math/110/q${padded}.png`,
+    explanationImagePath: `${import.meta.env.BASE_URL}explanations/math/110/e${padded}.png`,
     correctAnswer: ANSWERS[qNo],
     optionCount: 4,
   };
