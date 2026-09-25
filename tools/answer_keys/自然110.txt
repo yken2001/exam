@@ -1,11 +1,11 @@
 自然 110年 正解一覽 (共 54 題)
-來源: src/data/real/science110.ts
+來源: 110會考自然解析.pdf (tools/bank/110_science.json)
 題組(共用題幹): 46-47, 48-49, 50-51, 52-54
 
   1. A
   2. D
-  3. B
-  4. C
+  3. C
+  4. D
   5. D
   6. C
   7. A

@@ -1,5 +1,5 @@
 數學 110年 正解一覽 (共 26 題)
-來源: src/data/real/math110.ts
+來源: 110會考數學解析.pdf (tools/bank/110_math.json)
 
   1. A
   2. B

@@ -1,13 +1,8 @@
 import type { Question } from '../../types';
 
-// 110年國中教育會考 國文科 (1~48題，全部選擇題)
-// 題目截圖來源：110會考國文題本.pdf（乾淨無正解）
-// 詳解截圖 + 正解字母來源：110會考國文解析.pdf（翰林出版）
+// 110年國中教育會考 國文科 選擇題 48 題 -- 由 tools/build_bank.py + tools/gen_ts.py
+// 自動產生，請勿手動修改。題目、詳解截圖與正解皆取自 110會考國文解析.pdf。
 // 版權屬原出版社所有，僅供個人練習使用，不可公開散布。
-//
-// 33~48題為題組（共用一篇選文/表格的數道子題），同一組的題目共用同一張
-// 題目截圖與同一張詳解截圖（裁切時已把選文包含在內），並共用同一個 groupId，
-// 讓抽題引擎與排版都把它們視為一個不可分拆的單位。
 const ANSWERS: Record<number, string> = {
   1: 'A', 2: 'D', 3: 'C', 4: 'B', 5: 'C', 6: 'A', 7: 'A', 8: 'D', 9: 'D', 10: 'B',
   11: 'B', 12: 'B', 13: 'A', 14: 'B', 15: 'C', 16: 'B', 17: 'A', 18: 'D', 19: 'C', 20: 'D',
@@ -16,26 +11,25 @@ const ANSWERS: Record<number, string> = {
   41: 'B', 42: 'A', 43: 'B', 44: 'D', 45: 'A', 46: 'D', 47: 'C', 48: 'D',
 };
 
-const GROUPS: [number, number][] = [
-  [33, 34], [35, 36], [37, 38], [39, 41], [42, 43], [44, 45], [46, 48],
-];
+const GROUPS: [number, number][] = [[33, 34], [35, 36], [37, 38], [39, 41], [42, 43], [44, 45], [46, 48]];
 
-function groupIdFor(qNo: number): string | undefined {
-  const g = GROUPS.find(([a, b]) => qNo >= a && qNo <= b);
-  return g ? `國文-110-g${g[0]}-${g[1]}` : undefined;
+function groupOf(qNo: number): [number, number] | undefined {
+  return GROUPS.find(([a, b]) => qNo >= a && qNo <= b);
 }
+
+const pad = (n: number) => String(n).padStart(2, '0');
 
 export const CHINESE_110_QUESTIONS: Question[] = Array.from({ length: 48 }, (_, i) => {
   const qNo = i + 1;
-  const padded = String(qNo).padStart(2, '0');
+  const g = groupOf(qNo);
   return {
     id: `國文-110-${qNo}`,
     subject: '國文',
     year: 110,
     qNo,
-    groupId: groupIdFor(qNo),
-    imagePath: `${import.meta.env.BASE_URL}questions/chinese/110/q${padded}.png`,
-    explanationImagePath: `${import.meta.env.BASE_URL}explanations/chinese/110/e${padded}.png`,
+    groupId: g ? `國文-110-g${g[0]}-${g[1]}` : undefined,
+    imagePath: `${import.meta.env.BASE_URL}questions/chinese/110/q${pad(g ? g[0] : qNo)}.png`,
+    explanationImagePath: `${import.meta.env.BASE_URL}explanations/chinese/110/e${pad(qNo)}.png`,
     correctAnswer: ANSWERS[qNo],
     optionCount: 4,
   };

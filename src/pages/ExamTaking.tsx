@@ -5,6 +5,7 @@ import { QUESTION_BY_ID } from '../data/sampleQuestions';
 import { pageSizeForWidth, useWindowWidth } from '../hooks/useWindowWidth';
 import type { AttemptRecord, ExamPaper, Question } from '../types';
 import { clusterByGroup } from '../utils/clusterByGroup';
+import { newId } from '../utils/newId';
 import ExamImage from '../components/ExamImage';
 
 /** Packs whole clusters (shared-passage groups stay intact) onto pages of
@@ -38,7 +39,7 @@ export default function ExamTaking() {
   const pageSize = pageSizeForWidth(width);
 
   const [paper, setPaper] = useState<ExamPaper | null>(null);
-  const [attemptId] = useState(() => crypto.randomUUID());
+  const [attemptId] = useState(() => newId());
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [pageIndex, setPageIndex] = useState(0);
   const [remaining, setRemaining] = useState<number | null>(null);

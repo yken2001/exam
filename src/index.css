@@ -329,6 +329,23 @@ table.history-table td {
   font-size: 15px;
   line-height: 1.5;
 }
+.confirm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 0 0 16px;
+}
+.confirm-table th {
+  text-align: left;
+  color: var(--text-secondary);
+  font-weight: normal;
+  padding: 4px 12px 4px 0;
+  white-space: nowrap;
+  width: 1%;
+}
+.confirm-table td {
+  padding: 4px 0;
+}
 .modal-actions {
   display: flex;
   justify-content: flex-end;

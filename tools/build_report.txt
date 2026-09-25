@@ -1,0 +1,49 @@
+===== 110 國文: 48 questions, groups=[[33, 34], [35, 36], [37, 38], [39, 41], [42, 43], [44, 45], [46, 48]]
+  [note] Q31: marker D, no confirming answer text in explanation
+  [note] Q13: no "(D)" option text in stem region (check image options)
+===== 110 英文: 41 questions, groups=[[15, 16], [17, 18], [19, 21], [22, 24], [25, 28], [29, 31], [32, 34], [35, 37], [38, 41]]
+  [note] Q8: marker says B, explanation text says ['C']
+  [note] Q9: marker B, no confirming answer text in explanation
+  [note] Q12: marker C, no confirming answer text in explanation
+  [note] Q15: marker B, no confirming answer text in explanation
+  [note] Q16: marker D, no confirming answer text in explanation
+  [note] Q25: marker B, no confirming answer text in explanation
+  [note] Q39: marker A, no confirming answer text in explanation
+  [note] Q40: marker B, no confirming answer text in explanation
+===== 110 數學: 26 questions, groups=[]
+===== 110 自然: 54 questions, groups=[[46, 47], [48, 49], [50, 51], [52, 54]]
+===== 110 社會: 63 questions, groups=[[56, 57], [58, 60], [61, 63]]
+  [note] Q5: marker B, no confirming answer text in explanation
+===== 111 國文: 42 questions, groups=[[26, 27], [28, 29], [30, 31], [32, 33], [34, 35], [36, 38], [39, 40], [41, 42]]
+  [note] Q17: marker A, no confirming answer text in explanation
+  [note] Q11: no "(D)" option text in stem region (check image options)
+===== 111 英文: 43 questions, groups=[[21, 22], [23, 24], [25, 26], [27, 29], [30, 32], [33, 36], [37, 39], [40, 43]]
+  [note] Q1: marker A, no confirming answer text in explanation
+  [note] Q2: marker A, no confirming answer text in explanation
+  [note] Q3: marker C, no confirming answer text in explanation
+  [note] Q6: marker A, no confirming answer text in explanation
+  [note] Q7: marker B, no confirming answer text in explanation
+  [note] Q33: marker D, no confirming answer text in explanation
+  [note] Q40: marker D, no confirming answer text in explanation
+  [note] Q42: marker A, no confirming answer text in explanation
+===== 111 數學: 25 questions, groups=[[24, 25]]
+  [note] Q21: marker B, no confirming answer text in explanation
+  [note] Q22: marker A, no confirming answer text in explanation
+===== 111 自然: 50 questions, groups=[[42, 44], [45, 46], [47, 48], [49, 50]]
+===== 111 社會: 54 questions, groups=[[44, 45], [46, 48], [49, 51], [52, 54]]
+  [note] Q1: marker C, no confirming answer text in explanation
+  [note] Q2: marker B, no confirming answer text in explanation
+  [note] Q3: marker C, no confirming answer text in explanation
+  [note] Q4: marker A, no confirming answer text in explanation
+  [note] Q14: marker C, no confirming answer text in explanation
+  [note] Q17: marker B, no confirming answer text in explanation
+  [note] Q26: marker B, no confirming answer text in explanation
+  [note] Q27: marker D, no confirming answer text in explanation
+  [note] Q28: marker D, no confirming answer text in explanation
+  [note] Q48: marker B, no confirming answer text in explanation
+===== 112 國文: 42 questions, groups=[[25, 26], [27, 29], [30, 31], [32, 33], [34, 35], [36, 38], [39, 40], [41, 42]]
+===== 112 英文: 43 questions, groups=[[24, 25], [26, 27], [28, 29], [30, 32], [33, 35], [36, 38], [39, 41], [42, 43]]
+===== 112 數學: 25 questions, groups=[[24, 25]]
+===== 112 自然: 50 questions, groups=[[43, 44], [45, 46], [47, 48], [49, 50]]
+  [note] Q4: no "(D)" option text in stem region (check image options)
+===== 112 社會: 54 questions, groups=[[44, 45], [46, 48], [49, 51], [52, 54]]

@@ -28,3 +28,7 @@ __pycache__/
 
 # packaged builds for transferring to a device
 *.zip
+
+# reflowed full 解析 PDFs: regenerable by tools/build_bank.py, kept locally only
+tools/reflowed/
+tools/scratch/

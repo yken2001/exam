@@ -6,6 +6,23 @@ import type { AttemptRecord, ExamPaper, Question } from '../types';
 import { clusterByGroup } from '../utils/clusterByGroup';
 import ExamImage from '../components/ExamImage';
 
+/** Splits a cluster into runs of consecutive questions sharing one
+ * explanation image: each question gets its own run when every item has its
+ * own 解析, while a 題組 whose 解析卷 explains the whole group in one block
+ * becomes a single run (all items' answers, then that one explanation). */
+function runsByExplanation(cluster: Question[]): Question[][] {
+  const runs: Question[][] = [];
+  for (const q of cluster) {
+    const last = runs[runs.length - 1];
+    if (last && q.explanationImagePath && last[0].explanationImagePath === q.explanationImagePath) {
+      last.push(q);
+    } else {
+      runs.push([q]);
+    }
+  }
+  return runs;
+}
+
 export default function ReviewResult() {
   const { attemptId } = useParams();
   const [attempt, setAttempt] = useState<AttemptRecord | null>(null);
@@ -83,44 +100,48 @@ export default function ReviewResult() {
                   alt={`${first.subject} ${first.year} 第${first.qNo}題`}
                 />
               )}
-              {cluster.map((q) => {
-                const qGlobalIndex = questions.indexOf(q);
-                const selected = answerMap[q.id];
-                const isCorrect = selected === q.correctAnswer;
-                return (
-                  <div className="q-subblock" key={q.id}>
-                    <div className="q-sub-label">
-                      {isGroup ? `第 ${qGlobalIndex + 1} 題　` : ''}
-                      <span style={{ color: isCorrect ? '#3b6d11' : '#a32d2d' }}>
-                        {selected ? (isCorrect ? '答對' : '答錯') : '未作答'}
-                      </span>
-                    </div>
-                    <div className="q-options">
-                      {Array.from({ length: q.optionCount }, (_, i) => String.fromCharCode(65 + i)).map(
-                        (opt) => {
-                          let cls = 'q-option';
-                          if (opt === q.correctAnswer) cls += ' correct';
-                          else if (opt === selected) cls += ' incorrect';
-                          return (
-                            <span key={opt} className={cls}>
-                              {opt}
-                            </span>
-                          );
-                        }
-                      )}
-                    </div>
-                  </div>
-                );
-              })}
-              {first.explanationImagePath ? (
-                <ExamImage
-                  className="q-image explanation-image"
-                  src={first.explanationImagePath}
-                  alt={`第${firstIndex + 1}題詳解`}
-                />
-              ) : (
-                first.explanation && <div className="explanation">{first.explanation}</div>
-              )}
+              {runsByExplanation(cluster).map((run) => (
+                <div key={run[0].id}>
+                  {run.map((q) => {
+                    const qGlobalIndex = questions.indexOf(q);
+                    const selected = answerMap[q.id];
+                    const isCorrect = selected === q.correctAnswer;
+                    return (
+                      <div className="q-subblock" key={q.id}>
+                        <div className="q-sub-label">
+                          {isGroup ? `第 ${qGlobalIndex + 1} 題　` : ''}
+                          <span style={{ color: isCorrect ? '#3b6d11' : '#a32d2d' }}>
+                            {selected ? (isCorrect ? '答對' : '答錯') : '未作答'}
+                          </span>
+                        </div>
+                        <div className="q-options">
+                          {Array.from({ length: q.optionCount }, (_, i) => String.fromCharCode(65 + i)).map(
+                            (opt) => {
+                              let cls = 'q-option';
+                              if (opt === q.correctAnswer) cls += ' correct';
+                              else if (opt === selected) cls += ' incorrect';
+                              return (
+                                <span key={opt} className={cls}>
+                                  {opt}
+                                </span>
+                              );
+                            }
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+                  {run[0].explanationImagePath ? (
+                    <ExamImage
+                      className="q-image explanation-image"
+                      src={run[0].explanationImagePath}
+                      alt={`第${questions.indexOf(run[0]) + 1}題詳解`}
+                    />
+                  ) : (
+                    run[0].explanation && <div className="explanation">{run[0].explanation}</div>
+                  )}
+                </div>
+              ))}
             </div>
           );
         })}

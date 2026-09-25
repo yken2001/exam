@@ -1,5 +1,5 @@
 自然 112年 正解一覽 (共 50 題)
-來源: src/data/real/science112.ts
+來源: 112會考自然解析.pdf (tools/bank/112_science.json)
 題組(共用題幹): 43-44, 45-46, 47-48, 49-50
 
   1. D

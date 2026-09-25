@@ -1,5 +1,5 @@
 社會 112年 正解一覽 (共 54 題)
-來源: src/data/real/social112.ts
+來源: 112會考社會解析.pdf (tools/bank/112_social.json)
 題組(共用題幹): 44-45, 46-48, 49-51, 52-54
 
   1. C

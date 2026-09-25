@@ -1,5 +1,5 @@
 社會 110年 正解一覽 (共 63 題)
-來源: src/data/real/social110.ts
+來源: 110會考社會解析.pdf (tools/bank/110_social.json)
 題組(共用題幹): 56-57, 58-60, 61-63
 
   1. C
