@@ -31,7 +31,8 @@ SUBJ_EN = {'國文': 'chinese', '英文': 'english', '數學': 'math', '自然':
 RULES = {
     (110, '國文'): {'drop_last_page_col': 1},          # right half = 題型分析
     (110, '英文'): {'tag_groups': '文章翻譯'},          # 題組 have no "(15-16)" header
-    (110, '數學'): {'cut_last_page_at': '對應表'},       # 章節對應表 on the last page
+    (110, '數學'): {'cut_last_page_at': '對應表',        # 章節對應表 on the last page
+                   'drop_last_page_col': 1},             # right half = 參考公式
     (111, '國文'): {'drop_last_page': True},
     (111, '數學'): {'drop_last_page': True},
     (112, '英文'): {'start_after': '單一選擇題', 'bare_groups': True},  # skip the listening part
