@@ -1,32 +1,196 @@
-# React + TypeScript + Vite
+# 國中教育會考 練習 App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+給**我自己的小孩**在家練習會考用的小工具：從歷屆會考解析卷整理出題庫，在平板或電腦的瀏覽器上選科目、年度、時間作答，交卷後看正解與每題解析。
 
-Currently, two official plugins are available:
+> **特別說明**
+> - 這是家長自用的練習工具，只給自己的孩子使用，不是對外提供的服務。
+> - 題目、詳解截圖的版權屬原出版社所有，僅供個人／家庭練習使用，**請勿散布、轉載或做商業用途**。
+> - 英聽的聲音是用錄音稿以語音合成產生，**不是會考原音**。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 題庫來源
 
-## React Compiler
+翰林「會考考前衝刺」下載頁：<https://www.ehanlin.com.tw/event/pre-exam/download/index.html#CAP>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+只用每科的「**xxx會考xx解析.pdf**」（題本不需要），共 15 份：
 
-## Expanding the Oxlint configuration
+| 年度 | 國文 | 英文 | 英聽 | 數學 | 自然 | 社會 | 合計 |
+|---|---|---|---|---|---|---|---|
+| 110 | 48 | 41 | — | 26 | 54 | 63 | 232 |
+| 111 | 42 | 43 | — | 25 | 50 | 54 | 214 |
+| 112 | 42 | 43 | 21 | 25 | 50 | 54 | 235 |
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- 只收選擇題：數學的非選擇題（手寫題）不收；國文解析卷沒有作文。
+- 英聽只有 112 年的解析卷有錄音稿（110、111 年的英文解析卷只有閱讀）。
+- 正解一覽（人工備查用）在 [`tools/answer_keys/`](tools/answer_keys/)。
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## 功能
+
+- **建立考卷**：科目（可多選）、年度（可多選）、原始順序／亂數、總時間（10/20/35/70 分鐘，多科平均分配）。題數依各科實際作答速度換算，按「開始測驗」後會先確認選擇內容。
+- **題組不拆開**：亂數出題以題組為單位，同一題組的題目一定連在一起、順序不變，分頁也不會把題組切開。
+- **作答**：依螢幕寬度每頁 1～3 題；測驗中鎖住頁面切換，關閉或上一頁會提醒。
+- **英聽**：播放／暫停、重播、拖曳進度、0.5x～1.25x 速度。
+- **成績**：正確率、每題對錯、每題解析（英聽解析含錄音稿）；可刪除單筆或清除全部紀錄。
+- **成績只存在本機瀏覽器（IndexedDB）**：不會上傳到網站；平板和電腦的紀錄彼此獨立，清除瀏覽器資料會一起清掉。
+
+## 架構
+
+```mermaid
+flowchart LR
+  subgraph SRC["來源（不進 git）"]
+    PDF["15 份 解析 PDF<br/>tools/source_pdfs/"]
+  end
+
+  subgraph TOOLS["tools/（Python：PyMuPDF + Pillow + numpy）"]
+    R["1 重組 reflow<br/>去標頭、塗白頁尾、左右欄切開"]
+    P["2 解析 parse<br/>題號 / 題組標題（嚴格連號）"]
+    G["3 切割 regions<br/>題目＝題號→第一行紅字<br/>解析＝紅字→下一題"]
+    V["4 驗證<br/>題數、答案、故選交叉比對<br/>build_report.txt"]
+    L["build_listening.py<br/>112 英聽 21 題 + 錄音稿"]
+    A["gen_audio.py<br/>錄音稿 → 語音合成 WAV"]
+    T["gen_ts.py<br/>bank/*.json → TypeScript"]
+  end
+
+  subgraph OUT["產出（進 git）"]
+    IMG["public/questions<br/>public/explanations<br/>public/audio"]
+    JSON["tools/bank/*.json"]
+    TS["src/data/real/*.ts<br/>（自動產生，勿手改）"]
+  end
+
+  subgraph APP["App（Vite + React + TypeScript）"]
+    B["建立考卷<br/>selectExam"]
+    E["作答<br/>AudioPlayer"]
+    RV["成績 / 解析"]
+    DB[("IndexedDB<br/>Dexie")]
+  end
+
+  PDF --> R --> P --> G --> V --> IMG & JSON
+  PDF --> L --> A --> IMG
+  L --> JSON
+  JSON --> T --> TS --> B --> E --> RV
+  E <--> DB
+  RV <--> DB
+  APP -- "npm run build<br/>（單一 index.html）" --> DIST["dist/"]
+  DIST --> GH["GitHub Pages"]
+  DIST --> FILE["平板 / 電腦<br/>直接開 index.html"]
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## 重組題庫的方式
+
+每份解析卷都是「左右兩欄」排版，先把它**重組成一條連續的單欄內容**，再依題號切割：
+
+1. **標頭移除**：只有第 1 頁，切掉「翰林出版 logo＋會考解析卷標題＋年班號姓名欄」。
+2. **頁尾移除**：把「第 X 頁，共 X 頁」「請翻面繼續作答」、廣告與 QR code **塗白**（不是直接切一條線：有些頁面的頁碼和左欄最後一行字同高，用切的會切到內容）。
+3. **左右欄**：每頁從中間切開，依「第1頁左 → 第1頁右 → 第2頁左 …」接成一條。重組後的 PDF 輸出到 `tools/reflowed/`（本機備查用，不進 git）。
+4. **個別檔案的特殊處理**（`tools/build_bank.py` 的 `RULES`）：
+
+   | 檔案 | 處理 |
+   |---|---|
+   | 110 國文 | 最後一頁右半「題型分析」刪除 |
+   | 110 數學 | 最後一頁右半「參考公式」、下方「章節對應表」刪除 |
+   | 110 英文 | 題組沒有「(15-16)」標題、文章是圖片 → 以【文章翻譯】位置反推題組 |
+   | 111 國文、111 數學 | 最後一頁整頁刪除 |
+   | 112 英文 | 前段英聽另外處理，閱讀題從「四、單一選擇題」開始 |
+
+5. **切割**：題目＝題號到第一行**紅字**（解析一律是紅字）之前；解析＝紅字到下一題。題號旁印的答案字母會**塗白**成「(　)」，避免作答時看到答案。
+6. **題組**：題目圖＝文章＋所有小題；110、111 每小題各有解析，112 則是整組一段「答案：(1)(C)；(2)(D)」，組內共用一張解析圖。
+
+## 問題處理心智圖
+
+```mermaid
+mindmap
+  root((題庫問題處理))
+    破圖
+      圖片過高 16000px 以上
+        題目與解析分開存
+        解析改為每題一張
+        解析度 200→150 dpi
+      zip 解壓後中文資料夾名亂碼
+        圖片資料夾改英文名
+      Android 檔案總管開啟變 content://
+        讀不到同資料夾圖片
+        改用網址開啟
+    答案判斷錯誤
+      選項被當成題號
+        例：自然110 第3題 (B) 3 公尺
+        題號必須在欄位左緣
+      112 題組合併答案
+        答案:(1)(C);(2)(D)
+        答案:43.(A);44.(D)
+        用子題順序對應
+      原稿錯字
+        110英文 第14題漏句點
+        110英文 第8題解析字母寫錯 以題號旁字母為準
+      交叉驗證
+        題號旁字母 vs 故選
+        新舊兩套流程比對
+        舊版漏了 112數學 24-25題
+    版面
+      頁碼與左欄內容同高
+        改為塗白
+        塗白範圍避開正文
+      分數線被誤塗
+        只塗和頁碼廣告重疊的線條
+      上一題文字殘影
+        裁切起點不超過上一行
+      左右欄接起來沒對齊
+        以文字左緣對齊
+      題幹內 一、二、步驟
+        不當成大題標題
+    題組
+      沒有題組標題
+      文章是圖片
+      亂數出題不拆開
+        300 次隨機測試 0 次拆開
+    英聽
+      不混入閱讀題
+      錄音稿語音合成
+        男聲 降頻處理
+        題目前停頓 1 秒
+      播放 暫停 重播 調速
+    離線與部署
+      file:// 無法載入 ES module
+        JS CSS 內嵌成單一 HTML
+        圖片用相對路徑
+      http 區網下 randomUUID 不能用
+        改用自訂 ID
+```
+
+## 開發與執行
+
+需要 Node.js（開發時用 v24）、Python 3（開發時用 3.13）。
+
+```bash
+npm install
+npm run dev          # http://localhost:5173 （Claude Code 的預覽設定在 .claude/launch.json，port 5183）
+npm run build        # 產生 dist/：可直接雙擊 dist/index.html 開啟，或部署到 GitHub Pages
+```
+
+推送到 `main` 後，`.github/workflows/deploy.yml` 會自動建置並部署到 GitHub Pages。
+
+### 重新產生題庫
+
+```bash
+pip install -r tools/requirements.txt
+# 把 15 份「xxx會考xx解析.pdf」放到 tools/source_pdfs/
+python tools/build_bank.py        # 重組 + 切割 + 驗證 + 輸出圖片（--dry 只看驗證報告）
+python tools/build_listening.py   # 112 英聽
+python tools/gen_audio.py         # 英聽語音（需 Windows 的英文語音 Microsoft Zira）
+python tools/gen_ts.py            # 產生 src/data/real/*.ts
+```
+
+細節見 [`tools/README.md`](tools/README.md)。
+
+## 資料夾結構
+
+```
+exam-app/
+├─ src/
+│  ├─ pages/            ExamBuilder / ExamTaking / ReviewResult / History
+│  ├─ components/       ExamImage（載入失敗重試）、AudioPlayer
+│  ├─ engine/           selectExam（依時間換算題數、題組不拆開）
+│  ├─ data/real/        各科題庫（gen_ts.py 自動產生）
+│  └─ db.ts             IndexedDB（考卷、作答紀錄）
+├─ public/              題目圖、解析圖、英聽音檔
+├─ tools/               題庫產生工具、bank/*.json、answer_keys/
+└─ .github/workflows/   GitHub Pages 自動部署
+```
