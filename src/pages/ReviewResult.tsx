@@ -6,6 +6,7 @@ import type { AttemptRecord, ExamPaper, Question } from '../types';
 import { clusterByGroup, inUnitOrder } from '../utils/clusterByGroup';
 import ExamImage from '../components/ExamImage';
 import AudioPlayer from '../components/AudioPlayer';
+import { gradeAttempt, levelText } from '../engine/grade';
 
 /** Splits a cluster into runs of consecutive questions sharing one
  * explanation image: each question gets its own run when every item has its
@@ -53,6 +54,7 @@ export default function ReviewResult() {
   if (!attempt || !paper) return <div className="empty-state">載入中…</div>;
 
   const correctCount = questions.filter((q) => answerMap[q.id] === q.correctAnswer).length;
+  const grades = gradeAttempt(questions, answerMap);
   const total = questions.length;
   const rate = total > 0 ? Math.round((correctCount / total) * 100) : 0;
   const durationMin = attempt.finishedAt
@@ -76,6 +78,29 @@ export default function ReviewResult() {
             作答時間：約 {durationMin} 分鐘
           </div>
         )}
+      </div>
+
+      <div className="card" style={{ marginBottom: 16 }}>
+        <div className="field-label">評級（依心測中心各年等級對照表）</div>
+        <table className="grade-table">
+          <tbody>
+            {grades.map((g) => (
+              <tr key={g.name}>
+                <th>{g.name}</th>
+                <td>
+                  {g.correct}/{g.total}
+                </td>
+                <td className={`grade-level ${g.level ? 'lv-' + g.level[0] : ''}`}>
+                  {g.level ? `${g.kind === 'estimate' ? '約 ' : ''}${levelText(g.level)}` : '—'}
+                </td>
+                <td className="grade-note">
+                  {g.kind === 'official' ? '官方等級' : g.kind === 'estimate' ? '估計' : ''}
+                  {g.note ? `${g.kind === 'none' ? '' : '・'}${g.note}` : ''}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
 
       <div className="q-stack">

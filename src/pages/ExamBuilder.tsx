@@ -1,17 +1,24 @@
 import { useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AVAILABLE_YEARS, SAMPLE_QUESTIONS, yearsWithData } from '../data/sampleQuestions';
-import { SUBJECTS, TIME_OPTIONS_MIN } from '../data/subjectConfig';
+import { FRACTIONS, SUBJECTS } from '../data/subjectConfig';
 import { selectExam } from '../engine/selectExam';
 import { db } from '../db';
 import { newId } from '../utils/newId';
 import type { ExamPaper, OrderMode, Subject } from '../types';
 
+/** 1050 -> "17 分 30 秒", 4200 -> "70 分鐘" */
+function formatMinutes(sec: number): string {
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  return s ? `${m} 分 ${s} 秒` : `${m} 分鐘`;
+}
+
 export default function ExamBuilder() {
   const navigate = useNavigate();
   const [subjects, setSubjects] = useState<Subject[]>([]);
   const [years, setYears] = useState<number[]>([]);
-  const [totalMinutes, setTotalMinutes] = useState(70);
+  const [fraction, setFraction] = useState(1);
   const [orderMode, setOrderMode] = useState<OrderMode>('original');
   const [confirming, setConfirming] = useState(false);
 
@@ -21,11 +28,11 @@ export default function ExamBuilder() {
         allQuestions: SAMPLE_QUESTIONS,
         subjects,
         years,
-        totalMinutes,
+        fraction,
         orderMode,
       }),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [subjects, years, totalMinutes, orderMode]
+    [subjects, years, fraction, orderMode]
   );
 
   function toggleSubject(s: Subject) {
@@ -38,6 +45,8 @@ export default function ExamBuilder() {
   const ready = subjects.length > 0 && years.length > 0 && preview.questionIds.length > 0;
   const subjectText = SUBJECTS.filter((s) => subjects.includes(s)).join('、');
   const yearText = [...years].sort((a, b) => a - b).join('、');
+  const fractionText = FRACTIONS.find((f) => f.value === fraction)?.label ?? '';
+  const minutesText = formatMinutes(preview.timeBudgetSec);
 
   async function handleStart() {
     setConfirming(false);
@@ -47,7 +56,8 @@ export default function ExamBuilder() {
       createdAt: Date.now(),
       subjects,
       years,
-      totalMinutes,
+      totalMinutes: Math.round(preview.timeBudgetSec / 60),
+      fraction,
       orderMode,
       questionIds: preview.questionIds,
       breakdown: preview.breakdown,
@@ -115,17 +125,21 @@ export default function ExamBuilder() {
       </div>
 
       <div className="field">
-        <div className="field-label">總時間預算（{totalMinutes}分鐘，選多科時平均分配）</div>
+        <div className="field-label">份量（每一科都照會考的題數與時間比例）</div>
         <div className="chip-row">
-          {TIME_OPTIONS_MIN.map((m) => (
+          {FRACTIONS.map((f) => (
             <span
-              key={m}
-              className={`chip ${totalMinutes === m ? 'selected' : ''}`}
-              onClick={() => setTotalMinutes(m)}
+              key={f.value}
+              className={`chip ${fraction === f.value ? 'selected' : ''}`}
+              onClick={() => setFraction(f.value)}
             >
-              {m}分鐘
+              {f.label}
             </span>
           ))}
+        </div>
+        <div className="field-note">
+          全卷＝會考一整份（國文、社會、自然 70 分鐘，英語閱讀 60、聽力 25、數學 80）；只有「全卷＋單一年度」會給官方等級，
+          半卷以上給估計等級，1/4 卷只看正確率。
         </div>
       </div>
 
@@ -134,7 +148,7 @@ export default function ExamBuilder() {
         <div className="value">
           {subjects.length === 0 || years.length === 0
             ? '請先選科目與年度'
-            : `共 ${preview.questionIds.length} 題 · 約 ${Math.round(preview.timeBudgetSec / 60)} 分鐘`}
+            : `共 ${preview.questionIds.length} 題 · ${minutesText}`}
         </div>
       </div>
 
@@ -142,7 +156,7 @@ export default function ExamBuilder() {
         <div className="breakdown-row">
           {preview.breakdown.map((b) => (
             <span key={b.subject} className="breakdown-item">
-              {b.subject} <b>{b.count}題</b> · {Math.round(b.sec / 60)}分
+              {b.subject} <b>{b.count}題</b> · {formatMinutes(b.sec)}
             </span>
           ))}
         </div>
@@ -161,8 +175,9 @@ export default function ExamBuilder() {
                 <tr><th>科目</th><td>{subjectText}</td></tr>
                 <tr><th>年度</th><td>{yearText}</td></tr>
                 <tr><th>排序</th><td>{orderMode === 'original' ? '原始順序' : '亂數'}</td></tr>
+                <tr><th>份量</th><td>{fractionText}</td></tr>
                 <tr><th>題數</th><td>{preview.questionIds.length} 題</td></tr>
-                <tr><th>時間</th><td>約 {Math.round(preview.timeBudgetSec / 60)} 分鐘</td></tr>
+                <tr><th>時間</th><td>{minutesText}</td></tr>
               </tbody>
             </table>
             <div className="modal-actions">

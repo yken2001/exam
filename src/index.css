@@ -402,3 +402,53 @@ table.history-table td {
   margin-bottom: 12px;
 }
 .history-toolbar .toolbar-right { margin-left: auto; }
+
+.grade-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.grade-table th, .grade-table td { padding: 6px 8px; border-bottom: 1px solid var(--border); text-align: left; }
+.grade-table th { font-weight: 500; white-space: nowrap; }
+.grade-level { font-weight: 600; white-space: nowrap; }
+.grade-level.lv-A { color: #3b6d11; }
+.grade-level.lv-B { color: #185fa5; }
+.grade-level.lv-C { color: #a32d2d; }
+.grade-note { font-size: 12px; color: var(--text-secondary); }
+
+.points-panel { position: relative; margin-bottom: 16px; overflow: hidden; }
+.points-head { display: flex; align-items: center; gap: 16px; }
+.level-badge {
+  width: 64px; height: 64px; flex-shrink: 0; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 18px; color: #fff;
+  background: linear-gradient(135deg, #f0a030, #d9534f);
+  box-shadow: 0 2px 8px rgba(217, 83, 79, 0.35);
+}
+.points-main { flex: 1; min-width: 0; }
+.points-total { font-size: 24px; font-weight: 700; }
+.points-total span { font-size: 13px; font-weight: 400; color: var(--text-secondary); }
+.xp-bar { height: 12px; border-radius: 6px; background: var(--surface-muted); overflow: hidden; margin: 6px 0 4px; }
+.xp-fill {
+  height: 100%; border-radius: 6px; width: 0;
+  background: linear-gradient(90deg, #f0a030, #d9534f);
+  transition: width 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.points-sub { font-size: 12px; color: var(--text-secondary); }
+.points-stats { display: flex; gap: 24px; margin-top: 12px; font-size: 13px; flex-wrap: wrap; }
+.points-stats > div { flex: 1; min-width: 140px; }
+.points-stats b { font-size: 18px; }
+.mini-bar { height: 6px; border-radius: 3px; background: var(--surface-muted); overflow: hidden; margin-top: 4px; }
+.mini-bar > div { height: 100%; background: var(--accent); width: 0; transition: width 1.2s ease-out; }
+.points-chip { padding: 2px 10px; border-radius: 12px; font-weight: 600; color: #b05a00; }
+.level-up {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  font-size: 28px; font-weight: 800; color: #fff; z-index: 2;
+  background: linear-gradient(135deg, rgba(240, 160, 48, 0.95), rgba(217, 83, 79, 0.95));
+  animation: level-up 2.4s ease-out forwards;
+}
+@keyframes level-up {
+  0% { opacity: 0; transform: scale(0.6); }
+  15% { opacity: 1; transform: scale(1.08); }
+  25% { transform: scale(1); }
+  80% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+.field-note { font-size: 12px; color: var(--text-secondary); margin-top: 6px; line-height: 1.5; }

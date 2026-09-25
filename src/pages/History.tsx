@@ -1,19 +1,27 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { db } from '../db';
-import { QUESTION_BY_ID } from '../data/sampleQuestions';
+import { QUESTION_BY_ID, SAMPLE_QUESTIONS } from '../data/sampleQuestions';
 import type { AttemptRecord, ExamPaper } from '../types';
 import { backupFile, buildBackup, canShareFile, downloadFile, importBackup } from '../utils/backup';
+import { computePoints, type AttemptPoints, type PointsSummary } from '../engine/points';
+import { gradeAttempt } from '../engine/grade';
+import PointsPanel from '../components/PointsPanel';
 
 interface Row {
   attempt: AttemptRecord;
   paper: ExamPaper;
   correctCount: number;
   total: number;
+  /** e.g. "國文 B+・英文 約A" -- subjects that got a level */
+  grades: string;
 }
 
 export default function History() {
   const [rows, setRows] = useState<Row[]>([]);
+  const [loaded, setLoaded] = useState(false);
+  const [summary, setSummary] = useState<PointsSummary | null>(null);
+  const [pointsDetail, setPointsDetail] = useState<AttemptPoints | null>(null);
   const [confirmDialog, setConfirmDialog] = useState<{ message: string; onConfirm: () => void } | null>(
     null
   );
@@ -32,9 +40,17 @@ export default function History() {
         const q = QUESTION_BY_ID.get(a.questionId);
         return q && a.selected === q.correctAnswer;
       }).length;
-      built.push({ attempt, paper, correctCount, total: paper.questionIds.length });
+      const qs = paper.questionIds.map((id) => QUESTION_BY_ID.get(id)).filter((q) => q !== undefined);
+      const answers = Object.fromEntries(attempt.answers.map((a) => [a.questionId, a.selected]));
+      const grades = gradeAttempt(qs, answers)
+        .filter((g) => g.level)
+        .map((g) => `${g.name} ${g.kind === 'estimate' ? '約' : ''}${g.level}`)
+        .join('・');
+      built.push({ attempt, paper, correctCount, total: paper.questionIds.length, grades });
     }
     setRows(built);
+    setSummary(computePoints(finished, QUESTION_BY_ID));
+    setLoaded(true);
   };
 
   useEffect(() => {
@@ -117,7 +133,11 @@ export default function History() {
         )}
       </div>
 
-      {rows.length === 0 ? (
+      {summary && rows.length > 0 && <PointsPanel summary={summary} totalQuestions={SAMPLE_QUESTIONS.length} />}
+
+      {!loaded ? (
+        <div className="empty-state">載入中…</div>
+      ) : rows.length === 0 ? (
         <div className="empty-state">還沒有作答紀錄，先去「建立考卷」開始一次測驗吧。</div>
       ) : (
         <table className="history-table">
@@ -128,6 +148,8 @@ export default function History() {
               <th>開始時間</th>
               <th>時長</th>
               <th>正確率</th>
+              <th>評級</th>
+              <th>積分</th>
               <th></th>
               <th></th>
             </tr>
@@ -159,6 +181,17 @@ export default function History() {
                   <td>
                     {r.correctCount}/{r.total} · {rate}%
                   </td>
+                  <td className="grade-note">{r.grades || '—'}</td>
+                  <td>
+                    {(() => {
+                      const p = summary?.perAttempt.get(r.attempt.id);
+                      return p ? (
+                        <button className="points-chip" onClick={() => setPointsDetail(p)}>
+                          +{p.total}
+                        </button>
+                      ) : null;
+                    })()}
+                  </td>
                   <td>
                     <Link to={`/review/${r.attempt.id}`}>
                       <button>查看結果</button>
@@ -172,6 +205,34 @@ export default function History() {
             })}
           </tbody>
         </table>
+      )}
+
+      {pointsDetail && (
+        <div className="modal-overlay" onClick={() => setPointsDetail(null)}>
+          <div className="modal-box" onClick={(e) => e.stopPropagation()}>
+            <p className="modal-message">這次得到 {pointsDetail.total} 積分</p>
+            <table className="confirm-table">
+              <tbody>
+                {pointsDetail.lines.map((l) => (
+                  <tr key={l.label}>
+                    <th>{l.label}</th>
+                    <td>+{l.points}</td>
+                  </tr>
+                ))}
+                {pointsDetail.lines.length === 0 && (
+                  <tr>
+                    <td>這份卷沒有新題、訂正或精熟，所以沒有積分。</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+            <div className="modal-actions">
+              <button className="primary" onClick={() => setPointsDetail(null)}>
+                確定
+              </button>
+            </div>
+          </div>
+        </div>
       )}
 
       {notice && (
