@@ -16,4 +16,4 @@
 ## 常用指令
 - `npm run dev`（Claude Code 預覽設定：`.claude/launch.json` 的 exam-app-dev，port 5183）
 - `npm run build` → `dist/`（單一 index.html，可用 file:// 開）
-- 題庫：`python tools/build_bank.py` → `build_listening.py <年>`（112–115）→ `gen_audio.py <年>`（需 Windows 英文語音 Zira）→ `gen_ts.py` → `check_leaks.py`（必須 0 洩漏）
+- 題庫：`python tools/build_bank.py` → `build_listening.py <年>`（112–115）→ `gen_audio.py <年>`（需 Windows 英文語音 Zira）→ `gen_ts.py` → `check_leaks.py`（必須 0 洩漏）→ `check_official.py`（與心測中心官方答案必須 0 不一致；新年度先把官方答案表存到 `tools/official_answers/<年>.txt`）

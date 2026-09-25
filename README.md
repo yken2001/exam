@@ -26,6 +26,7 @@
 - 只收選擇題：數學的非選擇題（手寫題）不收；國文解析卷沒有作文。
 - 英聽：112 年收在英文解析卷前段，113 年起是單獨一份英聽解析卷；110、111 年的英文解析卷只有閱讀，沒有英聽。
 - 正解一覽（人工備查用）在 [`tools/answer_keys/`](tools/answer_keys/)。
+- **已與心測中心官方「選擇題參考答案一覽表」逐題比對：1386 題全部一致**（官方答案存於 [`tools/official_answers/`](tools/official_answers/)，比對程式 `tools/check_official.py`）。
 
 ## 功能
 
@@ -107,6 +108,7 @@ flowchart LR
 7. **英聽**（`tools/build_listening.py <年>`）：112 是官方格式（「一、辨識句意」、題號「1.」、紅字「答案:(C)」「錄音稿:」）；113–115 是翰林格式（「第一部分:辨識句意」、題號「( C )第1題」、紅字【聽力稿】【中譯】【試題解析】…故選【C】）。錄音稿依 W:／M:（M1、M2 也是男聲）／Anchor:（主播）／Question: 分段，去掉 [singing] 這類舞台指示後交給 `gen_audio.py` 合成語音。
 8. **題目圖不含紅字**：切題目用的 PDF 副本會先把所有紅字（解析）塗白，題目圖邊緣不可能再出現解析殘影。
 9. **洩漏檢查**（`tools/check_leaks.py`）：不沿用切割程式的判斷，另外到 PDF 找每題題號的「(　)」，確認題目圖上括號內是空白。
+10. **官方答案比對**（`tools/check_official.py`）：心測中心每年公布的「選擇題參考答案一覽表」（<https://cap.rcpet.edu.tw/examination.html>）存在 `tools/official_answers/<年>.txt`，與題庫逐題比對，必須 0 不一致。
 
 ## 問題處理心智圖
 
@@ -144,6 +146,7 @@ mindmap
         110英文 第8題解析字母寫錯 以題號旁字母為準
       交叉驗證
         題號旁字母 vs 故選
+        心測中心官方答案 1386題全對
         新舊兩套流程比對
         舊版漏了 112數學 24-25題
     版面
@@ -214,6 +217,7 @@ python tools/build_listening.py 112   # 英聽（113、114、115 各跑一次）
 python tools/gen_audio.py 115         # 英聽語音（需 Windows 的英文語音 Microsoft Zira；只有錄音稿變了才需要重跑）
 python tools/gen_ts.py                # 產生 src/data/real/*.ts 與 tools/answer_keys/
 python tools/check_leaks.py           # 洩漏檢查：每題題目圖的括號內必須空白
+python tools/check_official.py        # 與心測中心官方答案逐題比對（新年度先把官方答案表存到 tools/official_answers/）
 ```
 
 細節見 [`tools/README.md`](tools/README.md)。

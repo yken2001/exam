@@ -10,6 +10,7 @@ python build_listening.py 112   # 英聽 21 題(題目圖、解析圖、錄音�
 python gen_audio.py 113         # 由錄音稿合成英聽音檔(Windows Zira 語音)
 python gen_ts.py                # 由 bank/*.json 產生 src/data/real/*.ts 與 answer_keys/
 python check_leaks.py           # 獨立檢查每題題目圖的「(　)」內是空白(答案沒外洩)
+python check_official.py        # 與心測中心官方答案逐題比對(official_answers/<年>.txt)
 ```
 
 英聽音檔是語音合成(非會考原音):女聲 W 用 Zira 原聲,男聲 M 用同一個聲音加速合成
