@@ -83,6 +83,7 @@
  "warnings": [],
  "errors": [],
  "notes": [
+  "Q5: 1 element(s) on the marker row sorted before it; moved into the question",
   "Q4: no \"(D)\" option text in stem region (check image options)",
   "Q11: no \"(D)\" option text in stem region (check image options)",
   "Q20: no \"(D)\" option text in stem region (check image options)"
@@ -154,7 +155,7 @@
   ],
   "q05": [
    740,
-   267
+   277
   ],
   "e05": [
    740,

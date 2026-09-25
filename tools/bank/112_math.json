@@ -37,7 +37,9 @@
  ],
  "warnings": [],
  "errors": [],
- "notes": [],
+ "notes": [
+  "Q6: 2 element(s) on the marker row sorted before it; moved into the question"
+ ],
  "sizes": {
   "q24": [
    682,
@@ -85,7 +87,7 @@
   ],
   "q06": [
    682,
-   161
+   178
   ],
   "e06": [
    682,

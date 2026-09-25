@@ -1,4 +1,4 @@
-"""Rebuild the whole question bank from the 15 解析 PDFs.
+"""Rebuild the whole question bank from the 解析 PDFs (5 subjects x 110-115).
 
   python build_bank.py            parse + render + write everything
   python build_bank.py --dry      parse only, print the verification report
@@ -24,7 +24,7 @@ REFLOW_DIR = os.path.join(HERE, 'reflowed')
 DPI = 150
 
 SUBJECTS = ['國文', '英文', '數學', '自然', '社會']
-YEARS = [110, 111, 112, 113]
+YEARS = [110, 111, 112, 113, 114, 115]
 SUBJ_EN = {'國文': 'chinese', '英文': 'english', '數學': 'math', '自然': 'science', '社會': 'social'}
 
 # per-file page furniture that the generic header/footer rules don't cover
@@ -38,6 +38,7 @@ RULES = {
     (112, '英文'): {'start_after': '單一選擇題', 'bare_groups': True},  # skip the listening part
     (113, '英文'): {'tag_groups': '文章翻譯'},          # like 110英文: passages are images, no headers
     (113, '自然'): {'headerless_groups': True},         # 題組 passages have no "請閱讀…回答" line
+    (115, '英文'): {'tag_groups': '文章翻譯'},          # like 113英文
 }
 
 # multiple-choice question counts of each paper (cross-checked against the
@@ -49,6 +50,8 @@ EXPECTED = {
     (110, '自然'): 54, (111, '自然'): 50, (112, '自然'): 50,
     (110, '社會'): 63, (111, '社會'): 54, (112, '社會'): 54,
     (113, '國文'): 42, (113, '英文'): 43, (113, '數學'): 25, (113, '自然'): 50, (113, '社會'): 54,
+    (114, '國文'): 42, (114, '英文'): 43, (114, '數學'): 25, (114, '自然'): 50, (114, '社會'): 54,
+    (115, '國文'): 42, (115, '英文'): 43, (115, '數學'): 25, (115, '自然'): 50, (115, '社會'): 54,
 }
 
 RANGE_IN_HEADER = re.compile(r'(\d{1,2})\s*[~〜～\-]\s*(\d{1,2})\s*題')
@@ -108,6 +111,7 @@ def build(year, subj, render=True):
             os.makedirs(d)
 
         B.mask_answer_letters(qdoc, lines, questions)
+        B.whiten_red(qdoc, lines)
         qby = {q.qno: q for q in questions}
         sizes = {}
         question_file, explanation_file = {}, {}
@@ -116,9 +120,9 @@ def build(year, subj, render=True):
         for g in groups:
             if not g.qnos:
                 continue
-            parts = B.render_region(qdoc, pieces, lines, g.pre_black, end, DPI)
+            parts = B.render_region(qdoc, pieces, lines, g.pre_black, end, DPI, lift=True)
             for n in g.qnos:
-                parts += B.render_region(qdoc, pieces, lines, qby[n].stem, end, DPI)
+                parts += B.render_region(qdoc, pieces, lines, qby[n].stem, end, DPI, lift=True)
             name = f'q{g.qnos[0]:02d}'
             sizes[name] = B.stitch(parts, os.path.join(qdir, name + '.png'))
             for n in g.qnos:
@@ -128,7 +132,7 @@ def build(year, subj, render=True):
         for q in questions:
             if q.group < 0:
                 name = f'q{q.qno:02d}'
-                sizes[name] = B.stitch(B.render_region(qdoc, pieces, lines, q.stem, end, DPI),
+                sizes[name] = B.stitch(B.render_region(qdoc, pieces, lines, q.stem, end, DPI, lift=True),
                                        os.path.join(qdir, name + '.png'))
                 question_file[q.qno] = q.qno
             pre = None

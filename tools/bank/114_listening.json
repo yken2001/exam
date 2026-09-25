@@ -1,0 +1,419 @@
+{
+ "year": 114,
+ "subject": "英聽",
+ "count": 21,
+ "answers": {
+  "1": "A",
+  "2": "C",
+  "3": "C",
+  "4": "B",
+  "5": "A",
+  "6": "B",
+  "7": "A",
+  "8": "B",
+  "9": "C",
+  "10": "A",
+  "11": "B",
+  "12": "B",
+  "13": "A",
+  "14": "C",
+  "15": "A",
+  "16": "A",
+  "17": "B",
+  "18": "C",
+  "19": "B",
+  "20": "B",
+  "21": "C"
+ },
+ "sections": {
+  "1": "辨識句意 第1題",
+  "2": "辨識句意 第2題",
+  "3": "辨識句意 第3題",
+  "4": "基本問答 第1題",
+  "5": "基本問答 第2題",
+  "6": "基本問答 第3題",
+  "7": "基本問答 第4題",
+  "8": "基本問答 第5題",
+  "9": "基本問答 第6題",
+  "10": "基本問答 第7題",
+  "11": "基本問答 第8題",
+  "12": "言談理解 第1題",
+  "13": "言談理解 第2題",
+  "14": "言談理解 第3題",
+  "15": "言談理解 第4題",
+  "16": "言談理解 第5題",
+  "17": "言談理解 第6題",
+  "18": "言談理解 第7題",
+  "19": "言談理解 第8題",
+  "20": "言談理解 第9題",
+  "21": "言談理解 第10題"
+ },
+ "transcripts": {
+  "1": [
+   [
+    "N",
+    "The girl is taking a picture of the foxes."
+   ]
+  ],
+  "2": [
+   [
+    "N",
+    "The girl is eating popcorn and watching a movie on her computer."
+   ]
+  ],
+  "3": [
+   [
+    "N",
+    "The typhoon will move over the north of the island. It is going to hit the land at six thirty and leave before noon."
+   ]
+  ],
+  "4": [
+   [
+    "N",
+    "How do you usually go to work?"
+   ]
+  ],
+  "5": [
+   [
+    "N",
+    "Excuse me, where should I put these pencils?"
+   ]
+  ],
+  "6": [
+   [
+    "N",
+    "What's in the kitchen? It smells great."
+   ]
+  ],
+  "7": [
+   [
+    "N",
+    "I've got a crazy idea. Do you want to hear it?"
+   ]
+  ],
+  "8": [
+   [
+    "N",
+    "Oh, no. I just missed the last bus. Now I have to walk home."
+   ]
+  ],
+  "9": [
+   [
+    "N",
+    "Aren't you going to have some dinner? It's seven already."
+   ]
+  ],
+  "10": [
+   [
+    "N",
+    "I didn't know that you could play the piano so well. Who was your teacher?"
+   ]
+  ],
+  "11": [
+   [
+    "N",
+    "Do you know where I can find Dr. Holland? I need to talk to him."
+   ]
+  ],
+  "12": [
+   [
+    "M",
+    "Hey, Lisa. Are you ready for Father's Day?"
+   ],
+   [
+    "W",
+    "Well, I'm thinking to make Dad a card. What do you think?"
+   ],
+   [
+    "M",
+    "But he already has a lot of cards. We make him cards every year. Any other ideas?"
+   ],
+   [
+    "W",
+    "Why don't we take him to that new restaurant? I heard it's very good."
+   ],
+   [
+    "M",
+    "Yeah, it is. But I'm afraid everyone wants to take their dad there, and Father's Day is tomorrow. It's too late to get a table now."
+   ],
+   [
+    "W",
+    "Maybe we could cook a nice dinner for him. It's more comfortable at home, isn't it?"
+   ],
+   [
+    "M",
+    "Yeah, that's a good idea!"
+   ],
+   [
+    "Q",
+    "What are the man and the woman going to do for their father?"
+   ]
+  ],
+  "13": [
+   [
+    "M",
+    "Hey honey, could you help me do some shopping on your way home? I need cookies, milk and ice cream. Hmm... Maybe no ice cream this time. Oh, I also want some tomatoes. I'm going to make sandwiches. That's all for now. Thanks. See you later."
+   ],
+   [
+    "Q",
+    "What does the man need from the shop?"
+   ]
+  ],
+  "14": [
+   [
+    "M",
+    "It's one thousand five hundred dollars."
+   ],
+   [
+    "W",
+    "Here."
+   ],
+   [
+    "M",
+    "Thanks. Remember to wash it in cold water and hang it to dry."
+   ],
+   [
+    "W",
+    "OK, thanks."
+   ],
+   [
+    "M",
+    "Do you need a bag?"
+   ],
+   [
+    "W",
+    "Ehh... Can I have a box for the shirt? It's a gift."
+   ],
+   [
+    "M",
+    "Sorry. I'm afraid we only have paper bags."
+   ],
+   [
+    "W",
+    "That's okay. Do you know where I can get a box?"
+   ],
+   [
+    "M",
+    "There is a gift shop on the second floor next to a candy shop."
+   ],
+   [
+    "W",
+    "Great. Thank you."
+   ],
+   [
+    "Q",
+    "Where are the man and the woman?"
+   ]
+  ],
+  "15": [
+   [
+    "M",
+    "I had a close call today."
+   ],
+   [
+    "W",
+    "Really? What happened?"
+   ],
+   [
+    "M",
+    "I was driving around a corner, and I didn't notice a man was crossing the street. He just suddenly appeared! Lucky for us, he jumped out of the way at just the right moment, so I missed him."
+   ],
+   [
+    "W",
+    "Be more careful next time."
+   ],
+   [
+    "M",
+    "I know. I was just trying to answer a phone call while I was driving."
+   ],
+   [
+    "Q",
+    "What did the man mean when he said \"I had a close call\"?"
+   ]
+  ],
+  "16": [
+   [
+    "W",
+    "Hey, Scott. Is your class ready for tomorrow?"
+   ],
+   [
+    "M",
+    "Sure. We've baked some pies and bought some fruit for making juice. How about yours?"
+   ],
+   [
+    "W",
+    "We're not selling food. We'll invite people to paint cups and plates."
+   ],
+   [
+    "M",
+    "That sounds interesting. I'll visit your stand if I have time."
+   ],
+   [
+    "W",
+    "Do you know what Lily's class is going to do?"
+   ],
+   [
+    "M",
+    "They're preparing some games."
+   ],
+   [
+    "Q",
+    "Whose class is going to sell food?"
+   ]
+  ],
+  "17": [
+   [
+    "W",
+    "We're all looking for you. What are you doing here in the kitchen?"
+   ],
+   [
+    "M",
+    "I'm washing plates. We need more for the cake later."
+   ],
+   [
+    "W",
+    "Now I feel like I'm a bad friend. We're here to celebrate your birthday today, and you're washing plates for us."
+   ],
+   [
+    "M",
+    "No worries. I'll be out in a minute. I've only got a few more to wash."
+   ],
+   [
+    "W",
+    "Let me."
+   ],
+   [
+    "M",
+    "Are you sure?"
+   ],
+   [
+    "W",
+    "Hey! I know I'm not as good at housework as you, but I can deal with a few dirty plates, all right?"
+   ],
+   [
+    "M",
+    "OK! Don't break them."
+   ],
+   [
+    "W",
+    "I won't. Now go and have fun."
+   ],
+   [
+    "Q",
+    "Why won't the woman let the man wash the plates?"
+   ]
+  ],
+  "18": [
+   [
+    "W",
+    "Remember the interview I had last week? They just called to tell me I got the job."
+   ],
+   [
+    "M",
+    "I'm so happy for you! But why do you sound worried?"
+   ],
+   [
+    "W",
+    "Well, I think they gave me the job because I told them I speak Chinese."
+   ],
+   [
+    "M",
+    "Why did you do that? You can only say \"Xiao Long Bao\" and \"Xie Xie.\""
+   ],
+   [
+    "W",
+    "I know, I know. But it is my dream job."
+   ],
+   [
+    "M",
+    "But if they find out, you'll be in trouble. I'm sure you'll find a better job if you keep looking."
+   ],
+   [
+    "W",
+    "I'm not sure if I can, but still, I'll call them and tell them that I'm not taking the job."
+   ],
+   [
+    "M",
+    "You'll be glad that you did."
+   ],
+   [
+    "Q",
+    "Why has the woman decided not to take the job?"
+   ]
+  ],
+  "19": [
+   [
+    "M",
+    "Did you hear the music? Is there a show on the street tonight?"
+   ],
+   [
+    "W",
+    "No. That's the garbage truck music in Taiwan. When people hear it, they know the garbage truck is coming. They take out their garbage and throw it into the truck."
+   ],
+   [
+    "M",
+    "That's new to me. In my country, people just leave their garbage in front of their houses, and someone will collect it in the middle of the night."
+   ],
+   [
+    "W",
+    "That sounds much more convenient."
+   ],
+   [
+    "M",
+    "I guess so. Oh, I actually have some trash in my room. I should take it out now."
+   ],
+   [
+    "W",
+    "Then you should hurry. The garbage truck stops for only five minutes."
+   ],
+   [
+    "Q",
+    "What is the woman telling the man?"
+   ]
+  ],
+  "20": [
+   [
+    "M",
+    "You know what? Alan told me he plans to move to America this Christmas!"
+   ],
+   [
+    "W",
+    "And?"
+   ],
+   [
+    "M",
+    "This is big news!"
+   ],
+   [
+    "W",
+    "To you, yes. You only just met him. I don't know how many times I've heard him say the same thing over the past five years."
+   ],
+   [
+    "M",
+    "But he sounded very serious."
+   ],
+   [
+    "W",
+    "Well, you'll know what I mean next year."
+   ],
+   [
+    "Q",
+    "Why does the woman say \"You'll know what I mean next year\"?"
+   ]
+  ],
+  "21": [
+   [
+    "M",
+    "Take me out to the ball game. Take me out with the crowd..."
+   ],
+   [
+    "M",
+    "Good afternoon, ladies and gentlemen. We hope you are enjoying today's baseball game. Because of the rain, we will now take a long break. The rain is expected to get heavier the next twenty minutes, but it should stop in an hour. During this time, all snacks at our food stands come with a free drink. Go get yourself a basket of fries and a drink. We'll let you know when the game will begin again. Thank you for understanding."
+   ],
+   [
+    "Q",
+    "What is the man trying to say?"
+   ]
+  ]
+ }
+}

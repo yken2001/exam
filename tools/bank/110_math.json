@@ -33,7 +33,14 @@
  "groups": [],
  "warnings": [],
  "errors": [],
- "notes": [],
+ "notes": [
+  "Q3: 2 element(s) on the marker row sorted before it; moved into the question",
+  "Q9: 1 element(s) on the marker row sorted before it; moved into the question",
+  "Q11: 1 element(s) on the marker row sorted before it; moved into the question",
+  "Q17: 1 element(s) on the marker row sorted before it; moved into the question",
+  "Q21: 1 element(s) on the marker row sorted before it; moved into the question",
+  "Q23: 1 element(s) on the marker row sorted before it; moved into the question"
+ ],
  "sizes": {
   "q01": [
    711,
@@ -53,7 +60,7 @@
   ],
   "q03": [
    711,
-   175
+   193
   ],
   "e03": [
    711,

@@ -78,7 +78,10 @@
  ],
  "warnings": [],
  "errors": [],
- "notes": [],
+ "notes": [
+  "Q3: 1 element(s) on the marker row sorted before it; moved into the question",
+  "Q17: 1 element(s) on the marker row sorted before it; moved into the question"
+ ],
  "sizes": {
   "q46": [
    740,

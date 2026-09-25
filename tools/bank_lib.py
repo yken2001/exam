@@ -146,6 +146,12 @@ def reflow(doc, rules, mask_docs=()):
             hb += [img['bbox'][3] for img in page.get_image_info()
                    if img['bbox'][1] < 60 and img['bbox'][2] - img['bbox'][0] > W * 0.6]
             top = max(hb) + 1.0 if hb else 0.0
+            # the title image can overlap the first content line by a hair
+            # (115英聽: image to y=92, "第一部分:辨識句意" from y=90): never
+            # cut a line that starts inside the header and ends below it
+            straddle = [bb[1] for bb, t, _ in plines if bb[1] < top and bb[3] > top + 3]
+            if straddle:
+                top = min(straddle) - 0.5
 
         footer = []
         content = []
@@ -162,6 +168,8 @@ def reflow(doc, rules, mask_docs=()):
             r = fitz.Rect(img['bbox'])
             if r.y0 >= ftop - 15 and r.width < 100 and r.height < 100 and r.x0 > W * 0.75:
                 footer.append(r)                       # QR code (far right)
+            elif pno == 0 and r.y0 < 60 and r.width > W * 0.6:
+                continue                               # the title image itself
             elif r.y1 > top + 1:
                 images.append(r)
         # only drawings that touch a footer element (the box around
@@ -460,6 +468,35 @@ def parse(lines, rules):
     for q in questions:
         q.group = order[id(by_qno[q.qno])] if q.qno in by_qno else -1
 
+    # an element on the marker's own row can start a hair above the marker
+    # text and so sort before it (115社會 Q41: the 表(六) picture beside the
+    # stem is 2.5pt higher). It belongs to this question, not to the end of
+    # the previous explanation: move the marker in front of it.
+    protected = {q.marker for q in questions} | {g.header for g in groups} | set(sections)
+    for q in questions:
+        m = q.marker
+        k = m
+        while k - 1 > start and k - 1 not in protected:
+            l, ml = lines[k - 1], lines[m]
+            if not (l.piece == ml.piece and l.red < 0.5 and l.y0 >= ml.y0 - 8 and l.y1 > ml.y0 + 2):
+                break
+            k -= 1
+        if k == m:
+            continue
+        lines.insert(k, lines.pop(m))
+
+        def shift(i, k=k, m=m):
+            return k if i == m else i + 1 if k <= i < m else i
+        for o in questions:
+            o.marker = shift(o.marker)
+            if o.letter_line >= 0:
+                o.letter_line = shift(o.letter_line)
+        for g in groups:
+            g.header = shift(g.header)
+        sections[:] = [shift(i) for i in sections]
+        protected = {o.marker for o in questions} | {g.header for g in groups} | set(sections)
+        notes.append(f'Q{q.qno}: {m - k} element(s) on the marker row sorted before it; moved into the question')
+
     return questions, groups, sections, start, end, notes
 
 
@@ -589,7 +626,17 @@ def _drop_top_sliver(im, max_h=4):
     return im.crop((0, first_blank, im.width, im.height))
 
 
-def render_region(doc, pieces, lines, region, end, dpi):
+def whiten_red(qdoc, lines):
+    """Paint every red (explanation) line out of the stem document. Stems
+    never contain red lines, so this only removes explanations -- and with
+    them any chance of a red sliver at the edge of a question image."""
+    for l in lines:
+        if l.red >= 0.5 and not l.is_image:
+            qdoc[l.pno].draw_rect(fitz.Rect(l.x0 - 0.5, l.y0 - 0.5, l.x1 + 0.5, l.y1 + 0.5),
+                                  color=None, fill=(1, 1, 1), overlay=True)
+
+
+def render_region(doc, pieces, lines, region, end, dpi, lift=False):
     a, b = region
     if a >= b:
         return []
@@ -603,6 +650,16 @@ def render_region(doc, pieces, lines, region, end, dpi):
     above = [l.y1 for l in lines[max(0, a - 40):a] if l.piece == pa and l.y0 < top - 2]
     if above:
         y_start = max(y_start, min(max(above), top + 0.5))
+    # lift (stems, from the red-whitened document): an element of this
+    # region that starts above its first line -- a picture beside the stem
+    # whose caption sits higher than the marker (115社會 Q43 表(七)) -- is
+    # included up to its top, but never into black content above it
+    if lift:
+        ext = [l.y0 for l in lines[a:b] if l.piece == pa and l.y0 < top - 0.5]
+        if ext:
+            black = [l.y1 for l in lines[max(0, a - 40):a]
+                     if l.piece == pa and l.red < 0.5 and l.y0 < min(ext) - 2]
+            y_start = min(y_start, max([min(ext) - 1] + black))
     if b < len(lines):
         pb, y_end = lines[b].piece, lines[b].y0 - 1.5
     else:

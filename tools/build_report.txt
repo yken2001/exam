@@ -1,7 +1,9 @@
 ===== 110 國文: 48 questions, groups=[[33, 34], [35, 36], [37, 38], [39, 41], [42, 43], [44, 45], [46, 48]]
+  [note] Q16: 1 element(s) on the marker row sorted before it; moved into the question
   [note] Q31: marker D, no confirming answer text in explanation
   [note] Q13: no "(D)" option text in stem region (check image options)
 ===== 110 英文: 41 questions, groups=[[15, 16], [17, 18], [19, 21], [22, 24], [25, 28], [29, 31], [32, 34], [35, 37], [38, 41]]
+  [note] Q1: 1 element(s) on the marker row sorted before it; moved into the question
   [note] Q8: marker says B, explanation text says ['C']
   [note] Q9: marker B, no confirming answer text in explanation
   [note] Q12: marker C, no confirming answer text in explanation
@@ -11,10 +13,19 @@
   [note] Q39: marker A, no confirming answer text in explanation
   [note] Q40: marker B, no confirming answer text in explanation
 ===== 110 數學: 26 questions, groups=[]
+  [note] Q3: 2 element(s) on the marker row sorted before it; moved into the question
+  [note] Q9: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q11: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q17: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q21: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q23: 1 element(s) on the marker row sorted before it; moved into the question
 ===== 110 自然: 54 questions, groups=[[46, 47], [48, 49], [50, 51], [52, 54]]
+  [note] Q3: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q17: 1 element(s) on the marker row sorted before it; moved into the question
 ===== 110 社會: 63 questions, groups=[[56, 57], [58, 60], [61, 63]]
   [note] Q5: marker B, no confirming answer text in explanation
 ===== 111 國文: 42 questions, groups=[[26, 27], [28, 29], [30, 31], [32, 33], [34, 35], [36, 38], [39, 40], [41, 42]]
+  [note] Q1: 1 element(s) on the marker row sorted before it; moved into the question
   [note] Q17: marker A, no confirming answer text in explanation
   [note] Q11: no "(D)" option text in stem region (check image options)
 ===== 111 英文: 43 questions, groups=[[21, 22], [23, 24], [25, 26], [27, 29], [30, 32], [33, 36], [37, 39], [40, 43]]
@@ -27,10 +38,12 @@
   [note] Q40: marker D, no confirming answer text in explanation
   [note] Q42: marker A, no confirming answer text in explanation
 ===== 111 數學: 25 questions, groups=[[24, 25]]
+  [note] Q12: 1 element(s) on the marker row sorted before it; moved into the question
   [note] Q21: marker B, no confirming answer text in explanation
   [note] Q22: marker A, no confirming answer text in explanation
 ===== 111 自然: 50 questions, groups=[[42, 44], [45, 46], [47, 48], [49, 50]]
 ===== 111 社會: 54 questions, groups=[[44, 45], [46, 48], [49, 51], [52, 54]]
+  [note] Q24: 1 element(s) on the marker row sorted before it; moved into the question
   [note] Q1: marker C, no confirming answer text in explanation
   [note] Q2: marker B, no confirming answer text in explanation
   [note] Q3: marker C, no confirming answer text in explanation
@@ -44,17 +57,27 @@
 ===== 112 國文: 42 questions, groups=[[25, 26], [27, 29], [30, 31], [32, 33], [34, 35], [36, 38], [39, 40], [41, 42]]
 ===== 112 英文: 43 questions, groups=[[24, 25], [26, 27], [28, 29], [30, 32], [33, 35], [36, 38], [39, 41], [42, 43]]
 ===== 112 數學: 25 questions, groups=[[24, 25]]
+  [note] Q6: 2 element(s) on the marker row sorted before it; moved into the question
 ===== 112 自然: 50 questions, groups=[[43, 44], [45, 46], [47, 48], [49, 50]]
-  [note] Q4: no "(D)" option text in stem region (check image options)
 ===== 112 社會: 54 questions, groups=[[44, 45], [46, 48], [49, 51], [52, 54]]
+  [note] Q2: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q41: 1 element(s) on the marker row sorted before it; moved into the question
 ===== 113 國文: 42 questions, groups=[[25, 26], [27, 28], [29, 30], [31, 32], [33, 35], [36, 37], [38, 39], [40, 42]]
+  [note] Q5: 1 element(s) on the marker row sorted before it; moved into the question
   [note] Q4: no "(D)" option text in stem region (check image options)
   [note] Q11: no "(D)" option text in stem region (check image options)
   [note] Q20: no "(D)" option text in stem region (check image options)
 ===== 113 英文: 43 questions, groups=[[22, 23], [24, 25], [26, 27], [28, 29], [30, 32], [33, 35], [36, 39], [40, 43]]
 ===== 113 數學: 25 questions, groups=[[24, 25]]
+  [note] Q1: 2 element(s) on the marker row sorted before it; moved into the question
+  [note] Q3: 2 element(s) on the marker row sorted before it; moved into the question
+  [note] Q7: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q8: 3 element(s) on the marker row sorted before it; moved into the question
+  [note] Q11: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q22: 1 element(s) on the marker row sorted before it; moved into the question
   [note] Q4: no "(D)" option text in stem region (check image options)
 ===== 113 自然: 50 questions, groups=[[42, 43], [44, 45], [46, 48], [49, 50]]
+  [note] Q25: 3 element(s) on the marker row sorted before it; moved into the question
   [note] Q1: no "(D)" option text in stem region (check image options)
   [note] Q8: no "(D)" option text in stem region (check image options)
   [note] Q36: no "(D)" option text in stem region (check image options)
@@ -62,3 +85,50 @@
   [note] Q40: no "(D)" option text in stem region (check image options)
 ===== 113 社會: 54 questions, groups=[[44, 45], [46, 48], [49, 51], [52, 54]]
   [note] group header '閱讀下列選文,回答第52 至41 題:' has an inverted range; took Q52-Q54 up to the next header
+  [note] Q10: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q24: 1 element(s) on the marker row sorted before it; moved into the question
+===== 114 國文: 42 questions, groups=[[25, 26], [27, 28], [29, 31], [32, 33], [34, 35], [36, 37], [38, 39], [40, 42]]
+  [note] Q4: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q6: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q7: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q9: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q9: no "(D)" option text in stem region (check image options)
+===== 114 英文: 43 questions, groups=[[20, 21], [22, 23], [24, 25], [26, 28], [29, 31], [32, 34], [35, 37], [38, 43]]
+===== 114 數學: 25 questions, groups=[[24, 25]]
+  [note] Q1: 5 element(s) on the marker row sorted before it; moved into the question
+  [note] Q4: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q5: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q6: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q8: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q13: 2 element(s) on the marker row sorted before it; moved into the question
+  [note] Q16: 1 element(s) on the marker row sorted before it; moved into the question
+===== 114 自然: 50 questions, groups=[[43, 44], [45, 46], [47, 48], [49, 50]]
+===== 114 社會: 54 questions, groups=[[43, 45], [46, 48], [49, 51], [52, 54]]
+  [note] Q27: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q36: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q29: no "(D)" option text in stem region (check image options)
+===== 115 國文: 42 questions, groups=[[24, 25], [26, 29], [30, 32], [33, 34], [35, 36], [37, 38], [39, 40], [41, 42]]
+  [note] Q4: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q8: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q10: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q21: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q14: no "(D)" option text in stem region (check image options)
+  [note] Q16: no "(D)" option text in stem region (check image options)
+===== 115 英文: 43 questions, groups=[[20, 21], [22, 23], [24, 26], [27, 28], [29, 31], [32, 34], [35, 39], [40, 43]]
+===== 115 數學: 25 questions, groups=[[23, 25]]
+  [note] Q3: 2 element(s) on the marker row sorted before it; moved into the question
+  [note] Q5: 3 element(s) on the marker row sorted before it; moved into the question
+  [note] Q7: 4 element(s) on the marker row sorted before it; moved into the question
+  [note] Q9: 4 element(s) on the marker row sorted before it; moved into the question
+  [note] Q11: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q14: 4 element(s) on the marker row sorted before it; moved into the question
+  [note] Q16: 3 element(s) on the marker row sorted before it; moved into the question
+  [note] Q18: 1 element(s) on the marker row sorted before it; moved into the question
+===== 115 自然: 50 questions, groups=[[42, 43], [44, 45], [46, 47], [48, 50]]
+===== 115 社會: 54 questions, groups=[[44, 45], [46, 48], [49, 51], [52, 54]]
+  [note] Q7: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q41: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q43: 1 element(s) on the marker row sorted before it; moved into the question
+  [note] Q27: no "(D)" option text in stem region (check image options)
+  [note] Q29: no "(D)" option text in stem region (check image options)
+  [note] Q41: no "(D)" option text in stem region (check image options)

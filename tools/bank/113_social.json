@@ -79,7 +79,9 @@
  "warnings": [],
  "errors": [],
  "notes": [
-  "group header '閱讀下列選文,回答第52 至41 題:' has an inverted range; took Q52-Q54 up to the next header"
+  "group header '閱讀下列選文,回答第52 至41 題:' has an inverted range; took Q52-Q54 up to the next header",
+  "Q10: 1 element(s) on the marker row sorted before it; moved into the question",
+  "Q24: 1 element(s) on the marker row sorted before it; moved into the question"
  ],
  "sizes": {
   "q44": [
@@ -284,7 +286,7 @@
   ],
   "q24": [
    740,
-   657
+   674
   ],
   "e24": [
    740,

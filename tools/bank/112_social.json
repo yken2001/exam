@@ -78,7 +78,10 @@
  ],
  "warnings": [],
  "errors": [],
- "notes": [],
+ "notes": [
+  "Q2: 1 element(s) on the marker row sorted before it; moved into the question",
+  "Q41: 1 element(s) on the marker row sorted before it; moved into the question"
+ ],
  "sizes": {
   "q44": [
    746,
@@ -418,7 +421,7 @@
   ],
   "q41": [
    682,
-   444
+   458
   ],
   "e41": [
    746,

@@ -27,7 +27,10 @@ import bank_lib as B
 from build_bank import DL, PUBLIC, BANK_DIR, DPI
 
 SECTIONS = ('辨識句意', '基本問答', '言談理解')
-SPEAKER = re.compile(r'^(W|M|Q|Question)\s*[:：]\s*')
+# W/M: woman/man; M1, M2 (115 Q21: several people interviewed) are men;
+# Anchor (a news anchor) gets the plain voice like a narrator
+SPEAKER = re.compile(r'^(W\d?|M\d?|Q|Question|Anchor)\s*[:：]\s*')
+VOICE = {'Question': 'Q', 'Anchor': 'N'}
 
 FORMATS = {
     112: {
@@ -50,6 +53,9 @@ FORMATS = {
         'transcript_start': '【聽力稿】',
     },
 }
+# 114, 115: separate 翰林 英聽解析卷 in the same layout as 113
+for _y in (114, 115):
+    FORMATS[_y] = dict(FORMATS[113], pdf=f'{_y}會考英聽解析.pdf')
 
 
 def parse_transcript(text_lines):
@@ -60,7 +66,7 @@ def parse_transcript(text_lines):
         t = t.replace('’', "'").replace('‘', "'").replace('“', '"').replace('”', '"')
         m = SPEAKER.match(t)
         if m:
-            segs.append(['Q' if m.group(1) == 'Question' else m.group(1), t[m.end():]])
+            segs.append([VOICE.get(m.group(1), m.group(1)[0]), t[m.end():]])
         elif segs:
             segs[-1][1] += ' ' + t
         else:
@@ -70,6 +76,7 @@ def parse_transcript(text_lines):
         s = re.sub(r'\s+', ' ', s).strip()
         s = re.sub(r"\s+'s\b", "'s", s)                                 # "girl 's head"
         s = re.sub(r'\((?:sound|sounds) of [^)]*\)', '', s).strip()      # stage directions
+        s = re.sub(r'\[[^\]]*\]\s*', '', s).strip()                        # 114 Q21 "[singing]"
         if s:
             out.append((who, s))
     return out
@@ -150,6 +157,11 @@ def main(year):
             errors.append(f"Q{q['qno']}: transcript empty or contains Chinese: {q['transcript']}")
         if q['section'] == '言談理解' and not any(w == 'Q' for w, _ in q['transcript']):
             errors.append(f"Q{q['qno']}: 言談理解 transcript has no question line")
+        # anything TTS would read out that is not speech: an unknown speaker
+        # tag ("Anchor:", "M1:" before they were known) or a [stage direction]
+        for _, s in q['transcript']:
+            if re.search(r'(^|\s)[A-Z][A-Za-z]{0,7}\d?[:：]\S|[\[\]]', s):
+                errors.append(f"Q{q['qno']}: speaker tag or [direction] left in the text: {s[:60]}")
     if errors:
         print('\n'.join(errors))
         sys.exit(1)
@@ -157,6 +169,7 @@ def main(year):
     # paint the printed answer letter out of the question images (113)
     B.mask_answer_letters(qdoc, lines, [B.Question(q['qno'], q['marker'], letter=q['letter'])
                                         for q in questions if q['letter']])
+    B.whiten_red(qdoc, lines)
 
     qdir = os.path.join(PUBLIC, 'questions', 'listening', str(year))
     edir = os.path.join(PUBLIC, 'explanations', 'listening', str(year))
@@ -165,7 +178,7 @@ def main(year):
         os.makedirs(d)
     for q in questions:
         n = q['qno']
-        B.stitch(B.render_region(qdoc, pieces, lines, q['stem'], end, DPI), os.path.join(qdir, f'q{n:02d}.png'))
+        B.stitch(B.render_region(qdoc, pieces, lines, q['stem'], end, DPI, lift=True), os.path.join(qdir, f'q{n:02d}.png'))
         B.stitch(B.render_region(edoc, pieces, lines, q['expl'], end, DPI), os.path.join(edir, f'e{n:02d}.png'))
 
     bank = {'year': year, 'subject': '英聽', 'count': len(questions),

@@ -1,0 +1,427 @@
+{
+ "year": 115,
+ "subject": "英聽",
+ "count": 21,
+ "answers": {
+  "1": "C",
+  "2": "C",
+  "3": "C",
+  "4": "B",
+  "5": "B",
+  "6": "C",
+  "7": "A",
+  "8": "A",
+  "9": "A",
+  "10": "B",
+  "11": "B",
+  "12": "A",
+  "13": "A",
+  "14": "B",
+  "15": "A",
+  "16": "C",
+  "17": "B",
+  "18": "A",
+  "19": "A",
+  "20": "B",
+  "21": "A"
+ },
+ "sections": {
+  "1": "辨識句意 第1題",
+  "2": "辨識句意 第2題",
+  "3": "辨識句意 第3題",
+  "4": "基本問答 第1題",
+  "5": "基本問答 第2題",
+  "6": "基本問答 第3題",
+  "7": "基本問答 第4題",
+  "8": "基本問答 第5題",
+  "9": "基本問答 第6題",
+  "10": "基本問答 第7題",
+  "11": "基本問答 第8題",
+  "12": "言談理解 第1題",
+  "13": "言談理解 第2題",
+  "14": "言談理解 第3題",
+  "15": "言談理解 第4題",
+  "16": "言談理解 第5題",
+  "17": "言談理解 第6題",
+  "18": "言談理解 第7題",
+  "19": "言談理解 第8題",
+  "20": "言談理解 第9題",
+  "21": "言談理解 第10題"
+ },
+ "transcripts": {
+  "1": [
+   [
+    "N",
+    "The man is sailing his boat in terrible weather."
+   ]
+  ],
+  "2": [
+   [
+    "N",
+    "There is a bell on the door of apartment number 77."
+   ]
+  ],
+  "3": [
+   [
+    "N",
+    "The little girl and her dog are both enjoying their meal."
+   ]
+  ],
+  "4": [
+   [
+    "N",
+    "What holiday do you like the best?"
+   ]
+  ],
+  "5": [
+   [
+    "N",
+    "Do you want to see a movie together?"
+   ]
+  ],
+  "6": [
+   [
+    "N",
+    "What should we bring to the dinner party?"
+   ]
+  ],
+  "7": [
+   [
+    "N",
+    "I'm going to bed now. I'll see you in the morning."
+   ]
+  ],
+  "8": [
+   [
+    "N",
+    "Excuse me, is this your umbrella? It was under the table you were at."
+   ]
+  ],
+  "9": [
+   [
+    "N",
+    "Thanks so much for the camera. It's the best Christmas gift ever."
+   ]
+  ],
+  "10": [
+   [
+    "N",
+    "I finally finished my painting for the City Art Festival after so many months."
+   ]
+  ],
+  "11": [
+   [
+    "N",
+    "Has anyone said you look like the handsome doctor in the movie The Big Hospital?"
+   ]
+  ],
+  "12": [
+   [
+    "M",
+    "Hey everyone, cleaning time is over. Don't forget to put your cleaning tools back. It's raining now, so Mr. Lee says we'll have PE Class in the gym, not on the school playground. Hurry up."
+   ],
+   [
+    "Q",
+    "What is the boy telling his class to do?"
+   ]
+  ],
+  "13": [
+   [
+    "W",
+    "This is crazy. I don't want to wait in such a long line just to get tickets to a movie."
+   ],
+   [
+    "M",
+    "I didn't expect so many people to be interested in this movie."
+   ],
+   [
+    "W",
+    "Are you sure you want to see it today? Can we come some other time?"
+   ],
+   [
+    "M",
+    "Oh, please. I'll be super busy next week and won't have time, and I don't want to wait until it plays on TV. It'll be more exciting to see this movie on the big screen."
+   ],
+   [
+    "W",
+    "All right, all right."
+   ],
+   [
+    "M",
+    "I can wait. Why don't you go look around the area? I'll call you when I get the tickets."
+   ],
+   [
+    "W",
+    "Good idea."
+   ],
+   [
+    "Q",
+    "When do the man and woman decide to see the movie?"
+   ]
+  ],
+  "14": [
+   [
+    "W",
+    "Between your work, your friends, and family, life can be very busy. But it is time for you to stop and ask yourself this, \"When was the last time you had the doctor check your eyes?\" Millions of people in our country have common eye problems and don't even know it. Remember, your eyes are the windows to your health. Take time for yourself and plan a visit to the hospital. For more information, please visit www.nec.nch.gov"
+   ],
+   [
+    "Q",
+    "What does the woman want people to do?"
+   ]
+  ],
+  "15": [
+   [
+    "W",
+    "Did you do well on the test yesterday?"
+   ],
+   [
+    "M",
+    "I don't want to talk about it. You did well, didn't you?"
+   ],
+   [
+    "W",
+    "Well, I..."
+   ],
+   [
+    "M",
+    "Oh, wait, no. Don't tell me. I don't want to feel worse about myself."
+   ],
+   [
+    "W",
+    "Well, my dad said he would buy me a new cell phone if I got a good grade on the test. Now I can kiss that cell phone goodbye. Maybe I won't even be able to keep my old cell phone when he knows about my grade."
+   ],
+   [
+    "M",
+    "Life is hard."
+   ],
+   [
+    "W",
+    "Tests are harder."
+   ],
+   [
+    "Q",
+    "How did the boy and the girl do on the test yesterday?"
+   ]
+  ],
+  "16": [
+   [
+    "W",
+    "Hey, I haven't seen you for a while."
+   ],
+   [
+    "M",
+    "Yeah, I moved to Lake City for work. I just came back to see some friends."
+   ],
+   [
+    "W",
+    "Lake City, huh? Life in the big city must be very exciting."
+   ],
+   [
+    "M",
+    "Yeah, well...I guess you could say that. Most people think so."
+   ],
+   [
+    "W",
+    "But you don't?"
+   ],
+   [
+    "M",
+    "Well, Lake City is different."
+   ],
+   [
+    "W",
+    "Different?"
+   ],
+   [
+    "M",
+    "Yeah, it's not home."
+   ],
+   [
+    "W",
+    "And you miss home."
+   ],
+   [
+    "M",
+    "Yeah."
+   ],
+   [
+    "Q",
+    "How does the man feel about his life in Lake City?"
+   ]
+  ],
+  "17": [
+   [
+    "W",
+    "Have you tried the new restaurant?"
+   ],
+   [
+    "M",
+    "Yeah, it's very popular, and I waited over an hour to get in."
+   ],
+   [
+    "W",
+    "How did you like it?"
+   ],
+   [
+    "M",
+    "It was for the birds."
+   ],
+   [
+    "W",
+    "Why do you say that?"
+   ],
+   [
+    "M",
+    "My French fries were actually swimming in oil, so I left most of them. And the restaurant owner didn't do anything after his dog jumped up on my table and had a bite of my bread."
+   ],
+   [
+    "W",
+    "That's the most interesting dining experience I've heard."
+   ],
+   [
+    "Q",
+    "Why does the man say the new restaurant was for the birds?"
+   ]
+  ],
+  "18": [
+   [
+    "M",
+    "Rita has written a lot of things about you on the Internet. Did you know that?"
+   ],
+   [
+    "W",
+    "Yeah, I've read them, and they are not true."
+   ],
+   [
+    "M",
+    "I know. What are you going to do? I'm on your side if you want to start a fight with her."
+   ],
+   [
+    "W",
+    "Why should I? I have better things to do than thinking of ways to deal with her."
+   ],
+   [
+    "M",
+    "Like what?"
+   ],
+   [
+    "W",
+    "Like cook a big meal for myself and play with my cat."
+   ],
+   [
+    "M",
+    "Maybe you should at least talk to her and ask her to stop."
+   ],
+   [
+    "W",
+    "Well, words only hurt when they come from someone I care about. Rita is not my friend."
+   ],
+   [
+    "Q",
+    "What is the woman going to do to deal with Rita?"
+   ]
+  ],
+  "19": [
+   [
+    "W",
+    "Luis, the trip is tomorrow. Have you packed everything you need?"
+   ],
+   [
+    "M",
+    "I've got almost everything ready, maybe one more pair of jeans and some books."
+   ],
+   [
+    "W",
+    "Why are you bringing books with you? We're going abroad on a vacation."
+   ],
+   [
+    "M",
+    "I'm thinking of reading on the plane. And when we're back in the hotel, I'll read too."
+   ],
+   [
+    "W",
+    "You said the same thing last time, but you just watched movies on the plane, and in the hotel, you were too busy with your smartphone. The books you brought sat in your bag the whole time."
+   ],
+   [
+    "M",
+    "I'll read this time."
+   ],
+   [
+    "W",
+    "Then bring just one."
+   ],
+   [
+    "Q",
+    "What does the woman think when the boy said he was bringing books on a vacation?"
+   ]
+  ],
+  "20": [
+   [
+    "W",
+    "Let's go to the new ice cream shop."
+   ],
+   [
+    "M",
+    "Yeah, but it's so hot today. I don't want to walk."
+   ],
+   [
+    "W",
+    "I can ride my bike and you can sit on the back."
+   ],
+   [
+    "M",
+    "What? But people will see. I'm your big brother."
+   ],
+   [
+    "W",
+    "So, can you ride a bike?"
+   ],
+   [
+    "M",
+    "No, but your bike is small and my legs are too long."
+   ],
+   [
+    "W",
+    "I'm sure you can keep your feet off the ground."
+   ],
+   [
+    "M",
+    "But I'll look stupid."
+   ],
+   [
+    "W",
+    "Or you could walk. It's only 15 minutes away."
+   ],
+   [
+    "M",
+    "You know what? I think it isn't so bad to keep my feet off the ground for once."
+   ],
+   [
+    "Q",
+    "How will the boy and the girl go to the ice cream shop?"
+   ]
+  ],
+  "21": [
+   [
+    "N",
+    "Welcome back, next on the news. Sunshine City has finally decided to move its trains underground. Let's listen to what people say about the new plan."
+   ],
+   [
+    "M",
+    "You know the trains share the streets with all the cars and buses. The traffic is always terrible. Finally somebody's doing something about it."
+   ],
+   [
+    "W",
+    "I have waited so long for this change. Every day when I drive to work, I need to stop many times for trains to pass. It takes me so much time to get to work."
+   ],
+   [
+    "M",
+    "I think everyone will love it when the trains start running underground. Our driving time will be cut in half."
+   ],
+   [
+    "Q",
+    "What do these three people think of Sunshine City's new plan?"
+   ]
+  ]
+ }
+}

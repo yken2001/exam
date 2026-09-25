@@ -6,9 +6,10 @@
 python build_bank.py            # 重組 + 切割 + 驗證 + 輸出圖片
 python build_bank.py --dry      # 只解析、只出驗證報告
 python build_bank.py 110 自然    # 只跑一份
-python build_listening.py 112   # 英聽 21 題(題目圖、解析圖、錄音稿);113 同樣跑一次
+python build_listening.py 112   # 英聽 21 題(題目圖、解析圖、錄音稿);113–115 各跑一次
 python gen_audio.py 113         # 由錄音稿合成英聽音檔(Windows Zira 語音)
 python gen_ts.py                # 由 bank/*.json 產生 src/data/real/*.ts 與 answer_keys/
+python check_leaks.py           # 獨立檢查每題題目圖的「(　)」內是空白(答案沒外洩)
 ```
 
 英聽音檔是語音合成(非會考原音):女聲 W 用 Zira 原聲,男聲 M 用同一個聲音加速合成
@@ -29,4 +30,4 @@ python gen_ts.py                # 由 bank/*.json 產生 src/data/real/*.ts 與 
 - `answer_keys/`:正解一覽(人工備查用)
 - `reflowed/`:重組後的解析 PDF(備查用,不進 git,可隨時重新產生)
 
-來源 PDF 放在 `source_pdfs/`(110–113 各 5 份「xxx會考xx解析.pdf」+「113會考英聽解析.pdf」,共 21 份,不進 git)。
+來源 PDF 放在 `source_pdfs/`(110–115 各 5 份「xxx會考xx解析.pdf」+ 113–115「xxx會考英聽解析.pdf」,共 33 份,不進 git)。

@@ -9,8 +9,9 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 REAL = os.path.join(os.path.dirname(HERE), 'src', 'data', 'real')
 SUBJ = {'chinese': '國文', 'english': '英文', 'math': '數學', 'science': '自然', 'social': '社會'}
-YEARS = [110, 111, 112, 113]
-LISTENING = {112: '112會考英文解析.pdf', 113: '113會考英聽解析.pdf'}   # year -> source PDF
+YEARS = [110, 111, 112, 113, 114, 115]
+LISTENING = {112: '112會考英文解析.pdf', 113: '113會考英聽解析.pdf',
+             114: '114會考英聽解析.pdf', 115: '115會考英聽解析.pdf'}   # year -> source PDF
 
 
 def ts_record(d):

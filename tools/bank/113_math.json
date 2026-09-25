@@ -38,6 +38,12 @@
  "warnings": [],
  "errors": [],
  "notes": [
+  "Q1: 2 element(s) on the marker row sorted before it; moved into the question",
+  "Q3: 2 element(s) on the marker row sorted before it; moved into the question",
+  "Q7: 1 element(s) on the marker row sorted before it; moved into the question",
+  "Q8: 3 element(s) on the marker row sorted before it; moved into the question",
+  "Q11: 1 element(s) on the marker row sorted before it; moved into the question",
+  "Q22: 1 element(s) on the marker row sorted before it; moved into the question",
   "Q4: no \"(D)\" option text in stem region (check image options)"
  ],
  "sizes": {
@@ -47,7 +53,7 @@
   ],
   "q01": [
    694,
-   190
+   207
   ],
   "e01": [
    694,
@@ -63,7 +69,7 @@
   ],
   "q03": [
    694,
-   215
+   234
   ],
   "e03": [
    694,
@@ -127,7 +133,7 @@
   ],
   "q11": [
    694,
-   170
+   187
   ],
   "e11": [
    694,
