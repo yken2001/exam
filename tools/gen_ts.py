@@ -76,9 +76,45 @@ export const {const}: Question[] = Array.from({{ length: {n} }}, (_, i) => {{
     return n
 
 
+def gen_listening():
+    bank = json.load(open(os.path.join(HERE, 'bank', '112_listening.json'), encoding='utf-8'))
+    n = bank['count']
+    answers = {int(k): v for k, v in bank['answers'].items()}
+    assert sorted(answers) == list(range(1, n + 1)) and all(v in 'ABC' for v in answers.values())
+    src = f"""import type {{ Question }} from '../../types';
+
+// 112年國中教育會考 英語聽力 {n} 題 -- 由 tools/build_listening.py + tools/gen_ts.py
+// 自動產生，請勿手動修改。題目、詳解（含錄音稿）與正解取自 112會考英文解析.pdf；
+// 語音由 tools/gen_audio.py 依錄音稿以語音合成產生（非會考原音）。
+// 版權屬原出版社所有，僅供個人練習使用，不可公開散布。
+const ANSWERS: Record<number, string> = {ts_record(answers)};
+
+const pad = (n: number) => String(n).padStart(2, '0');
+
+export const LISTENING_112_QUESTIONS: Question[] = Array.from({{ length: {n} }}, (_, i) => {{
+  const qNo = i + 1;
+  return {{
+    id: `英聽-112-${{qNo}}`,
+    subject: '英聽',
+    year: 112,
+    qNo,
+    imagePath: `${{import.meta.env.BASE_URL}}questions/listening/112/q${{pad(qNo)}}.png`,
+    explanationImagePath: `${{import.meta.env.BASE_URL}}explanations/listening/112/e${{pad(qNo)}}.png`,
+    audioPath: `${{import.meta.env.BASE_URL}}audio/listening/112/a${{pad(qNo)}}.wav`,
+    correctAnswer: ANSWERS[qNo],
+    optionCount: 3,
+  }};
+}});
+"""
+    with open(os.path.join(REAL, 'listening112.ts'), 'w', encoding='utf-8', newline='\n') as fh:
+        fh.write(src)
+    return n
+
+
 if __name__ == '__main__':
     total = 0
     for y in YEARS:
         for en in SUBJ:
             total += gen(y, en)
+    total += gen_listening()
     print('questions written:', total)

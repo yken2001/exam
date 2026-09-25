@@ -1,4 +1,4 @@
-export type Subject = '國文' | '英文' | '數學' | '自然' | '社會';
+export type Subject = '國文' | '英文' | '英聽' | '數學' | '自然' | '社會';
 
 export interface SubjectConfig {
   subject: Subject;
@@ -15,6 +15,7 @@ export interface Question {
   imagePath: string;
   explanation?: string;
   explanationImagePath?: string;
+  audioPath?: string;
   correctAnswer: string;
   optionCount: number;
 }

@@ -5,6 +5,7 @@ import { QUESTION_BY_ID } from '../data/sampleQuestions';
 import type { AttemptRecord, ExamPaper, Question } from '../types';
 import { clusterByGroup } from '../utils/clusterByGroup';
 import ExamImage from '../components/ExamImage';
+import AudioPlayer from '../components/AudioPlayer';
 
 /** Splits a cluster into runs of consecutive questions sharing one
  * explanation image: each question gets its own run when every item has its
@@ -88,18 +89,14 @@ export default function ReviewResult() {
               <div className="q-card-title">
                 {isGroup ? `第 ${firstIndex + 1}~${lastIndex + 1} 題` : `第 ${firstIndex + 1} 題`}
                 {first.groupId && <span className="q-tag">題組</span>}
+                {first.audioPath && <span className="q-tag">英聽</span>}
               </div>
-              {first.imagePath.startsWith('placeholder://') ? (
-                <div className="q-body">
-                  題目內容（{first.subject} {first.year} 第{first.qNo}題，截圖區）
-                </div>
-              ) : (
-                <ExamImage
-                  className="q-image"
-                  src={first.imagePath}
-                  alt={`${first.subject} ${first.year} 第${first.qNo}題`}
-                />
-              )}
+              {first.audioPath && <AudioPlayer key={first.id} src={first.audioPath} />}
+              <ExamImage
+                className="q-image"
+                src={first.imagePath}
+                alt={`${first.subject} ${first.year} 第${first.qNo}題`}
+              />
               {runsByExplanation(cluster).map((run) => (
                 <div key={run[0].id}>
                   {run.map((q) => {

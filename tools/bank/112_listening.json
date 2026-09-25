@@ -1,0 +1,387 @@
+{
+ "year": 112,
+ "subject": "英聽",
+ "count": 21,
+ "answers": {
+  "1": "C",
+  "2": "A",
+  "3": "B",
+  "4": "C",
+  "5": "C",
+  "6": "B",
+  "7": "A",
+  "8": "B",
+  "9": "C",
+  "10": "B",
+  "11": "C",
+  "12": "C",
+  "13": "B",
+  "14": "A",
+  "15": "A",
+  "16": "A",
+  "17": "B",
+  "18": "A",
+  "19": "C",
+  "20": "C",
+  "21": "A"
+ },
+ "sections": {
+  "1": "辨識句意 第1題",
+  "2": "辨識句意 第2題",
+  "3": "辨識句意 第3題",
+  "4": "基本問答 第1題",
+  "5": "基本問答 第2題",
+  "6": "基本問答 第3題",
+  "7": "基本問答 第4題",
+  "8": "基本問答 第5題",
+  "9": "基本問答 第6題",
+  "10": "基本問答 第7題",
+  "11": "基本問答 第8題",
+  "12": "言談理解 第1題",
+  "13": "言談理解 第2題",
+  "14": "言談理解 第3題",
+  "15": "言談理解 第4題",
+  "16": "言談理解 第5題",
+  "17": "言談理解 第6題",
+  "18": "言談理解 第7題",
+  "19": "言談理解 第8題",
+  "20": "言談理解 第9題",
+  "21": "言談理解 第10題"
+ },
+ "transcripts": {
+  "1": [
+   [
+    "N",
+    "Some ducks are swimming in the pond and some turtles are sitting on the rocks."
+   ]
+  ],
+  "2": [
+   [
+    "N",
+    "The umbrella is lying under the window."
+   ]
+  ],
+  "3": [
+   [
+    "N",
+    "The girl looks very tired with all the shopping bags in her hands."
+   ]
+  ],
+  "4": [
+   [
+    "N",
+    "How many eggs do we have? I want to make fried rice."
+   ]
+  ],
+  "5": [
+   [
+    "N",
+    "Excuse me, but you can't eat in the metro."
+   ]
+  ],
+  "6": [
+   [
+    "N",
+    "What do you like to do on the weekend?"
+   ]
+  ],
+  "7": [
+   [
+    "N",
+    "I heard you invited Elisa to your party. What did she say?"
+   ]
+  ],
+  "8": [
+   [
+    "N",
+    "It's been a long time since we last met. How have you been?"
+   ]
+  ],
+  "9": [
+   [
+    "N",
+    "Excuse me. I'm looking for a John Smith. I was told I could find him here."
+   ]
+  ],
+  "10": [
+   [
+    "N",
+    "Hey, listen! What's the name of this song? Grandpa used to sing it to us."
+   ]
+  ],
+  "11": [
+   [
+    "N",
+    "Can I get you something to drink while you're looking at the menu?"
+   ]
+  ],
+  "12": [
+   [
+    "W",
+    "Hey, Ted. What did the teacher just say?"
+   ],
+   [
+    "M",
+    "Lesson One and Four will be on the test tomorrow."
+   ],
+   [
+    "W",
+    "Oh, no. Can I go to your house and study?"
+   ],
+   [
+    "M",
+    "Hmm, why?"
+   ],
+   [
+    "W",
+    "My neighbor is going to have a party tonight. I can't study with all that noise."
+   ],
+   [
+    "M",
+    "Oh. OK, but I need to ask my mom and dad first."
+   ],
+   [
+    "W",
+    "Thanks."
+   ],
+   [
+    "Q",
+    "Who is the boy?"
+   ]
+  ],
+  "13": [
+   [
+    "M",
+    "Hey, Ariana, let's play basketball together."
+   ],
+   [
+    "W",
+    "Well, I would like to, but I can't."
+   ],
+   [
+    "M",
+    "Why not? Do you need to study?"
+   ],
+   [
+    "W",
+    "No. I don't have the right shoes today. Maybe next time."
+   ],
+   [
+    "M",
+    "OK."
+   ],
+   [
+    "Q",
+    "Why doesn't the woman play basketball with the man?"
+   ]
+  ],
+  "14": [
+   [
+    "M",
+    "Attention, please. Attention, please. There is an earthquake happening right now. Everyone, hide under your desk, stay on your knees, and hold onto your head with your arms and hands. Be careful. Things may drop from above. Keep quiet, and do not come out until your teachers tell you to."
+   ],
+   [
+    "Q",
+    "What does the man tell the students to do?"
+   ]
+  ],
+  "15": [
+   [
+    "M",
+    "I heard you had a theater show last night."
+   ],
+   [
+    "W",
+    "Yeah, my first one."
+   ],
+   [
+    "M",
+    "So, tell me about it. Did a lot of people come?"
+   ],
+   [
+    "W",
+    "Oh, it was a very small show in a very small theater with just a few seats, but I think they both liked it."
+   ],
+   [
+    "M",
+    "Both? There were only two people there?"
+   ],
+   [
+    "W",
+    "Uh, by the end. Yeah."
+   ],
+   [
+    "M",
+    "Oh, sorry."
+   ],
+   [
+    "Q",
+    "Why did the man say he was sorry to the woman?"
+   ]
+  ],
+  "16": [
+   [
+    "W",
+    "What's wrong, Jason? You look worried."
+   ],
+   [
+    "M",
+    "Yeah, I'm going to Mr. Anderson's class later. I feel like I'm dying."
+   ],
+   [
+    "W",
+    "I know. I've been there."
+   ],
+   [
+    "M",
+    "Oh, you were in his class, too?"
+   ],
+   [
+    "W",
+    "Yeah, he always asked difficult questions that I couldn't answer."
+   ],
+   [
+    "M",
+    "Yes. I spent a lot of time studying, but sometimes I can't even understand his questions."
+   ],
+   [
+    "W",
+    "Well, I studied in a study group for this class and it helped a lot."
+   ],
+   [
+    "M",
+    "That's a great idea. I'll try it."
+   ],
+   [
+    "Q",
+    "What does the woman mean when she says \"I've been there?\""
+   ]
+  ],
+  "17": [
+   [
+    "M",
+    "So, for Thanksgiving dinner, I'll still make a pumpkin pie like last year."
+   ],
+   [
+    "W",
+    "Uh, let's just buy one from the bakery. We won't want you to be tired every year."
+   ],
+   [
+    "M",
+    "It's no problem. Besides, everyone liked it."
+   ],
+   [
+    "W",
+    "Well..."
+   ],
+   [
+    "M",
+    "What? Everyone said that they never had such a great pie."
+   ],
+   [
+    "W",
+    "Everyone said that they never had SUCH a pie."
+   ],
+   [
+    "M",
+    "They finished it all real quick."
+   ],
+   [
+    "W",
+    "Umm, did you actually see them eat it?"
+   ],
+   [
+    "M",
+    "Well, John said they wanted to enjoy it on the balcony. Aunt Karen and Rose wanted to have it by the pond in the front yard while watching the ducks."
+   ],
+   [
+    "W",
+    "I can only tell you that our neighbor's ducks and the birds all enjoyed your pie."
+   ],
+   [
+    "Q",
+    "Why does the woman want to buy a pie for Thanksgiving this year?"
+   ]
+  ],
+  "18": [
+   [
+    "M",
+    "Please come in. Let me show you the apartment. This is the living room. The kitchen and the dining room are on your left. The bedroom and the bathroom are on the other side. The bathroom is by the front door, and you get to it from both the bedroom and the living room. This way, visitors can use the bathroom without walking through your bedroom. Right across the bathroom is the dining room, and you can see in here the only door to the kitchen. This way, any smoke in the kitchen won't get into the living room. How do you like your apartment?"
+   ],
+   [
+    "Q",
+    "Which picture shows the apartment the man is talking about?"
+   ]
+  ],
+  "19": [
+   [
+    "W",
+    "Oh, no. We got the middle seats."
+   ],
+   [
+    "M",
+    "Isn't that good? Everyone wants middle seats."
+   ],
+   [
+    "W",
+    "That usually is, but it'll be a lot of trouble when you need to go to the restroom. You know I just had a large cup of Coke at the restaurant. Oh, I really hate to keep saying \"excuse me \", \"excuse me\", \"excuse me\" to people."
+   ],
+   [
+    "M",
+    "Then go to the restroom now. There are still ten minutes before the movie starts."
+   ],
+   [
+    "W",
+    "Oh, stupid me!"
+   ],
+   [
+    "M",
+    "Well, go now before there are a lot of people waiting."
+   ],
+   [
+    "Q",
+    "Where are the man and the woman?"
+   ]
+  ],
+  "20": [
+   [
+    "W",
+    "As an art lover, I visit museums a lot. Most of the time I see people standing in front of a painting, take a picture of it and then go on to the next painting. They spend less than ten seconds on each painting. They don't know what they are missing. You need to look at the painting and study it from different angles. What colors and shapes are used in the painting? How do they make you feel? If you don't feel the thing, that's okay. Go and find out stories behind the art work online. It helps you have a better idea of how the painting was created."
+   ],
+   [
+    "Q",
+    "What is the woman talking about?"
+   ]
+  ],
+  "21": [
+   [
+    "W",
+    "Did you hear that? The Browns are making so much noise again."
+   ],
+   [
+    "M",
+    "Oh, no!"
+   ],
+   [
+    "W",
+    "It's two o'clock in the morning. I have to get up early for a meeting and now I can't sleep at all."
+   ],
+   [
+    "M",
+    "OK, OK, don't worry. I'll go tell them to stop."
+   ],
+   [
+    "W",
+    "But last time you knocked on the door, they didn't even answer it."
+   ],
+   [
+    "M",
+    "Yeah, you're right. We should think of some other way to deal with them."
+   ],
+   [
+    "Q",
+    "How are the man and the woman going to deal with the Browns?"
+   ]
+  ]
+ }
+}

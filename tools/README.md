@@ -6,8 +6,14 @@
 python build_bank.py            # 重組 + 切割 + 驗證 + 輸出圖片
 python build_bank.py --dry      # 只解析、只出驗證報告
 python build_bank.py 110 自然    # 只跑一份
+python build_listening.py       # 112 英聽 21 題(題目圖、解析圖、錄音稿)
+python gen_audio.py             # 由錄音稿合成英聽音檔(Windows Zira 語音)
 python gen_ts.py                # 由 bank/*.json 產生 src/data/real/*.ts
 ```
+
+英聽音檔是語音合成(非會考原音):女聲 W 用 Zira 原聲,男聲 M 用同一個聲音加速合成
+再降頻拉長,音高約 180Hz → 125Hz。電腦若另外安裝英文男聲,可改 `gen_audio.py` 使用。
+數學的非選擇題(手寫題)不在題庫內,不會出題;國文解析卷沒有作文。
 
 1. **重組**(`bank_lib.reflow`):第 1 頁去掉標頭,每頁的頁碼 /「請翻面繼續作答」/ 廣告 / QR code 塗白,
    再把每頁從中間切成左右兩欄,依「第1頁左、第1頁右、第2頁左…」接成一條連續內容。

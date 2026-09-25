@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AVAILABLE_YEARS, SAMPLE_QUESTIONS } from '../data/sampleQuestions';
+import { AVAILABLE_YEARS, SAMPLE_QUESTIONS, yearsWithData } from '../data/sampleQuestions';
 import { SUBJECTS, TIME_OPTIONS_MIN } from '../data/subjectConfig';
 import { selectExam } from '../engine/selectExam';
 import { db } from '../db';
@@ -72,6 +72,13 @@ export default function ExamBuilder() {
             </span>
           ))}
         </div>
+        {subjects
+          .filter((s) => !yearsWithData(s).some((y) => years.includes(y)) && years.length > 0)
+          .map((s) => (
+            <div key={s} className="field-hint">
+              {s}只有 {yearsWithData(s).join('、')} 年的題目，目前選的年度沒有{s}題。
+            </div>
+          ))}
       </div>
 
       <div className="field">

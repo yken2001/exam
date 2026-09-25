@@ -211,15 +211,6 @@ button.primary {
   padding: 2px 8px;
   border-radius: 8px;
 }
-.q-body {
-  background: var(--surface-muted);
-  border-radius: var(--radius);
-  padding: 32px 12px;
-  text-align: center;
-  color: var(--text-muted);
-  margin-bottom: 12px;
-  font-size: 14px;
-}
 .q-image {
   display: block;
   max-width: 100%;
@@ -329,6 +320,40 @@ table.history-table td {
   font-size: 15px;
   line-height: 1.5;
 }
+.field-hint {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #a32d2d;
+}
+
+.audio-player {
+  background: var(--surface-muted);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  margin-bottom: 12px;
+}
+.audio-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.audio-row + .audio-row {
+  margin-top: 8px;
+}
+.audio-main {
+  min-width: 88px;
+}
+.audio-seek {
+  flex: 1;
+  min-width: 120px;
+}
+.audio-time,
+.audio-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
 .confirm-table {
   width: 100%;
   border-collapse: collapse;

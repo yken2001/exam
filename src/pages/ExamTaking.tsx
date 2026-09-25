@@ -7,6 +7,7 @@ import type { AttemptRecord, ExamPaper, Question } from '../types';
 import { clusterByGroup } from '../utils/clusterByGroup';
 import { newId } from '../utils/newId';
 import ExamImage from '../components/ExamImage';
+import AudioPlayer from '../components/AudioPlayer';
 
 /** Packs whole clusters (shared-passage groups stay intact) onto pages of
  * roughly `pageSize` questions each. A cluster bigger than pageSize just
@@ -203,18 +204,14 @@ export default function ExamTaking() {
               <div className="q-card-title">
                 {isGroup ? `第 ${firstIndex + 1}~${lastIndex + 1} 題` : `第 ${firstIndex + 1} 題`}
                 {first.groupId && <span className="q-tag">題組</span>}
+                {first.audioPath && <span className="q-tag">英聽</span>}
               </div>
-              {first.imagePath.startsWith('placeholder://') ? (
-                <div className="q-body">
-                  題目內容（{first.subject} {first.year} 第{first.qNo}題，截圖區）
-                </div>
-              ) : (
-                <ExamImage
-                  className="q-image"
-                  src={first.imagePath}
-                  alt={`${first.subject} ${first.year} 第${first.qNo}題`}
-                />
-              )}
+              {first.audioPath && <AudioPlayer key={first.id} src={first.audioPath} />}
+              <ExamImage
+                className="q-image"
+                src={first.imagePath}
+                alt={`${first.subject} ${first.year} 第${first.qNo}題`}
+              />
               {cluster.map((q) => {
                 const qGlobalIndex = questions.indexOf(q);
                 return (
