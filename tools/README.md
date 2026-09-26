@@ -12,6 +12,7 @@ python gen_ts.py                # 由 bank/*.json 產生 src/data/real/*.ts 與 
 python check_leaks.py           # 獨立檢查每題題目圖的「(　)」內是空白(答案沒外洩)
 python check_official.py        # 與心測中心官方答案逐題比對(official_answers/<年>.txt)
 python gen_levels.py            # 心測中心等級對照表 official_levels/<年>.pdf -> src/data/levels.ts(區間涵蓋、題數、單調性全部檢查)
+python check_ai_set.py          # AI 出題(src/data/ai/*.json)的一致性檢查:題號、選項、題組、克漏字空格、解析「故選」=答案
 ```
 
 英聽音檔是語音合成(非會考原音):女聲 W 用 Zira 原聲,男聲 M 用同一個聲音加速合成

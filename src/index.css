@@ -452,3 +452,17 @@ table.history-table td {
 }
 
 .field-note { font-size: 12px; color: var(--text-secondary); margin-top: 6px; line-height: 1.5; }
+
+.q-tag.ai { background: #f3e8fd; color: #6b2fa3; }
+.passage { font-size: 16px; line-height: 1.65; margin: 8px 0 12px; padding: 12px 14px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-muted); }
+.passage p { margin: 0 0 8px; }
+.passage p:last-child { margin-bottom: 0; }
+.passage-table { border-collapse: collapse; margin: 8px 0; font-size: 15px; }
+.passage-table th, .passage-table td { border: 1px solid var(--border-strong); padding: 4px 10px; text-align: left; }
+.cloze-blank { font-weight: 700; text-decoration: underline; white-space: nowrap; }
+.text-stem { font-size: 16px; line-height: 1.6; margin-bottom: 6px; }
+.text-options { margin: 4px 0 0 20px; }
+.passage-translation { margin: 0 0 12px; font-size: 14px; }
+.passage-translation summary { cursor: pointer; color: var(--accent); }
+.passage-translation > div { white-space: pre-line; margin-top: 6px; padding: 10px 12px; border-radius: 8px; background: var(--surface-muted); }
+.text-explanation { white-space: pre-line; font-size: 14px; line-height: 1.6; }

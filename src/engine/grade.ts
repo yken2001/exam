@@ -1,6 +1,7 @@
 import type { Question, Subject } from '../types';
 import { SUBJECTS } from '../data/subjectConfig';
 import { LEVELS, type YearLevels } from '../data/levels';
+import { isAiYear } from '../utils/yearLabel';
 
 /** 會考等級, low -> high */
 const ORDER = ['C', 'B', 'B+', 'B++', 'A', 'A+', 'A++'];
@@ -78,7 +79,7 @@ function gradeSubject(r: SubjectRun): SubjectGrade {
   const parts: { t: string[]; weight: number; year: number }[] = [];
   for (const [year, count] of r.years) {
     const t = table(year, r.subject);
-    if (!t) return { ...base, kind: 'none', note: `${year} 年沒有官方等級對照表` };
+    if (!t) return { ...base, kind: 'none', note: isAiYear(year) ? 'AI 題沒有官方等級，只看正確率' : `${year} 年沒有官方等級對照表` };
     parts.push({ t, weight: count, year });
   }
   const paperLength = parts.reduce((s, p) => s + p.weight * (p.t.length - 1), 0) / n;

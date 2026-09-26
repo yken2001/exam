@@ -12,6 +12,7 @@
 - 來源 PDF 放 `tools/source_pdfs/`（110–115 各 5 份解析卷＋113–115 英聽解析卷，共 33 份，不進 git，從 README 的連結下載）。`tools/reflowed/` 是重組後的備查 PDF，也不進 git。
 - 成績存在各瀏覽器的 IndexedDB，沒有後端。
 - 題目版權屬原出版社，不要把 PDF 或重組 PDF 放進 repo。
+- AI 出題（`src/data/ai/*.json`，年度 901＝AI-1）：上架前必須由至少兩個不同模型的 AI 在看不到答案的情況下各自作答，答案全部一致且所有被指出的題目都已改寫、改寫後重新驗證；`python tools/check_ai_set.py` 必須 0 問題；驗證紀錄寫進該檔 `verification`。
 
 ## 常用指令
 - `npm run dev`（Claude Code 預覽設定：`.claude/launch.json` 的 exam-app-dev，port 5183）

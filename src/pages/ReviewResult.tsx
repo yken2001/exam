@@ -7,6 +7,8 @@ import { clusterByGroup, inUnitOrder } from '../utils/clusterByGroup';
 import ExamImage from '../components/ExamImage';
 import AudioPlayer from '../components/AudioPlayer';
 import { gradeAttempt, levelText } from '../engine/grade';
+import { Passage, TextStem } from '../components/TextQuestion';
+import { yearLabel } from '../utils/yearLabel';
 
 /** Splits a cluster into runs of consecutive questions sharing one
  * explanation image: each question gets its own run when every item has its
@@ -65,7 +67,7 @@ export default function ReviewResult() {
     <div>
       <div className="card" style={{ marginBottom: 16 }}>
         <div className="field-label">
-          {paper.subjects.join('、')} · {paper.years.join('、')} 年度
+          {paper.subjects.join('、')} · {paper.years.map(yearLabel).join('、')} 年度
         </div>
         <div className="estimate-box" style={{ margin: 0 }}>
           <div className="label">正確率</div>
@@ -115,13 +117,33 @@ export default function ReviewResult() {
                 {isGroup ? `第 ${firstIndex + 1}~${lastIndex + 1} 題` : `第 ${firstIndex + 1} 題`}
                 {first.groupId && <span className="q-tag">題組</span>}
                 {first.audioPath && <span className="q-tag">英聽</span>}
+                {first.text && <span className="q-tag ai">AI 題</span>}
               </div>
               {first.audioPath && <AudioPlayer key={first.id} src={first.audioPath} />}
-              <ExamImage
-                className="q-image"
-                src={first.imagePath}
-                alt={`${first.subject} ${first.year} 第${first.qNo}題`}
-              />
+              {first.imagePath && (
+                <ExamImage
+                  className="q-image"
+                  src={first.imagePath}
+                  alt={`${first.subject} ${first.year} 第${first.qNo}題`}
+                />
+              )}
+              {first.text?.passage && (
+                <>
+                  <Passage
+                    text={first.text.passage}
+                    numberOf={(n) => {
+                      const i = cluster.findIndex((c) => c.qNo === n);
+                      return i < 0 ? undefined : questions.indexOf(cluster[i]) + 1;
+                    }}
+                  />
+                  {first.text.passageTranslation && (
+                    <details className="passage-translation">
+                      <summary>文章翻譯</summary>
+                      <div>{first.text.passageTranslation}</div>
+                    </details>
+                  )}
+                </>
+              )}
               {runsByExplanation(cluster).map((run) => (
                 <div key={run[0].id}>
                   {run.map((q) => {
@@ -130,8 +152,9 @@ export default function ReviewResult() {
                     const isCorrect = selected === q.correctAnswer;
                     return (
                       <div className="q-subblock" key={q.id}>
+                        {q.text && <TextStem q={q} number={qGlobalIndex + 1} />}
                         <div className="q-sub-label">
-                          {isGroup ? `第 ${qGlobalIndex + 1} 題　` : ''}
+                          {isGroup && !q.text ? `第 ${qGlobalIndex + 1} 題　` : ''}
                           <span style={{ color: isCorrect ? '#3b6d11' : '#a32d2d' }}>
                             {selected ? (isCorrect ? '答對' : '答錯') : '未作答'}
                           </span>
@@ -160,7 +183,7 @@ export default function ReviewResult() {
                       alt={`第${questions.indexOf(run[0]) + 1}題詳解`}
                     />
                   ) : (
-                    run[0].explanation && <div className="explanation">{run[0].explanation}</div>
+                    run[0].explanation && <div className="explanation text-explanation">{run[0].explanation}</div>
                   )}
                 </div>
               ))}

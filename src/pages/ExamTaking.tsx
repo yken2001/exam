@@ -7,6 +7,7 @@ import { clusterByGroup, inUnitOrder } from '../utils/clusterByGroup';
 import { newId } from '../utils/newId';
 import ExamImage from '../components/ExamImage';
 import AudioPlayer from '../components/AudioPlayer';
+import { Passage, TextStem } from '../components/TextQuestion';
 
 function formatTime(totalSec: number): string {
   const m = Math.floor(totalSec / 60).toString().padStart(2, '0');
@@ -191,18 +192,31 @@ export default function ExamTaking() {
                 {isGroup ? `第 ${firstIndex + 1}~${lastIndex + 1} 題` : `第 ${firstIndex + 1} 題`}
                 {first.groupId && <span className="q-tag">題組</span>}
                 {first.audioPath && <span className="q-tag">英聽</span>}
+                {first.text && <span className="q-tag ai">AI 題</span>}
               </div>
               {first.audioPath && <AudioPlayer key={first.id} src={first.audioPath} />}
-              <ExamImage
-                className="q-image"
-                src={first.imagePath}
-                alt={`${first.subject} ${first.year} 第${first.qNo}題`}
-              />
+              {first.imagePath && (
+                <ExamImage
+                  className="q-image"
+                  src={first.imagePath}
+                  alt={`${first.subject} ${first.year} 第${first.qNo}題`}
+                />
+              )}
+              {first.text?.passage && (
+                <Passage
+                  text={first.text.passage}
+                  numberOf={(n) => {
+                    const i = cluster.findIndex((c) => c.qNo === n);
+                    return i < 0 ? undefined : questions.indexOf(cluster[i]) + 1;
+                  }}
+                />
+              )}
               {cluster.map((q) => {
                 const qGlobalIndex = questions.indexOf(q);
                 return (
                   <div className="q-subblock" key={q.id}>
-                    {isGroup && <div className="q-sub-label">第 {qGlobalIndex + 1} 題</div>}
+                    {isGroup && !q.text && <div className="q-sub-label">第 {qGlobalIndex + 1} 題</div>}
+                    {q.text && <TextStem q={q} number={qGlobalIndex + 1} />}
                     <div className="q-options">
                       {Array.from({ length: q.optionCount }, (_, i) => String.fromCharCode(65 + i)).map(
                         (opt) => (

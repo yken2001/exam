@@ -1,0 +1,589 @@
+{
+ "set": "AI-1",
+ "year": 901,
+ "subject": "英文",
+ "title": "AI-1 英語（閱讀）模擬卷",
+ "note": "由 AI 依心測中心英語科命題架構（單題：語言成分；題組：篇章理解，含克漏字）與素養導向原則（取材於生活經驗與時事）編寫，非會考真題。",
+ "topics": [
+  "太陽能海水淡化：https://www.sciencedaily.com/news/earth_climate/environmental_science/",
+  "巴布亞企鵝為四個物種（DNA 研究）：https://www.sciencedaily.com/",
+  "2026 國際少年運動會（花蓮）：https://en.wikipedia.org/wiki/List_of_sporting_events_in_Taiwan",
+  "臺北國際龍舟錦標賽、學生使用 AI、手機使用時間、高溫與行道樹：生活議題"
+ ],
+ "groups": [
+  {
+   "from": 20,
+   "to": 21,
+   "passage": "Wenhua Junior High School Library\nTech-Smart Week (May 11–15)\nWant to use AI tools the smart way? Join us!\n| Day | Activity | Time |\n| Mon. | Talk: What AI Can and Can't Do | 12:30–13:10 |\n| Wed. | Workshop: Checking Facts Online | 16:00–17:00 |\n| Fri. | Game: Real or Fake Photo? | 12:30–13:10 |\n• Sign up at the front desk by May 8. Each activity has only 20 seats.\n• Bring your own tablet to the Wednesday workshop.\n• Students who join all three activities will get a free notebook.",
+   "translation": "文華國中圖書館\n科技聰明週（5 月 11 日至 15 日）\n想聰明地使用 AI 工具嗎？加入我們吧！\n星期一｜演講：AI 能做什麼、不能做什麼｜12:30–13:10\n星期三｜工作坊：網路資訊查證｜16:00–17:00\n星期五｜遊戲：照片是真的還是假的？｜12:30–13:10\n• 請在 5 月 8 日前到服務台報名，每項活動只有 20 個名額。\n• 參加星期三的工作坊請自備平板。\n• 三項活動都參加的同學可以獲得一本免費筆記本。"
+  },
+  {
+   "from": 22,
+   "to": 23,
+   "passage": "Leo: Are you coming to watch the dragon boat race this Sunday? My brother's team is in it.\nNina: I'd love to! But didn't you say it starts at 7 a.m.? That's so early.\nLeo: The first race does, but my brother's team races at 10:30. We can meet at the MRT station at 9:45.\nNina: Great. Should I bring anything?\nLeo: A hat and lots of water. It's going to be over 35°C. And don't wear white—my mom says we'll be sitting near the water, and people always get splashed!\nNina: Ha! OK, I'll wear my old blue T-shirt then.",
+   "translation": "Leo：這個星期天你會來看龍舟賽嗎？我哥哥的隊伍有參加。\nNina：我很想去！不過你不是說比賽早上 7 點就開始嗎？好早喔。\nLeo：第一場是那時候，但我哥哥的隊伍 10 點半才比。我們可以 9 點 45 分在捷運站碰面。\nNina：太好了。我需要帶什麼嗎？\nLeo：一頂帽子和很多水，那天會超過 35 度。還有不要穿白色衣服──我媽說我們會坐在水邊，大家總是會被水濺到！\nNina：哈！好，那我就穿我那件舊的藍色 T 恤。"
+  },
+  {
+   "from": 24,
+   "to": 26,
+   "passage": "About one out of four people in the world does not have enough clean water to drink. The ocean has plenty of water, but it is too salty to drink. Turning seawater into fresh water is called desalination. It is not a new idea, but most desalination plants use a lot of electricity. They also leave behind very salty water, called brine. When brine goes back into the sea, it can hurt the fish and plants living there.\nRecently, scientists have been working on a new kind of machine that uses only sunlight. The sun heats the seawater, and the water turns into steam. The steam then cools down and becomes fresh water. What makes the machine special is what happens to the salt. Instead of staying in the water, the salt turns into solid pieces that can be collected easily. So almost no brine is left.\nThe machine is still small, and it cannot make as much water as a big plant yet. But the scientists believe it could one day help islands and villages that are near the sea but far from power lines.",
+   "translation": "全世界大約每四個人就有一個人沒有足夠的乾淨飲用水。海洋裡有很多水，但太鹹了不能喝。把海水變成淡水叫做「海水淡化」。這不是新的想法，但大部分的海水淡化廠要用很多電，而且會留下非常鹹的水，叫做「鹵水」。鹵水排回海裡時，可能會傷害住在那裡的魚和植物。\n最近，科學家正在研發一種只用陽光的新機器。太陽把海水加熱，水變成水蒸氣，水蒸氣冷卻後就變成淡水。這台機器特別的地方在於鹽的去向：鹽不會留在水裡，而是變成容易收集的固體，所以幾乎不會留下鹵水。\n這台機器目前還很小，產水量還比不上大型的淡化廠。但科學家相信，有一天它可以幫助那些靠近海邊、卻離電線很遠的島嶼和村莊。"
+  },
+  {
+   "from": 27,
+   "to": 28,
+   "passage": "Dear Jun,\nGuess what? My city, Hualien, is hosting the International Children's Games this year! Young athletes from many countries will come here to take part in sports like swimming and table tennis. My school asked students to be volunteers, and I said yes right away.\nMy job is to help visitors find their way around the stadium. I've been practicing my English every night, and I've also learned to say \"welcome\" in five languages. My teacher says the most important thing is to smile, because a smile needs no translation.\nYou told me your cousin plays table tennis. If she comes to Taiwan for the Games, tell her to look for me. I'll be the one in the yellow volunteer shirt!\nYour friend,\nPei-yu",
+   "translation": "親愛的 Jun：\n你猜怎麼著？我住的城市花蓮今年要舉辦國際少年運動會！許多國家的年輕選手會來這裡參加游泳、桌球等運動項目。學校邀請學生當志工，我馬上就答應了。\n我的工作是幫訪客在體育館裡找路。我每天晚上都在練英文，也學會用五種語言說「歡迎」。老師說最重要的是微笑，因為微笑不需要翻譯。\n你說過你的表姊（妹）打桌球。如果她來臺灣參加比賽，叫她來找我。我會是穿黃色志工衣的那一個！\n你的朋友\n佩瑜"
+  },
+  {
+   "from": 29,
+   "to": 31,
+   "passage": "Last month, Class 8-3 asked 120 students at their school how many hours (counted in whole hours) they spend on their phones on a school day. They also asked what the students mostly use their phones for.\n| Hours a day | Number of students |\n| Less than 1 hour | 18 |\n| 1–2 hours | 42 |\n| 3–4 hours | 39 |\n| 5 hours or more | 21 |\nTop uses: 1. Watching videos 2. Chatting with friends 3. Playing games 4. Doing homework\nAfter seeing the results, the class started a \"Phone-Free Dinner\" challenge. For two weeks, students put their phones in another room during dinner. Many of them said they talked more with their families. One student said, \"I found out my dad was a great singer in high school! I never knew that before.\"",
+   "translation": "上個月，八年三班詢問了學校的 120 位學生，上學日每天花幾個小時（以整數小時計）使用手機，也問了他們主要用手機做什麼。\n每天使用時數｜學生人數\n少於 1 小時｜18\n1–2 小時｜42\n3–4 小時｜39\n5 小時以上｜21\n最常見的用途：1. 看影片 2. 和朋友聊天 3. 玩遊戲 4. 寫作業\n看到結果後，這個班級發起了「無手機晚餐」挑戰。兩個星期內，學生吃晚餐時把手機放在另一個房間。很多人說他們和家人聊得更多了。有一位學生說：「我發現我爸爸高中時是很厲害的歌手！我以前從來都不知道。」"
+  },
+  {
+   "from": 32,
+   "to": 34,
+   "passage": "For a long time, people thought all gentoo penguins belonged to one species. Gentoos are easy to spot: they have a white patch above each eye and a bright orange beak. They live on islands near Antarctica.\nBut a new study shows that the story is not so simple. Scientists studied the DNA of gentoos from different islands. They found four groups that are different enough to be called separate species. One of them lives only on a few far-away islands in the Indian Ocean. The groups look almost the same, but they have lived apart for a very long time, so their genes have slowly changed.\nThis discovery is not just interesting; it is also important. If there are four species instead of one, each species has fewer members than scientists thought. That means some of them may need more protection. \"You can't protect something if you don't know it exists,\" one scientist said.\n* species 物種；DNA 去氧核醣核酸（生物的遺傳物質）；genes 基因；beak 鳥嘴",
+   "translation": "長久以來，人們認為所有的巴布亞企鵝都屬於同一個物種。巴布亞企鵝很好認：牠們每隻眼睛上方都有一塊白斑，還有鮮橘色的嘴巴。牠們住在南極附近的島嶼上。\n但一項新研究顯示事情沒有那麼簡單。科學家研究了來自不同島嶼的巴布亞企鵝的 DNA，發現其中有四個族群彼此差異大到可以算是不同的物種。其中一種只住在印度洋上幾座遙遠的島嶼。這些族群外表幾乎一樣，但牠們已經分開生活了非常久，所以基因慢慢改變了。\n這項發現不只有趣，也很重要。如果是四個物種而不是一個，每個物種的數量就比科學家原本以為的少，這表示其中有些可能需要更多保護。一位科學家說：「如果你不知道某樣東西存在，你就無法保護它。」"
+  },
+  {
+   "from": 35,
+   "to": 39,
+   "passage": "More and more students are using AI chatbots to help them with homework. Some teachers worry that students will just copy the answers __35__ thinking for themselves. Others believe AI can be a useful tool if students use it in the right way.\nMs. Lin, an English teacher, lets her students use AI, but she has one rule: \"Ask the AI to explain, not to write.\" For example, if a student __36__ understand a grammar point, the student can ask the chatbot for more examples. But the student __37__ write the essay on his or her own.\nMs. Lin also reminds her students that AI is not always right. \"Sometimes AI gives wrong answers in a very confident way,\" she says. \"So you should always check __38__ answers with a book or a website you can trust.\"\nMost of her students agree with her rule. \"Using AI this way is like having a patient tutor,\" says one student. \"It never gets angry, __39__ I ask the same question ten times.\"",
+   "translation": "越來越多學生用 AI 聊天機器人幫忙寫作業。有些老師擔心學生只會照抄答案，而不是自己思考。也有人認為，只要學生用對方法，AI 可以是很有用的工具。\n英文老師林老師讓學生使用 AI，但她有一條規則：「請 AI 解釋，不要請它代寫。」例如，如果學生不懂某個文法觀念，可以請聊天機器人多舉一些例子，但作文還是必須自己寫。\n林老師也提醒學生，AI 不一定是對的。她說：「AI 有時會用非常有自信的口氣給出錯誤的答案，所以你一定要用書本或可信的網站查證它的答案。」\n她的學生大多同意這條規則。一位學生說：「這樣用 AI 就像有一位很有耐心的家教。就算我把同一個問題問十次，它也從不生氣。」"
+  },
+  {
+   "from": 40,
+   "to": 43,
+   "passage": "Last summer was the hottest summer in my town's history. On some days, the temperature went above 38°C, and older people were told to stay at home in the afternoon. My grandfather, who loves taking walks, felt like a bird in a cage.\nOne evening, he took me to the small park near our home. \"Feel this,\" he said, standing under a big tree. It was much cooler there. \"When I was your age, this whole street was full of trees like this one. Then the city cut most of them down to make the road wider.\"\nThat night, I searched online and learned that the shade from trees keeps the ground much cooler than the ground in the sun. Trees also give off water through their leaves, and this cools the air around them. I told my class about it, and we wrote a letter to the mayor. We asked the city to plant more trees on our street.\nTo our surprise, the mayor wrote back. This spring, workers planted thirty young trees along the street. They are still small, but my grandfather says they will grow big \"just in time for your children to enjoy them.\"",
+   "translation": "去年夏天是我們鎮上有史以來最熱的夏天。有幾天氣溫超過 38 度，老人家被建議下午待在家裡。我那很愛散步的爺爺，覺得自己像一隻關在籠子裡的鳥。\n有一天傍晚，他帶我到家附近的小公園。他站在一棵大樹下說：「你感覺一下。」那裡涼快多了。「我像你這麼大的時候，整條街都是像這樣的樹。後來市政府為了拓寬馬路，把大部分的樹都砍掉了。」\n那天晚上，我上網查資料，知道樹蔭下的地面比太陽下的地面涼快很多，樹也會透過葉子散發水分，讓周圍的空氣變涼。我把這件事告訴全班，我們一起寫了一封信給市長，請市政府在我們這條街上多種一些樹。\n讓我們驚喜的是，市長回信了。今年春天，工人沿著這條街種了三十棵小樹。它們現在還很小，但爺爺說它們長大時「剛好可以讓你的孩子享受」。"
+  }
+ ],
+ "items": [
+  {
+   "qNo": 1,
+   "stem": "Look at those dark clouds in the sky. It ______ rain soon. We'd better go home now.",
+   "options": [
+    "was",
+    "has",
+    "is going to",
+    "did"
+   ],
+   "answer": "C",
+   "explanation": "【中譯】看看天空那些烏雲，快要下雨了，我們最好現在回家。\n【解析】根據眼前的跡象（烏雲）推測即將發生的事，用 be going to＋原形動詞。故選 (C)。"
+  },
+  {
+   "qNo": 2,
+   "stem": "Amy practiced the piano every day for three months. Her ______ finally paid off when she won first prize in the contest.",
+   "options": [
+    "mistakes",
+    "efforts",
+    "secrets",
+    "dreams"
+   ],
+   "answer": "B",
+   "explanation": "【中譯】Amy 三個月來每天練琴，她的努力在比賽得到第一名時終於有了回報。\n【解析】(A) 錯誤 (B) 努力 (C) 祕密 (D) 夢想。每天練習得到回報的是「努力」，pay off 表示「得到成果」。故選 (B)。"
+  },
+  {
+   "qNo": 3,
+   "stem": "Please keep your voice down. The baby ______ in the next room.",
+   "options": [
+    "is sleeping",
+    "sleeps",
+    "slept",
+    "has slept"
+   ],
+   "answer": "A",
+   "explanation": "【中譯】請小聲一點，寶寶正在隔壁房間睡覺。\n【解析】說話的當下正在進行的動作，用現在進行式 is sleeping。故選 (A)。"
+  },
+  {
+   "qNo": 4,
+   "stem": "The museum is free for students, ______ you still need to show your student card at the door.",
+   "options": [
+    "because",
+    "so",
+    "or",
+    "but"
+   ],
+   "answer": "D",
+   "explanation": "【中譯】博物館對學生免費，但你還是需要在門口出示學生證。\n【解析】前後句是「免費」與「但需要出示證件」的轉折關係，用 but。故選 (D)。"
+  },
+  {
+   "qNo": 5,
+   "stem": "Ben is the ______ runner on our team. Nobody can run faster than him.",
+   "options": [
+    "faster",
+    "fastest",
+    "fast",
+    "most fast"
+   ],
+   "answer": "B",
+   "explanation": "【中譯】Ben 是我們隊上跑得最快的人，沒有人跑得比他快。\n【解析】the＋最高級，在一群人中「最」快。fast 的最高級是 fastest，不用 most fast。故選 (B)。"
+  },
+  {
+   "qNo": 6,
+   "stem": "I can't find my glasses anywhere. Have you seen ______?",
+   "options": [
+    "it",
+    "one",
+    "that",
+    "them"
+   ],
+   "answer": "D",
+   "explanation": "【中譯】我到處都找不到我的眼鏡，你有看到嗎？\n【解析】glasses（眼鏡）是複數名詞，代名詞用 them。故選 (D)。"
+  },
+  {
+   "qNo": 7,
+   "stem": "The weather app said it would be sunny, but it rained all day. The app was completely ______.",
+   "options": [
+    "wrong",
+    "helpful",
+    "popular",
+    "careful"
+   ],
+   "answer": "A",
+   "explanation": "【中譯】天氣 App 說會是晴天，結果下了一整天雨，這個 App 完全錯了。\n【解析】(A) 錯的 (B) 有幫助的 (C) 受歡迎的 (D) 小心的。預報晴天卻下雨，表示預報「錯了」。故選 (A)。"
+  },
+  {
+   "qNo": 8,
+   "stem": "Tom: Do you mind if I open the window?\nLisa: ______ It's really hot in here.",
+   "options": [
+    "Yes, I do.",
+    "Not at all.",
+    "I'm afraid so.",
+    "It doesn't work."
+   ],
+   "answer": "B",
+   "explanation": "【中譯】Tom：你介意我開窗嗎？ Lisa：一點也不，這裡真的很熱。\n【解析】Do you mind…? 是問「你介意嗎」，同意對方時要回答「不介意」Not at all。Lisa 覺得很熱，當然希望開窗。故選 (B)。"
+  },
+  {
+   "qNo": 9,
+   "stem": "My grandma ______ in this small town since she was born. She has never lived anywhere else.",
+   "options": [
+    "lives",
+    "lived",
+    "has lived",
+    "is living"
+   ],
+   "answer": "C",
+   "explanation": "【中譯】我奶奶從出生就住在這個小鎮，她從來沒有住過別的地方。\n【解析】since＋過去時間點，表示從過去持續到現在，用現在完成式 has lived。故選 (C)。"
+  },
+  {
+   "qNo": 10,
+   "stem": "The soup is too hot to eat now. Let's wait until it ______ down.",
+   "options": [
+    "cools",
+    "will cool",
+    "cooled",
+    "cooling"
+   ],
+   "answer": "A",
+   "explanation": "【中譯】湯現在太燙了不能喝，我們等它涼一點吧。\n【解析】until 引導表示時間的子句，要用現在式代替未來式，所以用 cools。故選 (A)。"
+  },
+  {
+   "qNo": 11,
+   "stem": "Kevin forgot to bring his lunch, so his friends ______ their food with him.",
+   "options": [
+    "saved",
+    "tasted",
+    "wasted",
+    "shared"
+   ],
+   "answer": "D",
+   "explanation": "【中譯】Kevin 忘了帶午餐，所以他的朋友和他分享食物。\n【解析】(A) 節省 (B) 品嚐 (C) 浪費 (D) 分享。share A with B 表示「和 B 分享 A」。故選 (D)。"
+  },
+  {
+   "qNo": 12,
+   "stem": "This is the park ______ my parents first met twenty years ago.",
+   "options": [
+    "which",
+    "who",
+    "where",
+    "what"
+   ],
+   "answer": "C",
+   "explanation": "【中譯】這是我爸媽二十年前第一次見面的公園。\n【解析】先行詞 the park 是地點，後面的子句 my parents first met 已經完整，用關係副詞 where（＝in which）。故選 (C)。"
+  },
+  {
+   "qNo": 13,
+   "stem": "The students were ______ when the teacher said there would be no homework this weekend.",
+   "options": [
+    "exciting",
+    "excited",
+    "excite",
+    "to excite"
+   ],
+   "answer": "B",
+   "explanation": "【中譯】老師說這個週末沒有作業時，學生們都很興奮。\n【解析】描述人「感到」興奮用 -ed 形容詞 excited；exciting 是「令人興奮的」，用來形容事物。故選 (B)。"
+  },
+  {
+   "qNo": 14,
+   "stem": "I'd like to buy this T-shirt, but it's a little too small for me. Do you have it in a ______ size?",
+   "options": [
+    "larger",
+    "cheaper",
+    "shorter",
+    "newer"
+   ],
+   "answer": "A",
+   "explanation": "【中譯】我想買這件 T 恤，但它對我來說有點小，你們有大一點的尺寸嗎？\n【解析】衣服太小，要找的是「較大的」尺寸 larger size。故選 (A)。"
+  },
+  {
+   "qNo": 15,
+   "stem": "You ______ touch the paintings in this museum. It's against the rules.",
+   "options": [
+    "can",
+    "need to",
+    "don't have to",
+    "must not"
+   ],
+   "answer": "D",
+   "explanation": "【中譯】你不可以觸摸這間博物館裡的畫，這是違反規定的。\n【解析】違反規定，表示「禁止」，用 must not。don't have to 是「不必」，意思不對。故選 (D)。"
+  },
+  {
+   "qNo": 16,
+   "stem": "Nobody knows ______ the old man lives alone in that big house.",
+   "options": [
+    "what",
+    "which",
+    "why",
+    "whose"
+   ],
+   "answer": "C",
+   "explanation": "【中譯】沒有人知道那位老先生為什麼獨自住在那棟大房子裡。\n【解析】名詞子句 the old man lives alone… 已經完整，缺的是「原因」，用 why。what、which 需要子句缺少主詞或受詞。故選 (C)。"
+  },
+  {
+   "qNo": 17,
+   "stem": "Sarah spent the whole afternoon ______ a birthday card for her best friend.",
+   "options": [
+    "make",
+    "making",
+    "made",
+    "to make"
+   ],
+   "answer": "B",
+   "explanation": "【中譯】Sarah 花了整個下午為她最好的朋友做生日卡片。\n【解析】spend＋時間＋V-ing，表示「花時間做某事」。故選 (B)。"
+  },
+  {
+   "qNo": 18,
+   "stem": "Many people choose to ride bikes to work ______ they want to save money and stay healthy.",
+   "options": [
+    "unless",
+    "although",
+    "until",
+    "because"
+   ],
+   "answer": "D",
+   "explanation": "【中譯】很多人選擇騎腳踏車上班，因為他們想省錢又想保持健康。\n【解析】後句是騎腳踏車的「原因」，用 because。故選 (D)。"
+  },
+  {
+   "qNo": 19,
+   "stem": "The little boy was afraid of the dark, so he always slept with the light ______.",
+   "options": [
+    "on",
+    "off",
+    "up",
+    "out"
+   ],
+   "answer": "A",
+   "explanation": "【中譯】小男孩怕黑，所以他總是開著燈睡覺。\n【解析】怕黑，所以燈是「開著的」，用 on。with the light on＝燈開著。故選 (A)。"
+  },
+  {
+   "qNo": 20,
+   "stem": "What can we learn from the notice?",
+   "options": [
+    "All the activities are held after school.",
+    "Students can still sign up on May 10.",
+    "The talk is about the limits of AI tools.",
+    "Every student will get a free notebook."
+   ],
+   "answer": "C",
+   "explanation": "【中譯】從這張公告可以得知什麼？(A) 所有活動都在放學後舉行 (B) 學生 5 月 10 日還可以報名 (C) 演講是關於 AI 工具的限制 (D) 每位學生都會得到免費筆記本。\n【解析】演講題目是 What AI Can and Can't Do（AI 能做和不能做的事），也就是 AI 的限制。(A) 星期一、五是中午；(B) 報名到 5 月 8 日；(D) 要三項都參加才有。故選 (C)。"
+  },
+  {
+   "qNo": 21,
+   "stem": "Mia wants to join the activity that needs her own tablet. When should she go?",
+   "options": [
+    "On Monday at lunchtime.",
+    "On Wednesday afternoon.",
+    "On Friday at lunchtime.",
+    "On Friday afternoon."
+   ],
+   "answer": "B",
+   "explanation": "【中譯】Mia 想參加需要自備平板的活動，她應該什麼時候去？\n【解析】公告寫 Bring your own tablet to the Wednesday workshop，星期三的工作坊時間是 16:00–17:00，也就是星期三下午。故選 (B)。"
+  },
+  {
+   "qNo": 22,
+   "stem": "Why does Leo want Nina to come to the race?",
+   "options": [
+    "He is on one of the teams.",
+    "He wants her to take photos.",
+    "His mother is selling water there.",
+    "Someone in his family is in the race."
+   ],
+   "answer": "D",
+   "explanation": "【中譯】Leo 為什麼希望 Nina 來看比賽？\n【解析】Leo 說 My brother's team is in it（我哥哥的隊伍有參加），是他的家人要比賽，不是他自己。故選 (D)。"
+  },
+  {
+   "qNo": 23,
+   "stem": "What will Nina most likely do?",
+   "options": [
+    "Wear white clothes.",
+    "Arrive at the race at 7 a.m.",
+    "Get to the MRT station before 10 a.m.",
+    "Sit far away from the water."
+   ],
+   "answer": "C",
+   "explanation": "【中譯】Nina 最可能會做什麼？\n【解析】兩人約 9:45 在捷運站碰面，所以 Nina 會在 10 點前到捷運站。(A) Leo 叫她不要穿白色，她說要穿藍色 T 恤；(B) 7 點是第一場比賽；(D) 他們會坐在水邊。故選 (C)。"
+  },
+  {
+   "qNo": 24,
+   "stem": "What is the reading mainly about?",
+   "options": [
+    "A new way to make drinking water from the sea.",
+    "Why seawater is too salty to drink.",
+    "How fish live in very salty water.",
+    "Why big desalination plants need electricity."
+   ],
+   "answer": "A",
+   "explanation": "【中譯】這篇文章主要在講什麼？\n【解析】第一段說明海水淡化的問題，第二、三段介紹一種只用陽光、幾乎不留下鹵水的新機器，主旨是「從海水製造飲用水的新方法」。其他選項都只是文中提到的細節。故選 (A)。"
+  },
+  {
+   "qNo": 25,
+   "stem": "What does \"brine\" mean in the reading?",
+   "options": [
+    "Steam from hot seawater.",
+    "Fresh water made by a machine.",
+    "Very salty water left after desalination.",
+    "Solid pieces of salt."
+   ],
+   "answer": "C",
+   "explanation": "【中譯】文中的 brine 是什麼意思？\n【解析】文中寫 They also leave behind very salty water, called brine，也就是淡化後留下的非常鹹的水（鹵水）。故選 (C)。"
+  },
+  {
+   "qNo": 26,
+   "stem": "Which is true about the new machine?",
+   "options": [
+    "It needs a lot of electricity.",
+    "It can already make more water than big plants.",
+    "It puts the salt back into the sea.",
+    "It may be useful for places without much electricity."
+   ],
+   "answer": "D",
+   "explanation": "【中譯】關於這台新機器，何者正確？\n【解析】最後一段說它可能幫助 near the sea but far from power lines（靠海但遠離電線）的地方，也就是電力不足的地方。(A) 它只用陽光；(B) 產水量還比不上大廠；(C) 鹽會變成固體被收集。故選 (D)。"
+  },
+  {
+   "qNo": 27,
+   "stem": "Why did Pei-yu write the letter?",
+   "options": [
+    "To invite Jun to be a volunteer.",
+    "To ask Jun to teach her English.",
+    "To tell Jun about her new yellow shirt.",
+    "To share her news about a sports event."
+   ],
+   "answer": "D",
+   "explanation": "【中譯】佩瑜為什麼寫這封信？\n【解析】信中分享花蓮舉辦國際少年運動會、她擔任志工的消息。(A) 是學校邀請她當志工；(B)(C) 都只是信中的細節或沒有提到。故選 (D)。"
+  },
+  {
+   "qNo": 28,
+   "stem": "What does Pei-yu's teacher mean by \"a smile needs no translation\"?",
+   "options": [
+    "People from any country can understand a smile.",
+    "Volunteers do not need to learn English.",
+    "It is hard to translate jokes into other languages.",
+    "Smiling is more important than helping visitors."
+   ],
+   "answer": "A",
+   "explanation": "【中譯】老師說「微笑不需要翻譯」是什麼意思？\n【解析】微笑不需要翻譯，就是不論哪一國的人都看得懂微笑。(B) 佩瑜還是每天練英文；(D) 老師是說微笑是志工最重要的態度，不是比幫助訪客更重要。故選 (A)。"
+  },
+  {
+   "qNo": 29,
+   "stem": "How many students use their phones for more than two hours on a school day?",
+   "options": [
+    "21",
+    "39",
+    "60",
+    "81"
+   ],
+   "answer": "C",
+   "explanation": "【中譯】上學日每天使用手機超過兩小時的學生有幾位？\n【解析】超過兩小時包括「3–4 小時」39 人和「5 小時以上」21 人，39＋21＝60。故選 (C)。"
+  },
+  {
+   "qNo": 30,
+   "stem": "What do the students use their phones for the most?",
+   "options": [
+    "Doing homework.",
+    "Chatting with friends.",
+    "Playing games.",
+    "Watching videos."
+   ],
+   "answer": "D",
+   "explanation": "【中譯】學生最常用手機做什麼？\n【解析】Top uses 第 1 名是 Watching videos（看影片）。寫作業是第 4 名。故選 (D)。"
+  },
+  {
+   "qNo": 31,
+   "stem": "What can we learn about the \"Phone-Free Dinner\" challenge?",
+   "options": [
+    "It lasted for a month.",
+    "It helped some students learn more about their families.",
+    "Students left their phones at school.",
+    "Parents also had to stop using their phones."
+   ],
+   "answer": "B",
+   "explanation": "【中譯】關於「無手機晚餐」挑戰，可以得知什麼？\n【解析】很多學生說和家人聊得更多，有人還發現爸爸高中時很會唱歌，表示這個挑戰讓學生更了解家人。(A) 是兩個星期；(C) 手機放在家裡另一個房間；(D) 文中沒有提到。故選 (B)。"
+  },
+  {
+   "qNo": 32,
+   "stem": "What is the second paragraph mainly about?",
+   "options": [
+    "What gentoo penguins look like.",
+    "Why gentoo penguins live on islands.",
+    "How scientists found that gentoos are four species.",
+    "How to protect penguins in the Indian Ocean."
+   ],
+   "answer": "C",
+   "explanation": "【中譯】第二段主要在講什麼？\n【解析】第二段說明科學家研究不同島嶼上巴布亞企鵝的 DNA，發現牠們其實是四個物種。(A) 是第一段的內容；(D) 保護的重要性在第三段。故選 (C)。"
+  },
+  {
+   "qNo": 33,
+   "stem": "Why did the four groups become different?",
+   "options": [
+    "They eat different kinds of food.",
+    "They have lived apart for a very long time.",
+    "Their beaks have different colors.",
+    "Scientists changed their DNA."
+   ],
+   "answer": "B",
+   "explanation": "【中譯】這四個族群為什麼會變得不一樣？\n【解析】文中寫 they have lived apart for a very long time, so their genes have slowly changed（牠們分開生活了很久，所以基因慢慢改變）。(C) 文中說牠們外表幾乎一樣。故選 (B)。"
+  },
+  {
+   "qNo": 34,
+   "stem": "What does the scientist mean in the last paragraph?",
+   "options": [
+    "We must know a species is there before we can protect it.",
+    "It is hard to find penguins on far-away islands.",
+    "People should not visit the penguins' islands.",
+    "Scientists do not know how many penguins there are."
+   ],
+   "answer": "A",
+   "explanation": "【中譯】最後一段科學家的話是什麼意思？\n【解析】You can't protect something if you don't know it exists 意思是「不知道某物存在就無法保護它」，所以要先知道有這個物種，才能保護它。故選 (A)。"
+  },
+  {
+   "qNo": 35,
+   "stem": "",
+   "options": [
+    "instead of",
+    "because of",
+    "as well as",
+    "in front of"
+   ],
+   "answer": "A",
+   "explanation": "【解析】(A) 而不是 (B) 因為 (C) 以及 (D) 在…前面。老師擔心學生照抄答案「而不是」自己思考，instead of＋V-ing。故選 (A)。"
+  },
+  {
+   "qNo": 36,
+   "stem": "",
+   "options": [
+    "can",
+    "doesn't",
+    "has",
+    "won't"
+   ],
+   "answer": "B",
+   "explanation": "【解析】學生「不懂」文法觀念時，才需要請 AI 多舉例，用 doesn't understand。if 子句用現在式，不用 won't。故選 (B)。"
+  },
+  {
+   "qNo": 37,
+   "stem": "",
+   "options": [
+    "may not",
+    "doesn't have to",
+    "has to",
+    "used to"
+   ],
+   "answer": "C",
+   "explanation": "【解析】林老師的規則是「請 AI 解釋，不要代寫」，所以作文「必須」自己寫，用 has to。(B) doesn't have to 是「不必」，意思相反。故選 (C)。"
+  },
+  {
+   "qNo": 38,
+   "stem": "",
+   "options": [
+    "its",
+    "it",
+    "they",
+    "theirs"
+   ],
+   "answer": "A",
+   "explanation": "【解析】空格後面接名詞 answers，需要所有格形容詞；指的是 AI 的答案，AI 是單數，用 its。(B) it 是主格／受格 (C) they 是主格 (D) theirs 是所有格代名詞，後面不能再接名詞。故選 (A)。"
+  },
+  {
+   "qNo": 39,
+   "stem": "",
+   "options": [
+    "so that",
+    "as soon as",
+    "unless",
+    "even if"
+   ],
+   "answer": "D",
+   "explanation": "【解析】(A) 以便 (B) 一…就 (C) 除非 (D) 即使。「即使」我把同一個問題問十次，它也從不生氣，用 even if。故選 (D)。"
+  },
+  {
+   "qNo": 40,
+   "stem": "Why did the writer's grandfather feel \"like a bird in a cage\"?",
+   "options": [
+    "He was sick and had to stay in bed.",
+    "It was too hot for him to go out.",
+    "He didn't have anyone to walk with.",
+    "The park near his home was closed."
+   ],
+   "answer": "B",
+   "explanation": "【中譯】作者的爺爺為什麼覺得自己「像籠子裡的鳥」？\n【解析】天氣太熱，老人家被建議下午待在家，很愛散步的爺爺不能出門，所以覺得像被關在籠子裡。故選 (B)。"
+  },
+  {
+   "qNo": 41,
+   "stem": "What did the writer learn online?",
+   "options": [
+    "How trees help cool a place.",
+    "Why the city cut down the trees.",
+    "How to write a letter to the mayor.",
+    "When the young trees will grow big."
+   ],
+   "answer": "A",
+   "explanation": "【中譯】作者在網路上學到了什麼？\n【解析】作者查到樹蔭讓地面比較涼，樹葉散發的水分也會讓空氣變涼，也就是「樹如何讓一個地方變涼」。(B) 是爺爺告訴他的。故選 (A)。"
+  },
+  {
+   "qNo": 42,
+   "stem": "What happened after the class wrote the letter?",
+   "options": [
+    "The city made the road wider.",
+    "The mayor visited their class.",
+    "Trees were planted on their street.",
+    "The grandfather moved to another town."
+   ],
+   "answer": "C",
+   "explanation": "【中譯】全班寫信之後發生了什麼事？\n【解析】市長回了信，今年春天工人沿街種了三十棵小樹。(A) 拓寬馬路是以前的事；(B) 市長是回信，不是來訪。故選 (C)。"
+  },
+  {
+   "qNo": 43,
+   "stem": "What does the grandfather mean in the last sentence?",
+   "options": [
+    "The writer should have children soon.",
+    "The trees will be cut down again.",
+    "Children like to play under trees.",
+    "The trees will need many years to grow big."
+   ],
+   "answer": "D",
+   "explanation": "【中譯】爺爺最後一句話是什麼意思？\n【解析】樹「剛好在你的孩子可以享受的時候」長大，表示這些小樹要很多年才會長大。故選 (D)。"
+  }
+ ],
+ "verification": [
+  "2026-09-26 初稿：獨立作答者 1（Claude Opus，看不到答案）43/43 與答案卷一致，0 題有異議；建議修正第 29 題表格區間重疊、第 27 題 email→letter、補註解 species/DNA/genes。",
+  "2026-09-26 初稿：獨立作答者 2（Claude Sonnet，看不到答案）43/43 一致，0 題有異議；提到第 4 題 so 有些許干擾、第 37 題語序（still）。",
+  "2026-09-26 修正第 4、27、29、37 題與第 32–34 題註解後：獨立作答者 3（Claude Opus）43/43 一致；指出第 29 題區間仍不夠乾淨、第 38 題代名詞指涉可能混淆。",
+  "2026-09-26 第 29 題改為整數時數分組、第 38 題改寫：獨立作答者 4（Claude Sonnet）第 29 題通過；第 38 題選 A（答案卷當時為 B）並指出指涉有兩種解讀 → 第 38 題重新設計為所有格 its（答案 A）。",
+  "2026-09-26 第 38 題重新設計後：獨立作答者 5（Claude Opus）通過，其他空格仍合文法。",
+  "2026-09-26 定稿：獨立作答者 6（Claude Sonnet）完整作答 43/43 與答案卷一致，0 題有異議。tools/check_ai_set.py 0 問題。"
+ ]
+}

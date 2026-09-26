@@ -12,12 +12,24 @@ export interface Question {
   year: number;
   qNo: number;
   groupId?: string;
-  imagePath: string;
+  /** screenshot of the question (會考真題); absent for text questions */
+  imagePath?: string;
+  /** text question (AI 出題): stem, options, and the 題組 passage */
+  text?: TextQuestion;
   explanation?: string;
   explanationImagePath?: string;
   audioPath?: string;
   correctAnswer: string;
   optionCount: number;
+}
+
+export interface TextQuestion {
+  /** empty for a cloze blank: the passage carries the __n__ mark */
+  stem: string;
+  options: string[];
+  /** shared by every item of a 題組 */
+  passage?: string;
+  passageTranslation?: string;
 }
 
 export type OrderMode = 'original' | 'shuffled';

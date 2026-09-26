@@ -7,6 +7,7 @@ import { backupFile, buildBackup, canShareFile, downloadFile, importBackup } fro
 import { computePoints, type AttemptPoints, type PointsSummary } from '../engine/points';
 import { gradeAttempt } from '../engine/grade';
 import PointsPanel from '../components/PointsPanel';
+import { yearLabel } from '../utils/yearLabel';
 
 interface Row {
   attempt: AttemptRecord;
@@ -165,7 +166,7 @@ export default function History() {
                 <tr key={r.attempt.id}>
                   <td>{rows.length - i}</td>
                   <td>
-                    {r.paper.subjects.join('+')} {r.paper.years.join('、')}
+                    {r.paper.subjects.join('+')} {r.paper.years.map(yearLabel).join('、')}
                     {r.attempt.importedFrom && (
                       <span className="q-tag" title={r.attempt.importedFrom}>
                         匯入

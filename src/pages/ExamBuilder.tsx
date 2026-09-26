@@ -5,6 +5,7 @@ import { FRACTIONS, SUBJECTS } from '../data/subjectConfig';
 import { selectExam } from '../engine/selectExam';
 import { db } from '../db';
 import { newId } from '../utils/newId';
+import { yearLabel } from '../utils/yearLabel';
 import type { ExamPaper, OrderMode, Subject } from '../types';
 
 /** 1050 -> "17 分 30 秒", 4200 -> "70 分鐘" */
@@ -44,7 +45,7 @@ export default function ExamBuilder() {
 
   const ready = subjects.length > 0 && years.length > 0 && preview.questionIds.length > 0;
   const subjectText = SUBJECTS.filter((s) => subjects.includes(s)).join('、');
-  const yearText = [...years].sort((a, b) => a - b).join('、');
+  const yearText = [...years].sort((a, b) => a - b).map(yearLabel).join('、');
   const fractionText = FRACTIONS.find((f) => f.value === fraction)?.label ?? '';
   const minutesText = formatMinutes(preview.timeBudgetSec);
 
@@ -86,7 +87,7 @@ export default function ExamBuilder() {
           .filter((s) => !yearsWithData(s).some((y) => years.includes(y)) && years.length > 0)
           .map((s) => (
             <div key={s} className="field-hint">
-              {s}只有 {yearsWithData(s).join('、')} 年的題目，目前選的年度沒有{s}題。
+              {s}只有 {yearsWithData(s).map(yearLabel).join('、')} 年的題目，目前選的年度沒有{s}題。
             </div>
           ))}
       </div>
@@ -100,7 +101,7 @@ export default function ExamBuilder() {
               className={`chip ${years.includes(y) ? 'selected' : ''}`}
               onClick={() => toggleYear(y)}
             >
-              {y}
+              {yearLabel(y)}
             </span>
           ))}
         </div>
