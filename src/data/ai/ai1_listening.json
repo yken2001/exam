@@ -1,0 +1,495 @@
+{
+ "set": "AI-1",
+ "year": 901,
+ "subject": "英聽",
+ "title": "AI-1 英語（聽力）模擬卷",
+ "note": "由 AI 依心測中心英語聽力架構（辨識句意 3 題、基本問答 8 題、言談理解 10 題，三選一）編寫，非會考真題；第一部分的圖片由程式繪製（tools/ai_sets/ai1_listening.py），語音以錄音稿合成（非會考原音）。",
+ "groups": [],
+ "items": [
+  {
+   "qNo": 1,
+   "stem": "",
+   "options": [
+    "",
+    "",
+    ""
+   ],
+   "answer": "C",
+   "figure": "ai/901/listening/q01.png",
+   "transcript": [
+    [
+     "N",
+     "The cat is sleeping under the table."
+    ]
+   ],
+   "explanation": "【聽力稿】The cat is sleeping under the table.\n【中譯】貓正在桌子底下睡覺。\n【解析】句子說貓在桌子「底下」（under the table）睡覺，要選貓在桌子下方的圖；貓在桌上或桌子旁邊都不對。故選 (C)。"
+  },
+  {
+   "qNo": 2,
+   "stem": "",
+   "options": [
+    "",
+    "",
+    ""
+   ],
+   "answer": "A",
+   "figure": "ai/901/listening/q02.png",
+   "transcript": [
+    [
+     "N",
+     "The boy is wearing a cap, and he is holding an umbrella."
+    ]
+   ],
+   "explanation": "【聽力稿】The boy is wearing a cap, and he is holding an umbrella.\n【中譯】這個男孩戴著一頂帽子，手上拿著一把傘。\n【解析】男孩要同時「戴帽子」和「拿著傘」。只拿傘沒戴帽子、或只戴帽子沒拿傘的圖都不符合。故選 (A)。"
+  },
+  {
+   "qNo": 3,
+   "stem": "",
+   "options": [
+    "",
+    "",
+    ""
+   ],
+   "answer": "C",
+   "figure": "ai/901/listening/q03.png",
+   "transcript": [
+    [
+     "N",
+     "There are three apples and two bananas on the plate."
+    ]
+   ],
+   "explanation": "【聽力稿】There are three apples and two bananas on the plate.\n【中譯】盤子上有三顆蘋果和兩根香蕉。\n【解析】要選「三顆蘋果、兩根香蕉」的圖。兩顆蘋果三根香蕉、或三顆蘋果一根香蕉的數量都不對。故選 (C)。"
+  },
+  {
+   "qNo": 4,
+   "stem": "",
+   "options": [
+    "At seven thirty.",
+    "It's about a dog.",
+    "With my sister."
+   ],
+   "answer": "A",
+   "transcript": [
+    [
+     "N",
+     "What time does the movie start?"
+    ]
+   ],
+   "explanation": "【聽力稿】What time does the movie start?\n【中譯】電影幾點開始？(A)(B)(C) 七點半／它是關於一隻狗的／和我姊姊（妹妹）一起。\n【解析】問「幾點」開始，要回答時間。故選 (A)。"
+  },
+  {
+   "qNo": 5,
+   "stem": "",
+   "options": [
+    "I'm fine, thanks.",
+    "Sure, here you are.",
+    "It's on Monday."
+   ],
+   "answer": "B",
+   "transcript": [
+    [
+     "N",
+     "Can I borrow your eraser?"
+    ]
+   ],
+   "explanation": "【聽力稿】Can I borrow your eraser?\n【中譯】我可以跟你借橡皮擦嗎？\n【解析】別人向你借東西時，答應並遞給對方，說 Sure, here you are.（當然，給你）。故選 (B)。"
+  },
+  {
+   "qNo": 6,
+   "stem": "",
+   "options": [
+    "For two hours.",
+    "At the pool.",
+    "Twice a week."
+   ],
+   "answer": "C",
+   "transcript": [
+    [
+     "N",
+     "How often do you go swimming?"
+    ]
+   ],
+   "explanation": "【聽力稿】How often do you go swimming?\n【中譯】你多久去游泳一次？\n【解析】How often 問「頻率」，要回答多久一次，例如 twice a week（一星期兩次）。For two hours 回答的是「多久時間」。故選 (C)。"
+  },
+  {
+   "qNo": 7,
+   "stem": "",
+   "options": [
+    "I stayed up late to study for the test.",
+    "Yes, I like it.",
+    "It's not far from here."
+   ],
+   "answer": "A",
+   "transcript": [
+    [
+     "N",
+     "You look tired. What's wrong?"
+    ]
+   ],
+   "explanation": "【聽力稿】You look tired. What's wrong?\n【中譯】你看起來很累，怎麼了？\n【解析】對方關心你為什麼累，要說明原因：為了準備考試熬夜。故選 (A)。"
+  },
+  {
+   "qNo": 8,
+   "stem": "",
+   "options": [
+    "Yes, I did.",
+    "No, thanks. I'm full.",
+    "I made it yesterday."
+   ],
+   "answer": "B",
+   "transcript": [
+    [
+     "N",
+     "Would you like some more cake?"
+    ]
+   ],
+   "explanation": "【聽力稿】Would you like some more cake?\n【中譯】你還想再吃一些蛋糕嗎？\n【解析】Would you like…? 是詢問要不要，可以回答 Yes, please. 或 No, thanks.，並說明原因「我吃飽了」。Yes, I did. 的時態不對。故選 (B)。"
+  },
+  {
+   "qNo": 9,
+   "stem": "",
+   "options": [
+    "It takes ten minutes.",
+    "I usually walk.",
+    "Take Bus 12."
+   ],
+   "answer": "C",
+   "transcript": [
+    [
+     "N",
+     "Which bus goes to the train station?"
+    ]
+   ],
+   "explanation": "【聽力稿】Which bus goes to the train station?\n【中譯】哪一班公車會到火車站？\n【解析】問「哪一班」公車，要回答公車的號碼：搭 12 號公車。故選 (C)。"
+  },
+  {
+   "qNo": 10,
+   "stem": "",
+   "options": [
+    "Thank you. I practiced a lot.",
+    "Don't worry about it.",
+    "Nice to meet you."
+   ],
+   "answer": "A",
+   "transcript": [
+    [
+     "N",
+     "Congratulations on winning the contest!"
+    ]
+   ],
+   "explanation": "【聽力稿】Congratulations on winning the contest!\n【中譯】恭喜你贏得比賽！\n【解析】別人恭喜你時，要向對方道謝。故選 (A)。"
+  },
+  {
+   "qNo": 11,
+   "stem": "",
+   "options": [
+    "I'm sorry to hear that.",
+    "No, it's free. Go ahead.",
+    "Yes, I'll have one."
+   ],
+   "answer": "B",
+   "transcript": [
+    [
+     "N",
+     "Excuse me, is anyone sitting here?"
+    ]
+   ],
+   "explanation": "【聽力稿】Excuse me, is anyone sitting here?\n【中譯】不好意思，這裡有人坐嗎？\n【解析】對方問這個座位有沒有人坐，回答「沒有，是空位，請坐」最適當。故選 (B)。"
+  },
+  {
+   "qNo": 12,
+   "stem": "",
+   "options": [
+    "Finish his game.",
+    "Carry the boxes.",
+    "Leave the house."
+   ],
+   "answer": "A",
+   "transcript": [
+    [
+     "W",
+     "Tom, can you help me carry these boxes to the car?"
+    ],
+    [
+     "M",
+     "Sure, Mom. But can I finish this game first? It will only take five minutes."
+    ],
+    [
+     "W",
+     "OK, but only five minutes. We have to leave at four."
+    ],
+    [
+     "Q",
+     "What will Tom do first?"
+    ]
+   ],
+   "explanation": "【聽力稿】W: Tom, can you help me carry these boxes to the car?\nM: Sure, Mom. But can I finish this game first? It will only take five minutes.\nW: OK, but only five minutes. We have to leave at four.\nQuestion: What will Tom do first?\n【中譯】女：Tom，你可以幫我把這些箱子搬到車上嗎？男：好啊，媽。但我可以先把這場遊戲玩完嗎？只要五分鐘。女：好，但只能五分鐘，我們四點要出門。問題：Tom 會先做什麼？\n【解析】Tom 請媽媽讓他先把遊戲玩完（finish this game first），媽媽答應了，所以他會先玩完遊戲，再搬箱子。故選 (A)。"
+  },
+  {
+   "qNo": 13,
+   "stem": "",
+   "options": [
+    "300 dollars.",
+    "450 dollars.",
+    "600 dollars."
+   ],
+   "answer": "B",
+   "transcript": [
+    [
+     "M",
+     "Excuse me, how much is this T-shirt?"
+    ],
+    [
+     "W",
+     "It's three hundred dollars. But if you buy two, you get the second one for half price."
+    ],
+    [
+     "M",
+     "Great. I'll take two, then."
+    ],
+    [
+     "Q",
+     "How much will the man pay?"
+    ]
+   ],
+   "explanation": "【聽力稿】M: Excuse me, how much is this T-shirt?\nW: It's three hundred dollars. But if you buy two, you get the second one for half price.\nM: Great. I'll take two, then.\nQuestion: How much will the man pay?\n【中譯】男：不好意思，這件 T 恤多少錢？女：300 元。但如果買兩件，第二件半價。男：太好了，那我買兩件。問題：這位男子要付多少錢？\n【解析】第一件 300 元，第二件半價 150 元，共 300＋150＝450 元。故選 (B)。"
+  },
+  {
+   "qNo": 14,
+   "stem": "",
+   "options": [
+    "He was sick.",
+    "He had to go to school.",
+    "He was taking care of his brother."
+   ],
+   "answer": "C",
+   "transcript": [
+    [
+     "W",
+     "Did you watch the baseball game last night?"
+    ],
+    [
+     "M",
+     "No, I didn't. My little brother was sick, so I took care of him."
+    ],
+    [
+     "W",
+     "Oh, is he better now?"
+    ],
+    [
+     "M",
+     "Yes, he went back to school today."
+    ],
+    [
+     "Q",
+     "Why didn't the man watch the game?"
+    ]
+   ],
+   "explanation": "【聽力稿】W: Did you watch the baseball game last night?\nM: No, I didn't. My little brother was sick, so I took care of him.\nW: Oh, is he better now?\nM: Yes, he went back to school today.\nQuestion: Why didn't the man watch the game?\n【中譯】女：你昨晚有看棒球比賽嗎？男：沒有。我弟弟生病了，所以我在照顧他。女：喔，他好一點了嗎？男：好了，他今天回學校上課了。問題：男子為什麼沒有看比賽？\n【解析】男子說弟弟生病，他在照顧弟弟（took care of him），所以沒看比賽。生病的是弟弟，不是他自己。故選 (C)。"
+  },
+  {
+   "qNo": 15,
+   "stem": "",
+   "options": [
+    "Have their sports day.",
+    "Have their usual classes.",
+    "Go home early."
+   ],
+   "answer": "B",
+   "transcript": [
+    [
+     "W",
+     "Attention, please. Because of the heavy rain, today's outdoor sports day will be moved to next Friday. All classes will be held as usual this afternoon. Please remember to bring your sports clothes next Friday."
+    ],
+    [
+     "Q",
+     "What will the students do this afternoon?"
+    ]
+   ],
+   "explanation": "【聽力稿】W: Attention, please. Because of the heavy rain, today's outdoor sports day will be moved to next Friday. All classes will be held as usual this afternoon. Please remember to bring your sports clothes next Friday.\nQuestion: What will the students do this afternoon?\n【中譯】女：請注意。因為下大雨，今天的戶外運動會將延到下星期五舉行。今天下午所有的課程照常上課。請記得下星期五帶運動服。問題：學生今天下午要做什麼？\n【解析】廣播說運動會延到下星期五，今天下午照常上課（classes will be held as usual）。故選 (B)。"
+  },
+  {
+   "qNo": 16,
+   "stem": "",
+   "options": [
+    "During summer vacation.",
+    "Today.",
+    "Next weekend."
+   ],
+   "answer": "A",
+   "transcript": [
+    [
+     "M",
+     "I'm thinking of getting a dog."
+    ],
+    [
+     "W",
+     "That sounds great, but dogs need a lot of time. You have to walk them every day."
+    ],
+    [
+     "M",
+     "I know. That's why I'm waiting until summer vacation. I'll have more free time then."
+    ],
+    [
+     "Q",
+     "When will the man most likely get a dog?"
+    ]
+   ],
+   "explanation": "【聽力稿】M: I'm thinking of getting a dog.\nW: That sounds great, but dogs need a lot of time. You have to walk them every day.\nM: I know. That's why I'm waiting until summer vacation. I'll have more free time then.\nQuestion: When will the man most likely get a dog?\n【中譯】男：我在考慮養一隻狗。女：聽起來很棒，但狗需要很多時間，你每天都要遛牠。男：我知道，所以我要等到暑假，那時我會有比較多空閒時間。問題：男子最可能什麼時候養狗？\n【解析】男子說要等到暑假（waiting until summer vacation），那時比較有空。故選 (A)。"
+  },
+  {
+   "qNo": 17,
+   "stem": "",
+   "options": [
+    "At the first corner.",
+    "Across from the school.",
+    "Next to the post office."
+   ],
+   "answer": "C",
+   "transcript": [
+    [
+     "W",
+     "Excuse me, where is the library?"
+    ],
+    [
+     "M",
+     "Go straight down this street and turn left at the second corner. It's next to the post office."
+    ],
+    [
+     "W",
+     "Next to the post office. Thank you."
+    ],
+    [
+     "Q",
+     "Where is the library?"
+    ]
+   ],
+   "explanation": "【聽力稿】W: Excuse me, where is the library?\nM: Go straight down this street and turn left at the second corner. It's next to the post office.\nW: Next to the post office. Thank you.\nQuestion: Where is the library?\n【中譯】女：不好意思，圖書館在哪裡？男：沿著這條街直走，在第二個轉角左轉，它就在郵局旁邊。女：在郵局旁邊，謝謝。問題：圖書館在哪裡？\n【解析】男子說圖書館在郵局旁邊（next to the post office），要在第二個轉角左轉，不是第一個。故選 (C)。"
+  },
+  {
+   "qNo": 18,
+   "stem": "",
+   "options": [
+    "She got first place.",
+    "Her friend did better than she did.",
+    "She practiced alone."
+   ],
+   "answer": "B",
+   "transcript": [
+    [
+     "M",
+     "Mia, you look happy today."
+    ],
+    [
+     "W",
+     "I am! I just got the results of the English speech contest. I got second place."
+    ],
+    [
+     "M",
+     "Wow, congratulations! Who got first place?"
+    ],
+    [
+     "W",
+     "My best friend, Amy. We practiced together every day."
+    ],
+    [
+     "Q",
+     "What do we know about Mia?"
+    ]
+   ],
+   "explanation": "【聽力稿】M: Mia, you look happy today.\nW: I am! I just got the results of the English speech contest. I got second place.\nM: Wow, congratulations! Who got first place?\nW: My best friend, Amy. We practiced together every day.\nQuestion: What do we know about Mia?\n【中譯】男：Mia，妳今天看起來很開心。女：對啊！我剛拿到英語演講比賽的結果，我得到第二名。男：哇，恭喜！第一名是誰？女：我最好的朋友 Amy，我們每天一起練習。問題：關於 Mia，我們知道什麼？\n【解析】Mia 得到第二名，第一名是她的好朋友 Amy，所以她的朋友表現得比她好。她們是一起練習的。故選 (B)。"
+  },
+  {
+   "qNo": 19,
+   "stem": "",
+   "options": [
+    "It will be sunny.",
+    "It will be cloudy but dry.",
+    "There may be thunderstorms."
+   ],
+   "answer": "C",
+   "transcript": [
+    [
+     "W",
+     "Good morning! Here's today's weather. It will be sunny in the morning, but it will get cloudy in the afternoon, and there may be thunderstorms in the evening. If you go out tonight, don't forget your umbrella."
+    ],
+    [
+     "Q",
+     "What will the weather be like in the evening?"
+    ]
+   ],
+   "explanation": "【聽力稿】W: Good morning! Here's today's weather. It will be sunny in the morning, but it will get cloudy in the afternoon, and there may be thunderstorms in the evening. If you go out tonight, don't forget your umbrella.\nQuestion: What will the weather be like in the evening?\n【中譯】女：早安！以下是今天的天氣。上午是晴天，下午會轉為多雲，晚上可能有雷雨。如果你今晚要出門，別忘了帶傘。問題：晚上的天氣會是什麼樣子？\n【解析】氣象報告說晚上可能有雷雨（thunderstorms in the evening），所以提醒出門帶傘。晴天是上午的天氣。故選 (C)。"
+  },
+  {
+   "qNo": 20,
+   "stem": "",
+   "options": [
+    "Cooking the beef slowly for a long time.",
+    "Buying expensive beef.",
+    "Cooking the beef for thirty minutes."
+   ],
+   "answer": "A",
+   "transcript": [
+    [
+     "M",
+     "Grandma, I want to try your recipe for beef noodles."
+    ],
+    [
+     "W",
+     "It's easy, but the most important thing is time. You have to cook the beef slowly for at least two hours."
+    ],
+    [
+     "M",
+     "Two hours? I thought thirty minutes was enough."
+    ],
+    [
+     "W",
+     "No. The beef won't be soft if you hurry."
+    ],
+    [
+     "Q",
+     "What does Grandma say is the most important thing?"
+    ]
+   ],
+   "explanation": "【聽力稿】M: Grandma, I want to try your recipe for beef noodles.\nW: It's easy, but the most important thing is time. You have to cook the beef slowly for at least two hours.\nM: Two hours? I thought thirty minutes was enough.\nW: No. The beef won't be soft if you hurry.\nQuestion: What does Grandma say is the most important thing?\n【中譯】男：奶奶，我想試試您的牛肉麵食譜。女：很簡單，但最重要的是時間，牛肉要用小火慢慢煮至少兩個小時。男：兩個小時？我以為三十分鐘就夠了。女：不行，太急的話牛肉不會軟。問題：奶奶說最重要的是什麼？\n【解析】奶奶說最重要的是時間，牛肉要慢慢煮至少兩小時。三十分鐘是孫子原本以為的時間。故選 (A)。"
+  },
+  {
+   "qNo": 21,
+   "stem": "",
+   "options": [
+    "AI chatbots are always right.",
+    "She should check the information from AI.",
+    "Books are not useful."
+   ],
+   "answer": "B",
+   "transcript": [
+    [
+     "M",
+     "Have you finished your science report?"
+    ],
+    [
+     "W",
+     "Not yet. I used an AI chatbot to find information, but some of it was wrong, so I had to check everything in books."
+    ],
+    [
+     "M",
+     "That sounds like a lot of work."
+    ],
+    [
+     "W",
+     "It is, but now I understand the topic much better."
+    ],
+    [
+     "Q",
+     "What did the woman learn from writing her report?"
+    ]
+   ],
+   "explanation": "【聽力稿】M: Have you finished your science report?\nW: Not yet. I used an AI chatbot to find information, but some of it was wrong, so I had to check everything in books.\nM: That sounds like a lot of work.\nW: It is, but now I understand the topic much better.\nQuestion: What did the woman learn from writing her report?\n【中譯】男：妳的自然科報告寫完了嗎？女：還沒。我用 AI 聊天機器人找資料，但有些資料是錯的，所以我必須用書本把所有內容查證一遍。男：聽起來很費工夫。女：是啊，但現在我對這個主題了解得更多了。問題：這位女子從寫報告中學到了什麼？\n【解析】女子發現 AI 給的資料有些是錯的，所以要用書本查證，也就是 AI 的資訊需要查證。她是用書本查證，所以書本是有用的。故選 (B)。"
+  }
+ ],
+ "verification": [
+  "2026-09-26 第一部分圖片由 tools/ai_sets/ai1_listening.py 繪製，選項順序與圖片格子由同一份 TARGET 決定；圖片經人工檢視修正（第 1 題貓的位置、第 3 題香蕉間距）。",
+  "2026-09-26 獨立作答者 1（Claude Opus，看不到答案，讀聽力稿與圖片）21/21 與答案卷一致，0 題有異議；確認 3 張圖片各只有一個符合。",
+  "2026-09-26 獨立作答者 2（Claude Sonnet）21/21 一致，0 題有異議。tools/check_ai_set.py 0 問題；語音由 tools/gen_audio.py ai1 合成。"
+ ]
+}

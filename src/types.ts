@@ -30,6 +30,9 @@ export interface TextQuestion {
   /** shared by every item of a 題組 */
   passage?: string;
   passageTranslation?: string;
+  /** picture drawn for the question / for the 題組 passage (URL) */
+  figure?: string;
+  passageFigure?: string;
 }
 
 export type OrderMode = 'original' | 'shuffled';

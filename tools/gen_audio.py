@@ -7,7 +7,8 @@ machine). Male lines ("M:") use the same voice made deeper: synthesized
 pitch and formants (~180 Hz -> ~125 Hz) while keeping the original length.
 Output: ../public/audio/listening/<year>/aNN.wav (16 kHz mono).
 
-  python gen_audio.py 113
+  python gen_audio.py 113      (a real year)
+  python gen_audio.py ai1      (an AI set: src/data/ai/ai1_listening.json)
 """
 import json
 import os
@@ -53,8 +54,19 @@ def silence(sec):
     return np.zeros(int(RATE * sec))
 
 
-def main(year):
-    bank = json.load(open(os.path.join(HERE, 'bank', f'{year}_listening.json'), encoding='utf-8'))
+def load(which):
+    """(year, {qno: [[who, text], ...]}) of a real year (bank/<year>_listening.json)
+    or of an AI set ("ai1" -> src/data/ai/ai1_listening.json)"""
+    if which.startswith('ai'):
+        s = json.load(open(os.path.join(os.path.dirname(HERE), 'src', 'data', 'ai', f'{which}_listening.json'), encoding='utf-8'))
+        return s['year'], {str(i['qNo']): i['transcript'] for i in s['items']}
+    bank = json.load(open(os.path.join(HERE, 'bank', f'{which}_listening.json'), encoding='utf-8'))
+    return int(which), bank['transcripts']
+
+
+def main(which):
+    year, transcripts = load(str(which))
+    bank = {'transcripts': transcripts}
     out = os.path.join(os.path.dirname(HERE), 'public', 'audio', 'listening', str(year))
     tmp = tempfile.mkdtemp()
     jobs, plan = [], {}
@@ -99,4 +111,4 @@ def main(year):
 
 
 if __name__ == '__main__':
-    main(int(sys.argv[1]) if len(sys.argv) > 1 else 112)
+    main(sys.argv[1] if len(sys.argv) > 1 else '112')

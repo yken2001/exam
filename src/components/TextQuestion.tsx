@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import type { Question } from '../types';
+import ExamImage from './ExamImage';
 
 /** Passage of a text 題組: paragraphs, "| a | b |" rows as a table, and
  * cloze blanks "__35__" shown with the number the blank has in this exam
@@ -49,29 +50,37 @@ export function Passage({ text, numberOf }: { text: string; numberOf: (qNo: numb
   return <div className="passage">{blocks}</div>;
 }
 
-/** stem and options of one text question */
+/** stem, figure and options of one text question. A 英聽 item has no
+ * printed stem (it is heard); a picture item's options are the drawn
+ * pictures (A)(B)(C) in its figure, so its option texts are empty. */
 export function TextStem({ q, number }: { q: Question; number: number }) {
   const t = q.text!;
+  const heard = q.subject === '英聽';
+  const stem = t.stem
+    ? t.stem.split('\n').map((l, i) => (
+        <span key={i}>
+          {i > 0 && <br />}
+          {l}
+        </span>
+      ))
+    : heard
+      ? '請聽錄音作答'
+      : `文章中的空格 (${number})`;
   return (
     <div className="text-stem">
       <div className="text-stem-q">
-        <b>{number}.</b>{' '}
-        {t.stem
-          ? t.stem.split('\n').map((l, i) => (
-              <span key={i}>
-                {i > 0 && <br />}
-                {l}
-              </span>
-            ))
-          : `文章中的空格 (${number})`}
+        <b>{number}.</b> {stem}
       </div>
-      <div className="text-options">
-        {t.options.map((o, i) => (
-          <div key={i}>
-            ({String.fromCharCode(65 + i)}) {o}
-          </div>
-        ))}
-      </div>
+      {t.figure && <ExamImage className="q-image text-figure" src={t.figure} alt={`第 ${number} 題附圖`} />}
+      {t.options.some((o) => o) && (
+        <div className="text-options">
+          {t.options.map((o, i) => (
+            <div key={i}>
+              ({String.fromCharCode(65 + i)}) {o}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

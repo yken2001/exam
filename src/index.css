@@ -466,3 +466,5 @@ table.history-table td {
 .passage-translation summary { cursor: pointer; color: var(--accent); }
 .passage-translation > div { white-space: pre-line; margin-top: 6px; padding: 10px 12px; border-radius: 8px; background: var(--surface-muted); }
 .text-explanation { white-space: pre-line; font-size: 14px; line-height: 1.6; }
+
+.text-figure { max-width: 520px; margin: 6px 0; }

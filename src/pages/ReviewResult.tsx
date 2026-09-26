@@ -136,6 +136,9 @@ export default function ReviewResult() {
                       return i < 0 ? undefined : questions.indexOf(cluster[i]) + 1;
                     }}
                   />
+                  {first.text.passageFigure && (
+                    <ExamImage className="q-image text-figure" src={first.text.passageFigure} alt="題組附圖" />
+                  )}
                   {first.text.passageTranslation && (
                     <details className="passage-translation">
                       <summary>文章翻譯</summary>

@@ -211,6 +211,9 @@ export default function ExamTaking() {
                   }}
                 />
               )}
+              {first.text?.passageFigure && (
+                <ExamImage className="q-image text-figure" src={first.text.passageFigure} alt="題組附圖" />
+              )}
               {cluster.map((q) => {
                 const qGlobalIndex = questions.indexOf(q);
                 return (
