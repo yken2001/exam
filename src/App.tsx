@@ -3,6 +3,7 @@ import ExamBuilder from './pages/ExamBuilder';
 import ExamTaking from './pages/ExamTaking';
 import History from './pages/History';
 import ReviewResult from './pages/ReviewResult';
+import { APP_VERSION, APP_VERSION_DATE } from './version';
 
 function Shell() {
   const location = useLocation();
@@ -40,6 +41,9 @@ function Shell() {
         <Route path="/history" element={<History />} />
         <Route path="/review/:attemptId" element={<ReviewResult />} />
       </Routes>
+      <footer className="app-footer">
+        {APP_VERSION} · {APP_VERSION_DATE}
+      </footer>
     </div>
   );
 }

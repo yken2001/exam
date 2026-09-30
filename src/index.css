@@ -468,3 +468,11 @@ table.history-table td {
 .text-explanation { white-space: pre-line; font-size: 14px; line-height: 1.6; }
 
 .text-figure { max-width: 520px; margin: 6px 0; }
+
+.app-footer {
+  margin-top: 24px;
+  padding: 8px 0 4px;
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-muted, #999);
+}
