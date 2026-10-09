@@ -143,7 +143,7 @@
      "Would you like some more cake?"
     ]
    ],
-   "explanation": "【聽力稿】Would you like some more cake?\n【中譯】你還想再吃一些蛋糕嗎？\n【解析】Would you like…? 是詢問要不要，可以回答 Yes, please. 或 No, thanks.，並說明原因「我吃飽了」。Yes, I did. 的時態不對。故選 (B)。"
+   "explanation": "【聽力稿】Would you like some more cake?\n【中譯】你還想再吃一些蛋糕嗎？\n【解析】Would you like…? 是詢問要不要，可以回答 Yes, please. 或 No, thanks.，並說明原因「我吃飽了」。問句是 Would you like…，不能用 Yes, I did. 回答。故選 (B)。"
   },
   {
    "qNo": 9,
@@ -490,6 +490,7 @@
  "verification": [
   "2026-09-26 第一部分圖片由 tools/ai_sets/ai1_listening.py 繪製，選項順序與圖片格子由同一份 TARGET 決定；圖片經人工檢視修正（第 1 題貓的位置、第 3 題香蕉間距）。",
   "2026-09-26 獨立作答者 1（Claude Opus，看不到答案，讀聽力稿與圖片）21/21 與答案卷一致，0 題有異議；確認 3 張圖片各只有一個符合。",
-  "2026-09-26 獨立作答者 2（Claude Sonnet）21/21 一致，0 題有異議。tools/check_ai_set.py 0 問題；語音由 tools/gen_audio.py ai1 合成。"
+  "2026-09-26 獨立作答者 2（Claude Sonnet）21/21 一致，0 題有異議。tools/check_ai_set.py 0 問題；語音由 tools/gen_audio.py ai1 合成。",
+  "2026-10-09 最終複查（定稿前）：獨立稽核者（Claude Opus）拿答案與解析逐題核對（答案唯一性、計算、事實、附圖、文字），另由 Claude Opus 與 Claude Sonnet 各自重新盲解全卷，答案全部與答案卷一致；稽核指出的解析措辭、誘答與解析不一致、真實事件的相對時間（改為確切年份）與文言異文（以多版本比對後採通行本）均已修正，修正過的題目再由兩個模型重新盲解一致；答案卷未變動。"
  ]
 }

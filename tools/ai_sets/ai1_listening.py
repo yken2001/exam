@@ -137,7 +137,7 @@ text_item(6, [('N', 'How often do you go swimming?')], 'Twice a week.', ['For tw
 text_item(7, [('N', "You look tired. What's wrong?")], 'I stayed up late to study for the test.', ['Yes, I like it.', "It's not far from here."],
           '你看起來很累，怎麼了？', '對方關心你為什麼累，要說明原因：為了準備考試熬夜。')
 text_item(8, [('N', 'Would you like some more cake?')], "No, thanks. I'm full.", ['Yes, I did.', 'I made it yesterday.'],
-          '你還想再吃一些蛋糕嗎？', 'Would you like…? 是詢問要不要，可以回答 Yes, please. 或 No, thanks.，並說明原因「我吃飽了」。Yes, I did. 的時態不對。')
+          '你還想再吃一些蛋糕嗎？', 'Would you like…? 是詢問要不要，可以回答 Yes, please. 或 No, thanks.，並說明原因「我吃飽了」。問句是 Would you like…，不能用 Yes, I did. 回答。')
 text_item(9, [('N', 'Which bus goes to the train station?')], 'Take Bus 12.', ['It takes ten minutes.', 'I usually walk.'],
           '哪一班公車會到火車站？', '問「哪一班」公車，要回答公車的號碼：搭 12 號公車。')
 text_item(10, [('N', 'Congratulations on winning the contest!')], 'Thank you. I practiced a lot.', ["Don't worry about it.", 'Nice to meet you.'],

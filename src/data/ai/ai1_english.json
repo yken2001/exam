@@ -32,8 +32,8 @@
   {
    "from": 27,
    "to": 28,
-   "passage": "Dear Jun,\nGuess what? My city, Hualien, is hosting the International Children's Games this year! Young athletes from many countries will come here to take part in sports like swimming and table tennis. My school asked students to be volunteers, and I said yes right away.\nMy job is to help visitors find their way around the stadium. I've been practicing my English every night, and I've also learned to say \"welcome\" in five languages. My teacher says the most important thing is to smile, because a smile needs no translation.\nYou told me your cousin plays table tennis. If she comes to Taiwan for the Games, tell her to look for me. I'll be the one in the yellow volunteer shirt!\nYour friend,\nPei-yu",
-   "translation": "親愛的 Jun：\n你猜怎麼著？我住的城市花蓮今年要舉辦國際少年運動會！許多國家的年輕選手會來這裡參加游泳、桌球等運動項目。學校邀請學生當志工，我馬上就答應了。\n我的工作是幫訪客在體育館裡找路。我每天晚上都在練英文，也學會用五種語言說「歡迎」。老師說最重要的是微笑，因為微笑不需要翻譯。\n你說過你的表姊（妹）打桌球。如果她來臺灣參加比賽，叫她來找我。我會是穿黃色志工衣的那一個！\n你的朋友\n佩瑜"
+   "passage": "Dear Jun,\nGuess what? My city, Hualien, is hosting the International Children's Games in August 2026! Young athletes from many countries will come here to take part in sports like swimming and table tennis. My school asked students to be volunteers, and I said yes right away.\nMy job is to help visitors find their way around the stadium. I've been practicing my English every night, and I've also learned to say \"welcome\" in five languages. My teacher says the most important thing is to smile, because a smile needs no translation.\nYou told me your cousin plays table tennis. If she comes to Taiwan for the Games, tell her to look for me. I'll be the one in the yellow volunteer shirt!\nYour friend,\nPei-yu",
+   "translation": "親愛的 Jun：\n你猜怎麼著？我住的城市花蓮 2026 年 8 月要舉辦國際少年運動會！許多國家的年輕選手會來這裡參加游泳、桌球等運動項目。學校邀請學生當志工，我馬上就答應了。\n我的工作是幫訪客在體育館裡找路。我每天晚上都在練英文，也學會用五種語言說「歡迎」。老師說最重要的是微笑，因為微笑不需要翻譯。\n你說過你的表姊（妹）打桌球。如果她來臺灣參加比賽，叫她來找我。我會是穿黃色志工衣的那一個！\n你的朋友\n佩瑜"
   },
   {
    "from": 29,
@@ -584,6 +584,7 @@
   "2026-09-26 修正第 4、27、29、37 題與第 32–34 題註解後：獨立作答者 3（Claude Opus）43/43 一致；指出第 29 題區間仍不夠乾淨、第 38 題代名詞指涉可能混淆。",
   "2026-09-26 第 29 題改為整數時數分組、第 38 題改寫：獨立作答者 4（Claude Sonnet）第 29 題通過；第 38 題選 A（答案卷當時為 B）並指出指涉有兩種解讀 → 第 38 題重新設計為所有格 its（答案 A）。",
   "2026-09-26 第 38 題重新設計後：獨立作答者 5（Claude Opus）通過，其他空格仍合文法。",
-  "2026-09-26 定稿：獨立作答者 6（Claude Sonnet）完整作答 43/43 與答案卷一致，0 題有異議。tools/check_ai_set.py 0 問題。"
+  "2026-09-26 定稿：獨立作答者 6（Claude Sonnet）完整作答 43/43 與答案卷一致，0 題有異議。tools/check_ai_set.py 0 問題。",
+  "2026-10-09 最終複查（定稿前）：獨立稽核者（Claude Opus）拿答案與解析逐題核對（答案唯一性、計算、事實、附圖、文字），另由 Claude Opus 與 Claude Sonnet 各自重新盲解全卷，答案全部與答案卷一致；稽核指出的解析措辭、誘答與解析不一致、真實事件的相對時間（改為確切年份）與文言異文（以多版本比對後採通行本）均已修正，修正過的題目再由兩個模型重新盲解一致；答案卷未變動。"
  ]
 }

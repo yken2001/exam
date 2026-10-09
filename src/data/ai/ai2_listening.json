@@ -60,7 +60,7 @@
     ""
    ],
    "answer": "B",
-   "explanation": "【聽力稿】I bought three apples and twice as many oranges. I wanted four bananas, but the store only had two left.\n【中譯】我買了三顆蘋果和兩倍數量的柳橙。我本來想買四根香蕉，但店裡只剩兩根。\n【解析】蘋果 3 顆；柳橙是蘋果的兩倍＝6 顆；香蕉「想買四根」，但店裡「只剩兩根」，所以只買到 2 根。(B) 蘋果 3、柳橙 6、香蕉 2，全部符合；(A) 蘋果 6、柳橙 3，把「兩倍」的對象弄反了；(C) 香蕉有 4 根，那是她「本來想買」的數量，不是實際買到的。故選 (B)。",
+   "explanation": "【聽力稿】I bought three apples and twice as many oranges. I wanted four bananas, but the store only had two left.\n【中譯】我買了三顆蘋果和兩倍數量的柳橙。我本來想買四根香蕉，但店裡只剩兩根。\n【解析】蘋果 3 顆；柳橙是蘋果的兩倍＝6 顆；香蕉「想買四根」，但店裡「只剩兩根」，所以只買到 2 根。(B) 蘋果 3、柳橙 6、香蕉 2，全部符合；(A) 蘋果 6、柳橙 3，把「兩倍」的對象弄反了；(C) 香蕉有 4 根，那是說話者「本來想買」的數量，不是實際買到的。故選 (B)。",
    "figure": "ai/902/listening/q03.png",
    "transcript": [
     [
@@ -214,11 +214,11 @@
     "Yamamoto pitched on two days in a row."
    ],
    "answer": "B",
-   "explanation": "【聽力稿】M: Did you see the last game of the World Series? I can't believe it went to eleven innings.\nW: Only the end of it. My dad woke me up when it was almost over.\nM: Then you saw Yamamoto get the final outs. He pitched six innings in the game the night before, you know.\nW: Really? I thought that last game was the only one he pitched in.\nM: No. He started the game the night before, and then he came back the very next day.\nW: No wonder they named him MVP.\nQuestion: Which of the following is NOT true?\n【中譯】男：妳有看世界大賽的最後一場嗎？真不敢相信打到了第十一局。女：只看了最後一段，我爸在比賽快結束時把我叫醒。男：那妳有看到山本（Yamamoto）投出最後幾個出局數。妳知道嗎，他前一晚的比賽才投了六局。女：真的嗎？我以為他只在最後那一場投球。男：不是。他前一晚先發，隔天又上場了。女：難怪他被選為最有價值球員。問題：下列何者「不」正確？\n【解析】題目問哪一項「不正確」，要逐一核對：女子說她「只看了最後一段」，是快結束時才被叫醒，所以 (B)「女子看了整場比賽」不正確。(A) 比賽打到第十一局，超過九局，正確；(C) 男子說山本前一晚先發、隔天又上場，連續兩天都有投球，正確（女子原本以為他只投一場，被男子糾正）。（2025 年世界大賽第七戰，道奇延長到 11 局擊敗藍鳥；山本由伸前一天先發第六戰投 6 局，第七戰後援，獲選 MVP。）故選 (B)。",
+   "explanation": "【聽力稿】M: Did you see the last game of the 2025 World Series? I can't believe it went to eleven innings.\nW: Only the end of it. My dad woke me up when it was almost over.\nM: Then you saw Yamamoto get the final outs. He pitched six innings in the game the night before, you know.\nW: Really? I thought that last game was the only one he pitched in.\nM: No. He started the game the night before, and then he came back the very next day.\nW: No wonder they named him MVP.\nQuestion: Which of the following is NOT true?\n【中譯】男：妳有看 2025 年世界大賽的最後一場嗎？真不敢相信打到了第十一局。女：只看了最後一段，我爸在比賽快結束時把我叫醒。男：那妳有看到山本（Yamamoto）投出最後幾個出局數。妳知道嗎，他前一晚的比賽才投了六局。女：真的嗎？我以為他只在最後那一場投球。男：不是。他前一晚先發，隔天又上場了。女：難怪他被選為最有價值球員。問題：下列何者「不」正確？\n【解析】題目問哪一項「不正確」，要逐一核對：女子說她「只看了最後一段」，是快結束時才被叫醒，所以 (B)「女子看了整場比賽」不正確。(A) 比賽打到第十一局，超過九局，正確；(C) 男子說山本前一晚先發、隔天又上場，連續兩天都有投球，正確（女子原本以為他只投一場，被男子糾正）。（2025 年世界大賽第七戰，道奇延長到 11 局擊敗藍鳥；山本由伸前一天先發第六戰投 6 局，第七戰後援，獲選 MVP。）故選 (B)。",
    "transcript": [
     [
      "M",
-     "Did you see the last game of the World Series? I can't believe it went to eleven innings."
+     "Did you see the last game of the 2025 World Series? I can't believe it went to eleven innings."
     ],
     [
      "W",
@@ -255,7 +255,7 @@
     "The 2:15 train, because the 2:45 train is full."
    ],
    "answer": "B",
-   "explanation": "【聽力稿】W: One ticket to Kaohsiung on the next train, please.\nM: The next one leaves at two fifteen, but there are no seats left. You'd have to stand.\nW: Stand all the way? No, thanks. What about the one after that?\nM: That's the two forty-five. It still has seats, and it gets in at four fifty.\nW: I promised my aunt I'd be there before five. OK, that works. One for the two forty-five, then.\nM: Oh, wait. I'm sorry, I was looking at the wrong line. The two forty-five gets in at five ten, not four fifty.\nW: Five ten? Then forget about the seat. Give me the two fifteen.\nQuestion: Which train will the woman take, and why?\n【中譯】女：請給我一張下一班到高雄的車票。男：下一班兩點十五分開，但已經沒有座位了，妳得站著。女：一路站到底？不了，謝謝。再下一班呢？男：是兩點四十五分那班，還有座位，四點五十分到。女：我答應我阿姨五點以前到……好，可以，那就兩點四十五分的。男：喔，等一下，抱歉，我看錯行了。兩點四十五分那班是五點十分到，不是四點五十分。女：五點十分？那座位就不管了，給我兩點十五分那班。問題：女子會搭哪一班車？為什麼？\n【解析】女子的選擇改了兩次：先因為沒座位不要 2:15，改選有座位的 2:45；售票員更正 2:45 那班是「五點十分」才到，她答應阿姨「五點以前」要到，只好改回 2:15 那班站著去。(A) 2:45 那班雖然有座位，但會太晚到，她最後沒有選；(C) 她確實搭 2:15，但原因說錯了：2:45 那班沒有客滿，沒座位的是 2:15 那班。故選 (B)。",
+   "explanation": "【聽力稿】W: One ticket to Kaohsiung on the next train, please.\nM: The next one leaves at two fifteen and gets in at four twenty, but there are no seats left. You'd have to stand.\nW: Stand all the way? No, thanks. What about the one after that?\nM: That's the two forty-five. It still has seats, and it gets in at four fifty.\nW: I promised my aunt I'd be there before five. OK, that works. One for the two forty-five, then.\nM: Oh, wait. I'm sorry, I was looking at the wrong line. The two forty-five gets in at five ten, not four fifty.\nW: Five ten? Then forget about the seat. Give me the two fifteen.\nQuestion: Which train will the woman take, and why?\n【中譯】女：請給我一張下一班到高雄的車票。男：下一班兩點十五分開，四點二十分到，但已經沒有座位了，妳得站著。女：一路站到底？不了，謝謝。再下一班呢？男：是兩點四十五分那班，還有座位，四點五十分到。女：我答應我阿姨五點以前到……好，可以，那就兩點四十五分的。男：喔，等一下，抱歉，我看錯行了。兩點四十五分那班是五點十分到，不是四點五十分。女：五點十分？那座位就不管了，給我兩點十五分那班。問題：女子會搭哪一班車？為什麼？\n【解析】女子的選擇改了兩次：先因為沒座位不要 2:15，改選有座位的 2:45；售票員更正 2:45 那班是「五點十分」才到，她答應阿姨「五點以前」要到，只好改回 4:20 就能到的 2:15 那班站著去。(A) 2:45 那班雖然有座位，但會太晚到，她最後沒有選；(C) 她確實搭 2:15，但原因說錯了：2:45 那班沒有客滿，沒座位的是 2:15 那班。故選 (B)。",
    "transcript": [
     [
      "W",
@@ -263,7 +263,7 @@
     ],
     [
      "M",
-     "The next one leaves at two fifteen, but there are no seats left. You'd have to stand."
+     "The next one leaves at two fifteen and gets in at four twenty, but there are no seats left. You'd have to stand."
     ],
     [
      "W",
@@ -345,11 +345,11 @@
     "On Friday morning, in the library."
    ],
    "answer": "C",
-   "explanation": "【聽力稿】Good afternoon, students. Last November, a big United Nations meeting on climate change was held in Belém, a city in the Amazon area of Brazil. Dr. Lin, a scientist who went to the meeting, will visit our school to tell us what she saw there. The talk was planned for Thursday afternoon in the gym. However, Dr. Lin's flight has been changed, so the talk will now be on Friday morning at ten. And because the volleyball games will be held in the gym that morning, the talk will move to the library. The library has only eighty seats, so please sign up at the school office by Wednesday. Students who don't get a seat can watch the talk on the TV in their classroom.\nQuestion: When and where will the talk be held?\n【中譯】各位同學午安。去年十一月，一場討論氣候變遷的聯合國大型會議在巴西亞馬遜地區的城市貝倫舉行。參加過那場會議的科學家林博士（虛構人物）會來學校告訴我們她在那裡看到的事。演講原本安排在星期四下午、地點在體育館。但是林博士的班機改了，所以演講改到星期五早上十點。而且因為那天早上體育館要舉行排球比賽，演講會改到圖書館。圖書館只有八十個座位，請在星期三以前到學校辦公室報名。沒有拿到座位的同學可以在教室看電視轉播。問題：演講會在什麼時候、什麼地方舉行？\n【解析】時間和地點各改了一次：班機改了，時間從星期四下午改成「星期五早上」；那天早上體育館有排球賽，地點從體育館改到「圖書館」。(A) 地點對了，但星期四下午是原本的時間；(B) 時間對了，但體育館那天早上要比排球，已改到圖書館。（COP30 聯合國氣候大會於 2025 年 11 月在巴西貝倫舉行。）故選 (C)。",
+   "explanation": "【聽力稿】Good afternoon, students. In November 2025, a big United Nations meeting on climate change was held in Belém, a city in the Amazon area of Brazil. Dr. Lin, a scientist who went to the meeting, will visit our school to tell us what she saw there. The talk was planned for Thursday afternoon in the gym. However, Dr. Lin's flight has been changed, so the talk will now be on Friday morning at ten. And because the volleyball games will be held in the gym that morning, the talk will move to the library. The library has only eighty seats, so please sign up at the school office by Wednesday. Students who don't get a seat can watch the talk on the TV in their classroom.\nQuestion: When and where will the talk be held?\n【中譯】各位同學午安。2025 年 11 月，一場討論氣候變遷的聯合國大型會議在巴西亞馬遜地區的城市貝倫舉行。參加過那場會議的科學家林博士（虛構人物）會來學校告訴我們她在那裡看到的事。演講原本安排在星期四下午、地點在體育館。但是林博士的班機改了，所以演講改到星期五早上十點。而且因為那天早上體育館要舉行排球比賽，演講會改到圖書館。圖書館只有八十個座位，請在星期三以前到學校辦公室報名。沒有拿到座位的同學可以在教室看電視轉播。問題：演講會在什麼時候、什麼地方舉行？\n【解析】時間和地點各改了一次：班機改了，時間從星期四下午改成「星期五早上」；那天早上體育館有排球賽，地點從體育館改到「圖書館」。(A) 地點對了，但星期四下午是原本的時間；(B) 時間對了，但體育館那天早上要比排球，已改到圖書館。（COP30 聯合國氣候大會於 2025 年 11 月在巴西貝倫舉行。）故選 (C)。",
    "transcript": [
     [
      "N",
-     "Good afternoon, students. Last November, a big United Nations meeting on climate change was held in Belém, a city in the Amazon area of Brazil. Dr. Lin, a scientist who went to the meeting, will visit our school to tell us what she saw there. The talk was planned for Thursday afternoon in the gym. However, Dr. Lin's flight has been changed, so the talk will now be on Friday morning at ten. And because the volleyball games will be held in the gym that morning, the talk will move to the library. The library has only eighty seats, so please sign up at the school office by Wednesday. Students who don't get a seat can watch the talk on the TV in their classroom."
+     "Good afternoon, students. In November 2025, a big United Nations meeting on climate change was held in Belém, a city in the Amazon area of Brazil. Dr. Lin, a scientist who went to the meeting, will visit our school to tell us what she saw there. The talk was planned for Thursday afternoon in the gym. However, Dr. Lin's flight has been changed, so the talk will now be on Friday morning at ten. And because the volleyball games will be held in the gym that morning, the talk will move to the library. The library has only eighty seats, so please sign up at the school office by Wednesday. Students who don't get a seat can watch the talk on the TV in their classroom."
     ],
     [
      "Q",
@@ -580,6 +580,7 @@
   "2026-10-09 第一版經兩個模型盲解後評為難度不足（Opus 2.52／Sonnet 2.19），全卷 21 題依 SPEC_AI2_AI3.md 重寫（長對話、改變計畫、言外之意、時間金額計算）；第一部分 3 張圖由 tools/ai_sets/ai2_listening.py 繪製並經人工檢視。",
   "2026-10-09 重寫版獨立作答：Claude Opus 21/21、Claude Sonnet 20/21（第 8 題）一致；Opus 指出第 1 題圖可能被理解為公車時間。已修正：三張圖都放上「NEXT BUS 6:45」站牌只改變時鐘；第 8 題誘答改為角色明顯相反。",
   "2026-10-09 修正後重新獨立作答：Claude Opus 21/21、Claude Sonnet 21/21 與答案卷一致，0 題有異議。難度（同一評分標準）：AI-1 1.90、本卷 Opus 3.10／Sonnet 2.71。",
-  "2026-10-09 時事（2025 世界大賽第七戰、米蘭冬奧／帕運與吉祥物、COP30）由獨立查核者以網路來源逐條確認。tools/check_ai_set.py 0 問題；語音由 tools/gen_audio.py ai2 合成。"
+  "2026-10-09 時事（2025 世界大賽第七戰、米蘭冬奧／帕運與吉祥物、COP30）由獨立查核者以網路來源逐條確認。tools/check_ai_set.py 0 問題；語音由 tools/gen_audio.py ai2 合成。",
+  "2026-10-09 最終複查（定稿前）：獨立稽核者（Claude Opus）拿答案與解析逐題核對（答案唯一性、計算、事實、附圖、文字），另由 Claude Opus 與 Claude Sonnet 各自重新盲解全卷，答案全部與答案卷一致；稽核指出的解析措辭、誘答與解析不一致、真實事件的相對時間（改為確切年份）與文言異文（以多版本比對後採通行本）均已修正，修正過的題目再由兩個模型重新盲解一致；答案卷未變動。"
  ]
 }

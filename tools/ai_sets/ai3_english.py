@@ -15,7 +15,7 @@ TOPICS = [
     '恐狼爭議（科學家批評仍是灰狼、無法向親代學習；公司稱目標是填補生態角色；滅絕逾一萬年）：https://www.npr.org/2025/04/08/nx-s1-5355686/dire-wolf-extinct-colossal-biosciences',
     '澳洲 16 歲以下社群媒體禁令 2025-12-10 生效（罰款上限 4,950 萬澳幣、WhatsApp 與 Roblox 不在名單、AI 臉部年齡估計或上傳證件）：https://www.khaleejtimes.com/world/australia-bans-under-16s-from-social-media',
     '澳洲禁令後續：2026 年 3 月（約三個月後）eSafety 檢查約 70% 原有帳號兒童仍活躍、2026 年 6 月政府擬將罰款上限加倍、部長稱 "not seeing improvements"：https://www.euronews.com/next/2026/06/29/fines-doubled-as-teens-outsmart-australias-world-first-social-media-ban',
-    '修理咖啡館（第一家 2009 年阿姆斯特丹，全球逾千家）：https://en.wikipedia.org/wiki/Repair_Caf%C3%A9',
+    '修理咖啡館（第一家 2009 年阿姆斯特丹，2016 年全球已逾千家）：https://en.wikipedia.org/wiki/Repair_Caf%C3%A9',
     '保溫瓶裡的湯、植物聽音樂的科展報告與老師評語、「天分」一詞的迷思：虛構情境',
 ]
 
@@ -82,7 +82,7 @@ b.item('When our class first heard that every student had to take turns working 
 
 b.item('I have two brothers. ______ of them is good at cooking: Leo makes great beef noodles, and Sam bakes the best bread in town.',  # L4
        'Each', ['Neither', 'None', 'Both'],
-       '【中譯】我有兩個哥哥。他們每個都很會做菜：Leo 的牛肉麵很棒，Sam 烤的麵包是鎮上最好吃的。\n'
+       '【中譯】我有兩個兄弟。他們每個都很會做菜：Leo 的牛肉麵很棒，Sam 烤的麵包是鎮上最好吃的。\n'
        '【解析】冒號後說明兩人「各自」擅長的料理，表示兩個都很會做菜，用 Each of them is。'
        '({d0}) Neither 表示兩個都不會，與冒號後的說明矛盾；({d1}) None 用於三者以上，且同樣是否定；({d2}) Both 的意思雖然對，但 Both of them 是複數，動詞要用 are，與空格後的 is 不合——這題要同時看語意和主詞動詞一致。')
 
@@ -139,7 +139,7 @@ The incident left an uncomfortable question. If the people running the machine c
 
 [Text B] Readers' Comments
 TennisDad_88: My daughter plays in a junior league, and the arguments over line calls never end. Kids cry, parents shout. If a machine made the calls, half of those fights would never start. Well done, Wimbledon.
-Grace L.: I've been going to Wimbledon every summer since 1990. The courts felt strangely empty this year. Those men and women in uniform were part of the show—part of the history. Accuracy matters, but tennis is not just a math problem.
+Grace L.: I've been going to Wimbledon every summer since 1990. The courts felt strangely empty in 2025. Those men and women in uniform were part of the show—part of the history. Accuracy matters, but tennis is not just a math problem.
 Ryo_K: Everyone is missing the point. The machine didn't fail; the people did. That's actually an argument for MORE technology, not less. Take away the off switch completely and let the system do its job.
 * umpire 主審；serve 發球；accurate 準確的""",
         translation="""【文本 A】溫布頓向司線員說再見
@@ -150,7 +150,7 @@ Ryo_K: Everyone is missing the point. The machine didn't fail; the people did. T
 
 【文本 B】讀者留言
 TennisDad_88：我女兒參加青少年聯賽，關於判線的爭吵永遠吵不完，小孩哭、家長吼。如果由機器判，這些爭吵有一半根本不會發生。溫布頓做得好。
-Grace L.：從 1990 年起我每年夏天都去溫布頓。今年的球場感覺空蕩蕩的，那些穿制服的男男女女是表演的一部分，也是歷史的一部分。準確很重要，但網球不只是一道數學題。
+Grace L.：從 1990 年起我每年夏天都去溫布頓。2025 年的球場感覺空蕩蕩的，那些穿制服的男男女女是表演的一部分，也是歷史的一部分。準確很重要，但網球不只是一道數學題。
 Ryo_K：大家都沒抓到重點。失敗的不是機器，是人。這其實是支持「更多」科技、而不是更少的理由。把關閉開關整個拿掉，讓系統好好做它的工作。""")
 
 b.item('What can be inferred about the umpire in the Kartal–Pavlyuchenkova match?',  # L5
@@ -197,14 +197,14 @@ How was it done? The company's scientists studied ancient DNA from two fossils: 
 Not everyone was impressed. Many scientists pointed out that the pups are still gray wolves, just with a few changes. You cannot bring back a species, they argued, simply by making one animal look like another. Others noted that even if the pups look like dire wolves, there are no dire wolf parents to teach them how to live like one.
 Colossal answered that it had never tried to make an exact copy. Its goal, the company said, was to create animals that could play the role dire wolves once played in nature.
 So, are they dire wolves or not? The answer may depend on what we mean by "species." If a species is defined by how an animal looks, perhaps the answer is yes. If it is defined by its full set of genes, or by the way it lives and the knowledge that passes from parents to young, the answer is clearly no.
-Perhaps the more important question is not whether we can bring extinct animals back, but whether we should spend so much money and attention doing so while many living species are disappearing today. The company says it has already used similar tools to make copies of the red wolf, a wolf so rare that it is in serious danger of dying out. Whether this kind of work can really help animals like that will tell us more about the value of the project than any photo of a cute white pup.
+Perhaps the more important question is not whether we can bring extinct animals back, but whether we should spend so much money and attention doing so while many living species are disappearing today. In 2025, the company also said it had already used similar tools to make copies of the red wolf, a wolf so rare that it is in serious danger of dying out. Whether this kind of work can really help animals like that will tell us more about the value of the project than any photo of a cute white pup.
 * dire wolf 恐狼；fossil 化石；species 物種；extinct 絕種的；gene 基因""",
         translation="""2025 年 4 月，美國一家叫 Colossal Biosciences 的公司發布了一則像是電影情節的消息：它讓恐狼復活了。恐狼是一種在一萬多年前就滅絕的大型狼。三隻毛茸茸的白色幼崽——兩隻雄的叫 Romulus 和 Remus，一隻雌的叫 Khaleesi——的照片很快傳遍全世界。
 這是怎麼做到的？公司的科學家研究了兩件化石中的古代 DNA：一顆約 13,000 年前的牙齒和一塊約 72,000 年前的耳骨。他們把它和灰狼的 DNA 做比較——這家公司稱灰狼是恐狼現存最近的親戚。接著，他們沒有把古代 DNA 放進動物體內，而是在灰狼細胞的 14 個基因上做了 20 處修改，讓幼崽具有一些恐狼的特徵，例如白色的毛、較大的頭和較強壯的肩膀。由狗擔任代理孕母，懷著幼崽直到牠們出生。
 並不是每個人都買帳。許多科學家指出，這些幼崽仍然是灰狼，只是做了一些修改。他們認為，光是讓一種動物長得像另一種動物，並不能讓一個物種復活。另有人指出，即使幼崽長得像恐狼，也沒有恐狼父母可以教牠們如何像恐狼一樣生活。
 Colossal 回應說，它從來沒有打算做出一模一樣的複製品。公司表示，它的目標是創造出能在自然界中扮演恐狼過去角色的動物。
 那麼，牠們到底是不是恐狼？答案可能取決於我們所說的「物種」是什麼意思。如果物種是由動物的外表來定義，答案或許是肯定的；如果是由全部的基因，或由牠的生活方式以及親代傳給下一代的知識來定義，答案顯然是否定的。
-或許更重要的問題不是我們「能不能」讓絕種動物復活，而是在許多現存物種正在消失的今天，我們「該不該」花這麼多金錢和注意力去做這件事。這家公司說，它已經用類似的技術複製出紅狼——一種稀少到面臨嚴重滅絕危機的狼。這類工作是否真的能幫助這樣的動物，比任何一張可愛白色幼崽的照片，更能告訴我們這個計畫的價值。""")
+或許更重要的問題不是我們「能不能」讓絕種動物復活，而是在許多現存物種正在消失的今天，我們「該不該」花這麼多金錢和注意力去做這件事。2025 年，這家公司也說，它已經用類似的技術複製出紅狼——一種稀少到面臨嚴重滅絕危機的狼。這類工作是否真的能幫助這樣的動物，比任何一張可愛白色幼崽的照片，更能告訴我們這個計畫的價值。""")
 
 b.item('Which of the following is true according to the passage?',  # L5
        "The scientists changed some of the gray wolf's own genes instead of adding ancient DNA.",
@@ -247,13 +247,13 @@ b.item("Which best describes the writer's attitude toward the project?",  # L5
 # ======================================================================
 b.group(24, 28, """The first time I walked into the repair café near my school, I was carrying a broken desk lamp and very low expectations. I was sure someone would tell me to throw it away and buy a new one. __24__, a white-haired man named Mr. Ho took it from me, turned it over, and smiled. "Let's see what's wrong with it," he said. "But you're going to do the work. I'll just tell you what to do."
 He meant it. For the next forty minutes, Mr. Ho never once touched the lamp himself. __25__, he kept asking me questions: "What do you think this part does? What happens if you take this off?" Slowly, I opened, checked, and cleaned parts I never knew the lamp had. The problem turned out to be a tiny wire that was loose. When I finally switched the lamp on and it lit up, a few people at the next table actually clapped.
-Repair cafés like this one are not really cafés. They are free events where volunteers help people fix their own things—clothes, toys, bikes, and small machines. The first one was held in Amsterdam in 2009, and today there are more than a thousand around the world. The idea behind them is simple: many things we throw away are not truly broken; __26__ just need a little care and someone who knows how to help.
+Repair cafés like this one are not really cafés. They are free events where volunteers help people fix their own things—clothes, toys, bikes, and small machines. The first one was held in Amsterdam in 2009, and by 2016 there were already more than a thousand around the world. The idea behind them is simple: many things we throw away are not truly broken; __26__ just need a little care and someone who knows how to help.
 Since that day, I've gone back almost every month. I've fixed a fan, a pair of headphones, and my little sister's favorite toy car, and I've even started helping first-time visitors find the right tools. __27__, Mr. Ho says I'm almost ready to become a volunteer myself.
 What I've learned, though, is bigger than how to use a screwdriver. Every time we fix something instead of replacing it, we save money and reduce waste. __28__, we change the way we look at the things around us: not as objects to use and throw away, but as things worth keeping.
 * repair café 修理咖啡館；volunteer 志工；screwdriver 螺絲起子""",
         translation="""我第一次走進學校附近的修理咖啡館時，手裡拿著一盞壞掉的檯燈，心裡也不抱什麼期望。我確信會有人叫我把它丟掉、買一盞新的。出乎我意料的是，一位白髮的何先生從我手中接過檯燈，把它翻過來看了看，笑了。「我們來看看它哪裡壞了，」他說，「不過要動手的是你，我只負責告訴你怎麼做。」
 他是說真的。接下來的四十分鐘，何先生一次都沒有自己碰檯燈，反而一直問我問題：「你覺得這個零件是做什麼的？把這個拆下來會怎樣？」我慢慢地把一些我從來不知道檯燈裡有的零件打開、檢查、清乾淨。問題原來是一條鬆掉的細電線。當我終於打開開關、檯燈亮起來時，隔壁桌有幾個人還真的鼓起掌來。
-像這樣的修理咖啡館其實不是咖啡館，而是免費的活動，由志工幫助大家修理自己的東西——衣服、玩具、腳踏車和小型機器。第一場在 2009 年於阿姆斯特丹舉辦，如今全世界已經有一千多個。背後的理念很簡單：許多我們丟掉的東西其實並沒有真的壞掉，其中很多只需要一點照顧，以及一個懂得怎麼幫忙的人。
+像這樣的修理咖啡館其實不是咖啡館，而是免費的活動，由志工幫助大家修理自己的東西——衣服、玩具、腳踏車和小型機器。第一場在 2009 年於阿姆斯特丹舉辦，到 2016 年，全世界就已經有一千多個。背後的理念很簡單：許多我們丟掉的東西其實並沒有真的壞掉，其中很多只需要一點照顧，以及一個懂得怎麼幫忙的人。
 從那天起，我幾乎每個月都會回去。我修好了一台電扇、一副耳機，還有我妹妹最喜歡的玩具車，甚至開始幫第一次來的人找合適的工具。因此，何先生說我差不多可以自己當志工了。
 不過，我學到的東西比怎麼用螺絲起子更重要。每當我們修理東西而不是換新的，我們就省了錢、減少了垃圾。更重要的是，我們改變了看待身邊事物的方式：它們不是用完就丟的物品，而是值得保留的東西。""")
 
@@ -285,14 +285,14 @@ Supporters of the law argued that social media is designed to keep young people 
 Critics, however, raised several concerns. Checking a user's age is not simple. Some platforms chose to estimate ages with AI tools that study a person's face in a photo; others asked users to upload an ID. Neither method is perfect, and some people worried about handing so much personal information to tech companies. Others feared that teenagers would simply move to corners of the internet that are even less safe.
 The early results were mixed. The government said that millions of accounts belonging to children had been removed, turned off, or limited. Yet in March 2026, a check by the country's online safety office found that about 70 percent of children who had accounts on the day the ban began were still active on major platforms such as Facebook, Instagram, Snapchat, and TikTok. In June 2026, about six months after the ban started, the government announced plans to double the largest possible fine, saying it was "not seeing improvements."
 What should we make of this? It would be easy to say the ban has failed. But laws often work slowly. Seat belt laws did not make every driver buckle up overnight; it took years of rules, checks, and changing habits. On the other hand, a law that many people ignore can teach the wrong lesson: that rules are only words on paper.
-Other countries are watching closely. Whatever happens next in Australia, one thing is already clear: the question is no longer whether governments should do anything about young people and social media, but what—and how much—they should do.
+In 2026, other countries were watching closely. Whatever happens next in Australia, one thing is already clear: the question is no longer whether governments should do anything about young people and social media, but what—and how much—they should do.
 * platform 平臺；fine 罰款；scroll 滑（螢幕）；buckle up 繫上安全帶""",
         translation="""2025 年 12 月 10 日，澳洲成為全世界第一個禁止 16 歲以下兒童擁有社群媒體帳號的國家。從那天起，TikTok、Instagram、Facebook、Snapchat 和 YouTube 等平臺必須採取「合理的措施」，不讓 16 歲以下的人使用服務，否則最高可罰 4,950 萬澳幣。WhatsApp 等通訊軟體和遊戲平臺 Roblox 不在名單內，至少一開始是如此。
 支持這項法律的人認為，社群媒體的設計就是要讓年輕人盡可能一直滑下去，而光靠父母，是打不贏世界上一些最有錢的公司的。在新法之下，違反規定時受罰的是公司，而不是孩子或他們的父母。
 然而，批評者提出了幾項疑慮。確認使用者的年齡並不簡單。有些平臺選擇用 AI 工具分析照片中的臉來估計年齡，有些則要求使用者上傳證件。兩種方法都不完美，也有人擔心要把這麼多個人資料交給科技公司。另外有人擔心，青少年只會轉移到網路上更不安全的角落。
 初期的成效好壞參半。政府表示，已有數百萬個屬於兒童的帳號被刪除、停用或限制。然而，2026 年 3 月，該國網路安全主管機關的檢查發現，在禁令開始當天擁有帳號的兒童中，約有 70% 仍活躍於 Facebook、Instagram、Snapchat 和 TikTok 等主要平臺。2026 年 6 月，也就是禁令開始約六個月後，政府宣布計畫把罰款上限加倍，表示「沒有看到改善」。
 我們該怎麼看待這種情況？說這項禁令失敗了很容易。但法律常常是慢慢發揮作用的。安全帶法規並沒有讓每個駕駛一夜之間就繫上安全帶，而是花了好幾年的規定、稽查和習慣的改變。另一方面，一條很多人都不遵守的法律，也可能教給人錯誤的一課：規定只是紙上的文字。
-其他國家正密切關注。不論澳洲接下來如何發展，有一件事已經很清楚：問題不再是政府「該不該」對年輕人與社群媒體做些什麼，而是該做「什麼」、做到「多少」。""")
+2026 年時，其他國家都在密切關注。不論澳洲接下來如何發展，有一件事已經很清楚：問題不再是政府「該不該」對年輕人與社群媒體做些什麼，而是該做「什麼」、做到「多少」。""")
 
 b.item('Which of the following is NOT mentioned as a concern about the ban?',  # L4
        'Teachers would no longer be able to use online videos in class.',
@@ -419,7 +419,7 @@ b.item('What does the teacher mean by saying that "a difference of 0.7 cm betwee
         'Groups B and C should have been given 0.7 cm more water.'],
        '【中譯】老師說「兩組各只有 10 株植物，0.7 公分的差距可能說明不了什麼」是什麼意思？\n'
        '【解析】每組植物不多，差距又很小，就算音樂種類根本沒有影響，兩組也可能因為偶然（例如個別種子的差異）而相差 0.7 公分，所以不能據此說古典音樂比較好。'
-       '({d0}) 老師稱讚他們「測量得很仔細」，沒有說單位錯；({d1}) 只是把數字套進去，文中沒有這樣的說法；({d2}) 水量是用「多少」計算，不是公分，而且各組水量本來就相同。')
+       '({d0}) 老師稱讚他們「測量得很仔細」，沒有說單位錯；({d1}) 只是把數字套進去，文中沒有這樣的說法；({d2}) 水量不是用公分計算，而且各組水量本來就相同。')
 
 b.item('What "problem in the way the experiment was set up" does the teacher most likely mean?',  # L5
        'Group A got much less light than Groups B and C.',

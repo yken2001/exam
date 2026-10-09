@@ -305,15 +305,15 @@ text(t, 'Trade one of her green Labubus for one of Amy\'s pink ones.',
      '（Labubu 是香港藝術家龍家昇創作、泡泡瑪特以盲盒販售的玩偶，2025 年在各地掀起排隊搶購熱潮。）')
 
 # Q14  L3  current event: 2026 Taiwan Lantern Festival in Chiayi; Year of the Horse but the main lantern is a tree
-t = [['W', 'Did you go to the Taiwan Lantern Festival in Chiayi this March?'],
+t = [['W', 'Did you go to the Taiwan Lantern Festival in Chiayi in March 2026?'],
      ['M', 'Yes, I went with my family on the last weekend. It was really crowded.'],
-     ['W', "Was the main lantern a horse? It's the Year of the Horse."],
+     ['W', "Was the main lantern a horse? Twenty twenty-six is the Year of the Horse."],
      ['M', "That's what I thought, too. But it wasn't. It looked like a giant tree from Alishan, about twenty meters tall."],
      ['W', 'A tree? How interesting!'],
      ['M', 'Every half hour, it had a light show. The horse was on the small hand lanterns. They looked like a bear riding a wooden horse.'],
      ['Q', 'What did the main lantern look like?']]
 text(t, 'A tall tree.', ['A horse.', 'A bear riding a horse.'],
-     '女：你今年三月有去嘉義的台灣燈會嗎？男：有，我最後一個週末跟家人去的，人超多。女：主燈是馬嗎？今年是馬年。'
+     '女：你 2026 年三月有去嘉義的台灣燈會嗎？男：有，我最後一個週末跟家人去的，人超多。女：主燈是馬嗎？2026 年是馬年。'
      '男：我本來也這麼以為，但不是。它看起來像一棵阿里山的巨大神木，大約二十公尺高。女：一棵樹？真有趣！'
      '男：每半小時它會有一場燈光秀。馬出現在小提燈上，小提燈是一隻熊騎著木馬的樣子。問題：主燈看起來是什麼樣子？',
      '男子說主燈「不是馬」，而是「看起來像一棵阿里山的巨大神木」。'
@@ -335,16 +335,16 @@ text(t, 'On Friday at four thirty.', ['On Thursday at four thirty.', 'On Wednesd
 t = [['M', "Can you please stop singing that song? You've been singing it all morning."],
      ['W', "You mean Golden? I can't help it. It's the song from KPop Demon Hunters."],
      ['M', "I know. I've watched the movie with you three times. At first, I loved the song, too."],
-     ['W', 'It even won a Grammy in February. It was the first K-pop song to win one!'],
+     ['W', 'It even won a Grammy in February 2026. It was the first K-pop song to win one!'],
      ['M', "Good for them. But if I hear it one more time today, I'm going to wear earplugs."],
      ['Q', 'How does the man feel about the song now?']]
 text(t, 'He is tired of hearing it.',
      ['He likes it as much as he did at first.', 'He hopes it will win a Grammy.'],
      '男：妳可以不要再唱那首歌了嗎？妳已經唱了一整個早上。女：你是說〈Golden〉？我忍不住嘛，它是《KPop 獵魔女團》的歌。'
-     '男：我知道，我已經陪妳看了三次那部電影。一開始我也很喜歡那首歌。女：它二月還得了葛萊美獎，是第一首得獎的 K-pop 歌曲！'
+     '男：我知道，我已經陪妳看了三次那部電影。一開始我也很喜歡那首歌。女：它 2026 年二月還得了葛萊美獎，是第一首得獎的 K-pop 歌曲！'
      '男：恭喜他們。但如果今天再讓我聽到一次，我就要戴耳塞了。問題：男子現在對這首歌有什麼感覺？',
      '男子請女子別再唱，還說再聽到一次就要戴耳塞，可見他現在已經聽膩了。'
-     '({d0}) 他只是「一開始」很喜歡，現在不是；({d1}) 女子說這首歌「已經」在二月得到葛萊美獎，不是還希望它得獎。'
+     '({d0}) 他只是「一開始」很喜歡，現在不是；({d1}) 女子說這首歌「已經」在 2026 年二月得到葛萊美獎，不是還希望它得獎。'
      '（〈Golden〉於 2026 年 2 月 1 日獲葛萊美最佳影視歌曲獎，是第一首得到葛萊美獎的 K-pop 歌曲。）')
 
 # Q17  L4  price: student price only with a card; the brother forgot his

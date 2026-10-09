@@ -224,12 +224,12 @@ text([['N', "If you'd told me you were bringing friends, I would have made more 
      '({d1}) 對方在意的是「你沒告訴他」要帶朋友，你「告訴朋友們他會在」與此無關，答非所問。')
 
 # Q6  L4  current event: 2026 WBC (final already played); "So was I" agrees with "He was sure ..."
-text([['N', 'Venezuela won the World Baseball Classic in March, and my dad still can\'t believe it. He was sure the U.S. would win the final.']],
+text([['N', 'Venezuela won the World Baseball Classic in March 2026, and my dad still can\'t believe it. He was sure the U.S. would win the final.']],
      'So was I. But Venezuela just played better that night.',
      ['Me too. I hope the U.S. wins the final.', "Really? I didn't know your dad played for Venezuela."],
-     '委內瑞拉三月贏得了世界棒球經典賽冠軍，我爸到現在還不敢相信。他原本很確定美國會贏得冠軍戰。'
+     '委內瑞拉在 2026 年 3 月贏得了世界棒球經典賽冠軍，我爸到現在還不敢相信。他原本很確定美國會贏得冠軍戰。'
      '（2026 年 3 月 17 日，委內瑞拉在冠軍戰以 3:2 擊敗美國，首度奪冠）',
-     '冠軍戰已經在三月打完，委內瑞拉贏了。So was I 是「我也是（原本很確定美國會贏）」，'
+     '冠軍戰已經在 2026 年 3 月打完，委內瑞拉贏了。So was I 是「我也是（原本很確定美國會贏）」，'
      '({c})「我也是，但委內瑞拉那天晚上就是打得比較好」回應得當。'
      '({d0}) 冠軍戰已經打完了，不能再說「希望美國贏得冠軍戰」；({d1}) 對方的爸爸只是看比賽、猜錯了，並沒有替委內瑞拉打球。')
 
@@ -279,7 +279,7 @@ text([['N', "If you're going past the post office, I've got a letter that needs 
 
 # ============================================================ 第三部分：言談理解
 # Q12  L5  current event: 2026 World Cup final; whose team won -- feelings must be inferred
-t = [['M', 'Did you stay up for the World Cup final?'],
+t = [['M', 'Did you stay up for the 2026 World Cup final?'],
      ['W', 'I set my alarm, but I slept right through the first half. When I woke up, it was still zero to zero.'],
      ['M', "You didn't miss much, then. Nobody scored in the whole ninety minutes."],
      ['W', 'I know. And when Spain finally scored in extra time, my brother screamed so loudly that he woke up our neighbors.'],
@@ -290,7 +290,7 @@ t = [['M', 'Did you stay up for the World Cup final?'],
      ['Q', 'How did the woman most likely feel at the end of the game?']]
 text(t, 'Disappointed, because the team she liked lost.',
      ['Excited, because Spain finally scored.', 'Upset, because she slept through the whole game.'],
-     '男：妳有熬夜看世界盃冠軍戰嗎？女：我設了鬧鐘，但整個上半場都睡過頭了。我醒來的時候還是零比零。'
+     '男：妳有熬夜看 2026 年世界盃冠軍戰嗎？女：我設了鬧鐘，但整個上半場都睡過頭了。我醒來的時候還是零比零。'
      '男：那妳沒錯過什麼，整整九十分鐘都沒人進球。女：我知道。西班牙終於在延長賽進球的時候，我弟弟（哥哥）叫得好大聲，把鄰居都吵醒了。'
      '男：所以你們兩個都替西班牙加油？女：他是。我希望阿根廷連續兩屆奪冠。他們連頒獎都還沒開始，我就回去睡了。'
      '男：喔，好吧，至少妳弟弟（哥哥）度過了美好的一晚。女：太美好了，他到現在還在講。問題：比賽結束時，女子最可能有什麼感覺？',
@@ -301,7 +301,7 @@ text(t, 'Disappointed, because the team she liked lost.',
 
 # Q13  L5  current event: Artemis II; who did what (grandpa / class / cousin) + the distance record
 t = [['M', 'My grandpa says he watched astronauts walk on the moon on a black-and-white TV when he was a kid.'],
-     ['W', 'That was the Apollo program, more than fifty years ago. Did you follow Artemis Two this spring?'],
+     ['W', 'That was the Apollo program, more than fifty years ago. Did you follow Artemis Two in April 2026?'],
      ['M', 'A little. Our teacher showed the launch on the big screen in class.'],
      ['W', 'My cousin watched it in person in Florida. She said she could feel the ground shake.'],
      ['M', 'Lucky her! Did the astronauts land on the moon this time?'],
@@ -311,7 +311,7 @@ t = [['M', 'My grandpa says he watched astronauts walk on the moon on a black-an
      ['Q', 'Which of the following is true?']]
 text(t, 'The Artemis Two astronauts traveled farther from Earth than the Apollo astronauts.',
      ["The man's grandpa watched the Artemis Two launch on TV.", "The woman's cousin watched the launch with the man's class."],
-     '男：我爺爺說他小時候在黑白電視上看過太空人在月球上漫步。女：那是阿波羅計畫，已經是五十多年前的事了。你今年春天有關注 Artemis II 嗎？'
+     '男：我爺爺說他小時候在黑白電視上看過太空人在月球上漫步。女：那是阿波羅計畫，已經是五十多年前的事了。你有關注 2026 年 4 月的 Artemis II 嗎？'
      '男：有一點。我們老師在課堂上用大螢幕播了發射的畫面。女：我表姊（堂姊）在佛羅里達現場看，她說她感覺得到地面在震動。'
      '男：她真幸運！這次太空人有登陸月球嗎？女：沒有，他們只繞著月球飛，是為了將來登陸做的測試。不過他們還是飛得比以前任何人都離地球更遠，連阿波羅太空人都比不上。'
      '男：所以我爺爺那時候的太空人不再保有那項紀錄了。女：那一項沒有了。但他們仍然是唯一在月球上走過的人。問題：下列何者正確？',
@@ -357,12 +357,12 @@ t = [['M', "I've decided to ride my bike around Taiwan this summer. In five days
 text(t, "It's too much for him to try right now.",
      ['He should find someone to ride with him.', 'Five days is too long for the trip.'],
      '男：我決定今年暑假騎腳踏車環島，五天騎完！女：五天？嗯，這真是……很勇敢。你以前一天最遠騎過多遠？'
-     '男：大概三十公里，到我奶奶家來回。女：整趟差不多一千公里，對吧？那一天大約要騎兩百公里。男：我會努力練習，而且我表哥會跟我一起去。'
+     '男：大概三十公里，到我奶奶家來回。女：整趟差不多一千公里，對吧？那一天大約要騎兩百公里。男：我會努力練習，而且我表哥（或表姊等）會跟我一起去。'
      '女：嗯……也許你們兩個可以先從短一點的開始，像是週末騎日月潭一圈。男：妳覺得我做不到？女：我可沒這麼說，我只是說不用急。'
      '問題：女子對男子的計畫真正的看法是什麼？',
      '女子沒有直說「你做不到」，但她用「很勇敢」委婉帶過，又算出一天要騎兩百公里（男子最多只騎過三十公里），還建議先從短程開始、「不用急」，'
      '可見她認為這個計畫目前對他來說太勉強。'
-     '({d0}) 男子已經說表哥會一起去，女子並沒有建議要找人同行；({d1}) 女子的意思正好相反：一千公里五天騎完是「太趕」，不是天數太多。')
+     '({d0}) 男子已經說他的表（堂）兄弟姊妹會一起去，女子並沒有建議要找人同行；({d1}) 女子的意思正好相反：一千公里五天騎完是「太趕」，不是天數太多。')
 
 # Q16  L5  current event: 2026 Asian Games; announcement with several changes -- where at 8:15?
 t = [['N', "Good morning, everyone. As you know, the Asian Games in Aichi and Nagoya, Japan, ended on October fourth. "

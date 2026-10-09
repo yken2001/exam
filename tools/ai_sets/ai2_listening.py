@@ -198,7 +198,7 @@ picture('I bought three apples and twice as many oranges. I wanted four bananas,
         '我買了三顆蘋果和兩倍數量的柳橙。我本來想買四根香蕉，但店裡只剩兩根。',
         f'蘋果 {apples} 顆；柳橙是蘋果的兩倍＝{oranges} 顆；香蕉「想買四根」，但店裡「只剩兩根」，所以只買到 {bananas} 根。'
         f'({{c}}) 蘋果 3、柳橙 6、香蕉 2，全部符合；({{d0}}) 蘋果 6、柳橙 3，把「兩倍」的對象弄反了；'
-        f'({{d1}}) 香蕉有 4 根，那是她「本來想買」的數量，不是實際買到的。')
+        f'({{d1}}) 香蕉有 4 根，那是說話者「本來想買」的數量，不是實際買到的。')
 
 # ============================================================ 第二部分：基本問答
 # Q4  L3  How come ...? = why (not "how")
@@ -271,7 +271,7 @@ text([['N', 'My brother watched every ski race of the Winter Olympics in Italy, 
 
 # ============================================================ 第三部分：言談理解
 # Q12  L4  current event: 2025 World Series Game 7; NOT-true question, three statements to check
-t = [['M', "Did you see the last game of the World Series? I can't believe it went to eleven innings."],
+t = [['M', "Did you see the last game of the 2025 World Series? I can't believe it went to eleven innings."],
      ['W', 'Only the end of it. My dad woke me up when it was almost over.'],
      ['M', 'Then you saw Yamamoto get the final outs. He pitched six innings in the game the night before, you know.'],
      ['W', 'Really? I thought that last game was the only one he pitched in.'],
@@ -280,7 +280,7 @@ t = [['M', "Did you see the last game of the World Series? I can't believe it we
      ['Q', 'Which of the following is NOT true?']]
 text(t, 'The woman watched the whole game.',
      ['The game lasted more than nine innings.', 'Yamamoto pitched on two days in a row.'],
-     '男：妳有看世界大賽的最後一場嗎？真不敢相信打到了第十一局。女：只看了最後一段，我爸在比賽快結束時把我叫醒。'
+     '男：妳有看 2025 年世界大賽的最後一場嗎？真不敢相信打到了第十一局。女：只看了最後一段，我爸在比賽快結束時把我叫醒。'
      '男：那妳有看到山本（Yamamoto）投出最後幾個出局數。妳知道嗎，他前一晚的比賽才投了六局。'
      '女：真的嗎？我以為他只在最後那一場投球。男：不是。他前一晚先發，隔天又上場了。女：難怪他被選為最有價值球員。'
      '問題：下列何者「不」正確？',
@@ -290,7 +290,7 @@ text(t, 'The woman watched the whole game.',
 
 # Q13  L4  choice changes twice (2:15 -> 2:45 -> 2:15) after the clerk corrects himself
 t = [['W', 'One ticket to Kaohsiung on the next train, please.'],
-     ['M', "The next one leaves at two fifteen, but there are no seats left. You'd have to stand."],
+     ['M', "The next one leaves at two fifteen and gets in at four twenty, but there are no seats left. You'd have to stand."],
      ['W', 'Stand all the way? No, thanks. What about the one after that?'],
      ['M', "That's the two forty-five. It still has seats, and it gets in at four fifty."],
      ['W', "I promised my aunt I'd be there before five. OK, that works. One for the two forty-five, then."],
@@ -299,12 +299,12 @@ t = [['W', 'One ticket to Kaohsiung on the next train, please.'],
      ['Q', 'Which train will the woman take, and why?']]
 text(t, 'The 2:15 train, because she must arrive before five.',
      ['The 2:45 train, because it still has seats.', 'The 2:15 train, because the 2:45 train is full.'],
-     '女：請給我一張下一班到高雄的車票。男：下一班兩點十五分開，但已經沒有座位了，妳得站著。'
+     '女：請給我一張下一班到高雄的車票。男：下一班兩點十五分開，四點二十分到，但已經沒有座位了，妳得站著。'
      '女：一路站到底？不了，謝謝。再下一班呢？男：是兩點四十五分那班，還有座位，四點五十分到。'
      '女：我答應我阿姨五點以前到……好，可以，那就兩點四十五分的。男：喔，等一下，抱歉，我看錯行了。兩點四十五分那班是五點十分到，不是四點五十分。'
      '女：五點十分？那座位就不管了，給我兩點十五分那班。問題：女子會搭哪一班車？為什麼？',
      '女子的選擇改了兩次：先因為沒座位不要 2:15，改選有座位的 2:45；售票員更正 2:45 那班是「五點十分」才到，'
-     '她答應阿姨「五點以前」要到，只好改回 2:15 那班站著去。'
+     '她答應阿姨「五點以前」要到，只好改回 4:20 就能到的 2:15 那班站著去。'
      '({d0}) 2:45 那班雖然有座位，但會太晚到，她最後沒有選；({d1}) 她確實搭 2:15，但原因說錯了：2:45 那班沒有客滿，沒座位的是 2:15 那班。')
 
 # Q14  L3  implied opinion: praises everything except the movie itself
@@ -325,7 +325,7 @@ text(t, 'It was too boring for him to enjoy.',
      '({d0}) 結局是「網路上大家在討論」的，男子睡著了根本沒看到；({d1}) 男子說音樂「很棒」，不是最糟的部分。')
 
 # Q15  L4  current event: COP30 in Belém; the day AND the place both change
-t = [['N', "Good afternoon, students. Last November, a big United Nations meeting on climate change was held in Belém, a city in the Amazon area of Brazil. "
+t = [['N', "Good afternoon, students. In November 2025, a big United Nations meeting on climate change was held in Belém, a city in the Amazon area of Brazil. "
            "Dr. Lin, a scientist who went to the meeting, will visit our school to tell us what she saw there. "
            "The talk was planned for Thursday afternoon in the gym. However, Dr. Lin's flight has been changed, so the talk will now be on Friday morning at ten. "
            "And because the volleyball games will be held in the gym that morning, the talk will move to the library. "
@@ -334,7 +334,7 @@ t = [['N', "Good afternoon, students. Last November, a big United Nations meetin
      ['Q', 'When and where will the talk be held?']]
 text(t, 'On Friday morning, in the library.',
      ['On Thursday afternoon, in the library.', 'On Friday morning, in the gym.'],
-     '各位同學午安。去年十一月，一場討論氣候變遷的聯合國大型會議在巴西亞馬遜地區的城市貝倫舉行。'
+     '各位同學午安。2025 年 11 月，一場討論氣候變遷的聯合國大型會議在巴西亞馬遜地區的城市貝倫舉行。'
      '參加過那場會議的科學家林博士（虛構人物）會來學校告訴我們她在那裡看到的事。演講原本安排在星期四下午、地點在體育館。'
      '但是林博士的班機改了，所以演講改到星期五早上十點。而且因為那天早上體育館要舉行排球比賽，演講會改到圖書館。'
      '圖書館只有八十個座位，請在星期三以前到學校辦公室報名。沒有拿到座位的同學可以在教室看電視轉播。問題：演講會在什麼時候、什麼地方舉行？',

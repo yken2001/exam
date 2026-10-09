@@ -391,13 +391,13 @@ b.item('Kevin also wants to join Kitchen Chemistry on Sunday. Why is that a prob
 # ======================================================================
 b.group(27, 29, """What color is the sky? Blue, of course. But what about a color that nobody has ever seen before? In April 2025, a team of scientists from the University of California, Berkeley, and the University of Washington said they had found one. They named it "olo."
 To understand this, we need to know a little about our eyes. At the back of the eye, there are three kinds of cells that help us see colors. We can call them L cells, M cells, and S cells. Usually, light turns on two or three kinds of these cells at the same time, and our brain mixes the signals into a color. No light in the real world can turn on the M cells alone. Even pure green light turns on the L cells, too.
-So the scientists built a machine called Oz. It sends tiny flashes of laser light into the eye and aims only at the M cells. Five people, including three of the scientists, tried it. All of them saw a blue-green color brighter and deeper than any color they had ever seen. The name "olo" comes from 0-1-0: the L cells are off (0), the M cells are on (1), and the S cells are off (0).
-Sadly, you can't see olo on a phone screen or in a painting. Right now, the only way is with Oz. The scientists hope their work can someday help people who are color-blind.
+So the scientists built a machine called Oz. It sends tiny flashes of laser light into the eye and aims only at the M cells. Five people, including three of the scientists, tried it. All of them saw a blue-green color more vivid and intense than any color they had ever seen. The name "olo" comes from 0-1-0: the L cells are off (0), the M cells are on (1), and the S cells are off (0).
+Sadly, you can't see olo on a phone screen or in a painting. When the study came out in 2025, the only way to see it was with Oz. The scientists hope their work can someday help people who are color-blind.
 * cell 細胞；laser 雷射；signal 訊號；color-blind 色盲的""",
         translation="""天空是什麼顏色？當然是藍色。但如果是一種從來沒有人看過的顏色呢？2025 年 4 月，一組來自加州大學柏克萊分校和華盛頓大學的科學家說，他們找到了一種，並把它命名為「olo」。
 要了解這件事，我們得先知道一點眼睛的知識。眼睛後方有三種幫助我們看見顏色的細胞，我們可以叫它們 L 細胞、M 細胞和 S 細胞。通常光線會同時啟動其中兩種或三種細胞，大腦再把訊號混合成一種顏色。現實世界中沒有任何光能「只」啟動 M 細胞，即使是純綠光，也會同時啟動 L 細胞。
-於是科學家做了一台叫 Oz 的機器。它把極小的雷射閃光射進眼睛，只瞄準 M 細胞。五個人試過，其中包括三位科學家。他們全都看見一種比以往看過的任何顏色都更亮、更深的藍綠色。「olo」這個名字來自 0-1-0：L 細胞關（0）、M 細胞開（1）、S 細胞關（0）。
-可惜的是，你無法在手機螢幕或畫作上看到 olo，目前唯一的方法就是透過 Oz。科學家希望這項研究有一天能幫助色盲的人。""")
+於是科學家做了一台叫 Oz 的機器。它把極小的雷射閃光射進眼睛，只瞄準 M 細胞。五個人試過，其中包括三位科學家。他們全都看見一種比以往看過的任何顏色都更鮮豔、更濃烈的藍綠色。「olo」這個名字來自 0-1-0：L 細胞關（0）、M 細胞開（1）、S 細胞關（0）。
+可惜的是，你無法在手機螢幕或畫作上看到 olo，在 2025 年研究發表時，唯一的方法就是透過 Oz。科學家希望這項研究有一天能幫助色盲的人。""")
 
 b.item('Why can\'t people see olo in everyday life?',  # L3
        'No light in the real world can turn on only the M cells.',
