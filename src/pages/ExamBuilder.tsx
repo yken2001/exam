@@ -5,7 +5,7 @@ import { FRACTIONS, SUBJECTS } from '../data/subjectConfig';
 import { selectExam } from '../engine/selectExam';
 import { db } from '../db';
 import { newId } from '../utils/newId';
-import { yearLabel } from '../utils/yearLabel';
+import { isAiYear, yearLabel } from '../utils/yearLabel';
 import type { ExamPaper, OrderMode, Subject } from '../types';
 
 /** 1050 -> "17 分 30 秒", 4200 -> "70 分鐘" */
@@ -105,6 +105,12 @@ export default function ExamBuilder() {
             </span>
           ))}
         </div>
+        {AVAILABLE_YEARS.some(isAiYear) && (
+          <div className="field-note">
+            110–115 是會考真題；AI 卷是另外出的練習卷（重閱讀理解、靈活應用與時事）：AI-1 基礎、AI-4 約等於會考、AI-2 進階、AI-3 挑戰。
+            數學、英聽的 AI-2、AI-3 比會考難；國文、英文、自然、社會的 AI-2、AI-3 目前與會考相近，之後會依實際作答成績再調整。
+          </div>
+        )}
       </div>
 
       <div className="field">

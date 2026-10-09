@@ -15,6 +15,8 @@ python gen_levels.py            # 心測中心等級對照表 official_levels/<�
 python check_ai_set.py          # AI 出題(src/data/ai/*.json)的一致性檢查:題號、選項、題組、克漏字空格、解析「故選」=答案
 python ai_sets/ai1_math.py       # AI-1 各科題目產生程式(ai1_math/science/social/listening/chinese):答案計算、附圖繪製、選項排列
 python ai_booklet.py ai1_math out.txt   # 不含答案的題本,給獨立作答的 AI 驗證用
+python ai_sets/ai2_math.py       # AI-2/AI-3(ai2_*/ai3_*):共用 ai_sets/common.py,規格見 ai_sets/SPEC_AI2_AI3.md
+python ai_compare.py ai2_math reply.txt   # 比對獨立作答 AI 的答案與答案卷,並統計它評的難度
 python gen_audio.py ai1         # AI-1 英聽語音
 ```
 

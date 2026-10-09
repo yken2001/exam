@@ -34,10 +34,11 @@ import { LISTENING_112_QUESTIONS } from './real/listening112';
 import { LISTENING_113_QUESTIONS } from './real/listening113';
 import { LISTENING_114_QUESTIONS } from './real/listening114';
 import { LISTENING_115_QUESTIONS } from './real/listening115';
-import { aiQuestions } from './aiQuestions';
+import { AI_QUESTIONS, aiQuestions } from './aiQuestions';
 
-// 901 = AI-1 (AI 出題的練習卷, see utils/yearLabel)
-const YEARS = [110, 111, 112, 113, 114, 115, 901];
+// real papers, then the AI-made sets (901 = AI-1, 902 = AI-2 …, see utils/yearLabel)
+const AI_YEARS = [...new Set(AI_QUESTIONS.map((q) => q.year))].sort((a, b) => a - b);
+const YEARS = [110, 111, 112, 113, 114, 115, ...AI_YEARS];
 
 // 數學非選擇題（手寫題）不在題庫內；英聽：112 年收在英文解析卷，113 年起是單獨的英聽解析卷，110、111 年沒有
 const REAL_DATA: Record<Subject, Partial<Record<number, Question[]>>> = {
@@ -49,10 +50,12 @@ const REAL_DATA: Record<Subject, Partial<Record<number, Question[]>>> = {
   自然: { 110: SCIENCE_110_QUESTIONS, 111: SCIENCE_111_QUESTIONS, 112: SCIENCE_112_QUESTIONS, 113: SCIENCE_113_QUESTIONS, 114: SCIENCE_114_QUESTIONS, 115: SCIENCE_115_QUESTIONS },
 };
 
-// AI-1 (901): every subject's AI set, next to the real papers
+// every AI set (AI-1, AI-2 …), next to the real papers
 for (const subject of SUBJECTS) {
-  const qs = aiQuestions(subject, 901);
-  if (qs.length) REAL_DATA[subject][901] = qs;
+  for (const year of AI_YEARS) {
+    const qs = aiQuestions(subject, year);
+    if (qs.length) REAL_DATA[subject][year] = qs;
+  }
 }
 
 export const SAMPLE_QUESTIONS: Question[] = SUBJECTS.flatMap((subject) =>

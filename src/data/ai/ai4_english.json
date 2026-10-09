@@ -1,0 +1,598 @@
+{
+ "set": "AI-4",
+ "year": 904,
+ "subject": "英文",
+ "title": "AI-4 英語（閱讀）模擬卷（會考水準）",
+ "difficulty": "會考水準",
+ "note": "由 AI 依近年會考英語科架構編寫，難度比照會考（平均約 2.5 級）：單題 15 題（語境中的字彙、語法、圖片與告示），題組 28 題（告示、email、新聞短文、活動表、故事、群組對話、雙文本與克漏字），並以 2025 年真實事件為素材；非會考真題。",
+ "topics": [
+  "北京亦莊人形機器人半程馬拉松（2025-04-19，因強風延後；21 台人形機器人參賽、6 台完賽；Tiangong Ultra 約 2 小時 40 分奪冠、是唯一在 3 小時 10 分時限內完賽者、途中跌倒一次並換三次電池；過熱、跌倒、需人員協助；男子人類冠軍約 1 小時 2 分）：https://en.wikipedia.org/wiki/Beijing_E-Town_Half-Marathon",
+  "同上，完賽 6 台、Tiangong Ultra 2:40:42、唯一在時限內完賽：https://www.irunfar.com/results-of-the-human-vs-robot-half-marathon-humans-still-tops",
+  "新顏色 olo（2025 年 4 月 Science Advances；UC Berkeley 與 University of Washington；Oz 系統以雷射只刺激 M 視錐細胞；5 人看見、含三位作者（受試者 10001R、10003L、20205R 為共同作者，含 Ren Ng 與 Austin Roorda）；極飽和的藍綠色；名稱來自 0-1-0；自然界沒有任何波長能只刺激 M 視錐；可能有助色盲研究）：https://optometry.berkeley.edu/novel-color/ ；受試者中三位為共同作者：https://pmc.ncbi.nlm.nih.gov/articles/PMC12007580/",
+  "同上，名稱來自二進位 010（L、M、S 只有 M 開）：https://boingboing.net/2025/04/21/firing-lasers-into-the-retina-reveals-a-brand-new-color.html",
+  "Labubu 熱潮（2015 年香港出生藝術家龍家昇 Kasing Lung 創作，《The Monsters》繪本角色；2019 年起與泡泡瑪特合作、以盲盒販售、系列常有稀有隱藏款；2025 年 5 月英國門市因顧客衝突暫停販售；2025 年 6 月北京首場拍賣，真人大小薄荷綠 Labubu（約 1.3 公尺，各來源記為 1.2 m／131 cm）落槌 108 萬人民幣（約 15 萬美元，含佣金約 17 萬美元），文中寫「約 1.3 公尺、超過 15 萬美元」；仿冒品被稱為 Lafufu）：https://en.wikipedia.org/wiki/Labubu",
+  "Labubu 排隊與搶購熱潮報導：https://www.nbcnews.com/pop-culture/pop-culture-news/labubu-craze-viral-lines-pop-mart-stores-rcna203213",
+  "河濱腳踏車租借、動物收容所志工 email、科學博物館週末活動表、圖書館書中紙條的故事、生日驚喜群組對話、奶奶學用智慧型手機、Jay 的盲盒煩惱與回信：虛構情境"
+ ],
+ "groups": [
+  {
+   "from": 16,
+   "to": 17,
+   "passage": "Riverside Bike Rental\nOpen 8:00 a.m. to 8:00 p.m. every day\n\nPRICES\n- Regular bike: NT$50 for the first hour, then NT$30 for every extra half hour\n- Kids' bike (for children under 12): half the price of a regular bike\n- Bike for two: NT$120 an hour\nMonday to Friday, before 10:00 a.m.: 20% off all bikes!\n\nRULES\n- Please leave your ID card at the counter when you rent a bike. We will give it back when you return the bike.\n- Helmets are free. Everyone under 18 must wear one.\n- Bikes returned after 8:00 p.m. will cost an extra NT$100.",
+   "translation": "河濱腳踏車租借\n每天上午 8 點到晚上 8 點營業\n價格\n- 一般腳踏車：第一小時 50 元，之後每多半小時 30 元\n- 兒童腳踏車（12 歲以下兒童）：一般腳踏車價格的一半\n- 雙人腳踏車：每小時 120 元\n週一到週五上午 10 點前：所有車款打八折！\n規定\n- 租車時請把身分證件留在櫃檯，還車時歸還。\n- 安全帽免費提供，18 歲以下都必須戴。\n- 晚上 8 點以後還車，加收 100 元。"
+  },
+  {
+   "from": 18,
+   "to": 20,
+   "passage": "Subject: My first day at the animal shelter\n\nHi Grandpa,\nRemember how I said I wanted a dog and Mom said no? Well, Mom found another way. Last Saturday, she took me to Happy Tails, an animal shelter near our home, and I signed up to help there every weekend this summer.\nI thought I would play with cute puppies all day. I was wrong. First, a worker named Ms. Lin gave me a bucket and a brush, and I spent two hours cleaning dog cages. Then I washed forty food bowls. By lunchtime, my arms hurt and my clothes smelled terrible.\nIn the afternoon, Ms. Lin asked me to walk an old dog called Lucky. He is nine years old and moves slowly, and nobody has wanted him for over a year. At first, he wouldn't come near me. I sat beside him quietly and waited. After about twenty minutes, he put his head on my knee. I almost cried.\nMs. Lin says older dogs are usually the last to find a home because most people want puppies. So I've decided to make a short video about Lucky and share it online. Maybe someone out there will see how sweet he is.\nMom always says taking care of a pet is a big job. Now I understand what she means.\nLove,\nAnnie\n* shelter 收容所；cage 籠子",
+   "translation": "主旨：我在動物收容所的第一天\n爺爺好：\n還記得我說想養狗、媽媽說不行嗎？結果媽媽想到了另一個辦法。上星期六，她帶我去我們家附近一間叫「快樂尾巴」的動物收容所，我報名了這個暑假每個週末去那裡幫忙。\n我以為我會整天和可愛的小狗玩，結果我錯了。首先，一位叫林小姐的工作人員給了我一個水桶和一支刷子，我花了兩個小時清狗籠。接著我洗了四十個飼料碗。到了午餐時間，我的手臂好痠，衣服也臭得要命。\n下午，林小姐請我帶一隻叫 Lucky 的老狗去散步。牠九歲了，動作很慢，已經超過一年沒有人想領養牠。一開始牠不肯靠近我，我就安靜地坐在牠旁邊等。大約二十分鐘後，牠把頭靠在我的膝蓋上，我差點哭出來。\n林小姐說，老狗通常是最後才找到家的，因為大部分的人都想要小狗。所以我決定幫 Lucky 拍一支短片放到網路上，也許會有人看到牠有多可愛。\n媽媽總是說照顧寵物是一件大工程，現在我懂她的意思了。\n愛你的 Annie"
+  },
+  {
+   "from": 21,
+   "to": 23,
+   "passage": "On April 19, 2025, thousands of people ran a half marathon in Beijing, China. But the runners who got the most attention that day were not people at all. For the first time, 21 humanoid robots—machines that look and move like humans—joined a half marathon. Every robot had a team of human helpers who followed it along the way.\nThe race was about 21 kilometers long, and the robots had 3 hours and 10 minutes to finish it. That turned out to be very hard. Some robots fell down soon after the start. Others got too hot and had to stop so that their teams could cool them down. Many needed new batteries during the race. In the end, only six robots reached the finish line.\nThe winner was a robot called Tiangong Ultra. It finished in about 2 hours and 40 minutes, and it was the only robot that finished within the time limit. Even so, it fell once and needed its batteries changed three times. The fastest human runner, by the way, finished in about 1 hour and 2 minutes.\nSome people laughed at the robots, and it is easy to see why. But for the engineers, the race was a useful test. It showed them clearly what their robots could not do yet—and what they need to work on next.\n* humanoid 人形的；battery 電池；engineer 工程師",
+   "translation": "2025 年 4 月 19 日，數千人在中國北京跑了一場半程馬拉松。不過那天最受注目的跑者根本不是人。人形機器人——外表和動作都像人的機器——第一次參加半程馬拉松，共有 21 台。每台機器人都有一組人類協助人員沿路跟著。\n比賽全長約 21 公里，機器人必須在 3 小時 10 分內跑完，結果這非常困難。有些機器人起跑沒多久就跌倒了；有些過熱，必須停下來讓團隊幫它們降溫；很多在比賽中需要更換電池。最後，只有六台機器人抵達終點。\n冠軍是一台叫 Tiangong Ultra（天工 Ultra）的機器人，它花了大約 2 小時 40 分跑完，是唯一在時限內完賽的機器人。即使如此，它也跌倒了一次，並換了三次電池。順帶一提，最快的人類跑者大約 1 小時 2 分就跑完了。\n有些人嘲笑這些機器人，原因不難理解。但對工程師來說，這場比賽是一次有用的測試：它清楚地讓他們看到機器人還做不到什麼，以及接下來要改進什麼。"
+  },
+  {
+   "from": 24,
+   "to": 26,
+   "passage": "Kevin, 13, and his brother Sam, 7, are going to the Star Science Museum with their mother this Sunday. Kevin has a student card, but Sam doesn't. Here is their plan: Kevin will join Make Your Own Robot in the morning, and then the whole family will watch the 2:00 Star Show together.\nLook at the museum's program list and answer the questions.",
+   "translation": "13 歲的 Kevin 和 7 歲的弟弟 Sam 這個星期日要和媽媽去星星科學博物館。Kevin 有學生證，Sam 沒有。他們的計畫是：Kevin 上午參加「自己做機器人」，之後全家一起看 2:00 的星空秀。\n（表格）星星科學博物館週末活動（週六、週日）\n恐龍骨骼導覽｜9:30–10:30｜A 廳｜不限年齡｜免費\n自己做機器人｜10:00–12:00｜201 教室｜10–15 歲｜200 元\n星空秀｜11:00–11:40、2:00–2:40｜太空劇場｜6 歲以上｜100 元\n廚房化學｜1:30–3:00｜105 教室｜12 歲以上｜150 元\n博物館之夜｜6:00–9:00（僅週六）｜A 廳｜8–12 歲（需家長陪同）｜300 元\n＊持學生證每項收費活動折 50 元。＊201、105 教室的活動請至少提前一天上網預約。",
+   "figure": "ai/904/english/g24_museum.png"
+  },
+  {
+   "from": 27,
+   "to": 29,
+   "passage": "What color is the sky? Blue, of course. But what about a color that nobody has ever seen before? In April 2025, a team of scientists from the University of California, Berkeley, and the University of Washington said they had found one. They named it \"olo.\"\nTo understand this, we need to know a little about our eyes. At the back of the eye, there are three kinds of cells that help us see colors. We can call them L cells, M cells, and S cells. Usually, light turns on two or three kinds of these cells at the same time, and our brain mixes the signals into a color. No light in the real world can turn on the M cells alone. Even pure green light turns on the L cells, too.\nSo the scientists built a machine called Oz. It sends tiny flashes of laser light into the eye and aims only at the M cells. Five people, including three of the scientists, tried it. All of them saw a blue-green color brighter and deeper than any color they had ever seen. The name \"olo\" comes from 0-1-0: the L cells are off (0), the M cells are on (1), and the S cells are off (0).\nSadly, you can't see olo on a phone screen or in a painting. Right now, the only way is with Oz. The scientists hope their work can someday help people who are color-blind.\n* cell 細胞；laser 雷射；signal 訊號；color-blind 色盲的",
+   "translation": "天空是什麼顏色？當然是藍色。但如果是一種從來沒有人看過的顏色呢？2025 年 4 月，一組來自加州大學柏克萊分校和華盛頓大學的科學家說，他們找到了一種，並把它命名為「olo」。\n要了解這件事，我們得先知道一點眼睛的知識。眼睛後方有三種幫助我們看見顏色的細胞，我們可以叫它們 L 細胞、M 細胞和 S 細胞。通常光線會同時啟動其中兩種或三種細胞，大腦再把訊號混合成一種顏色。現實世界中沒有任何光能「只」啟動 M 細胞，即使是純綠光，也會同時啟動 L 細胞。\n於是科學家做了一台叫 Oz 的機器。它把極小的雷射閃光射進眼睛，只瞄準 M 細胞。五個人試過，其中包括三位科學家。他們全都看見一種比以往看過的任何顏色都更亮、更深的藍綠色。「olo」這個名字來自 0-1-0：L 細胞關（0）、M 細胞開（1）、S 細胞關（0）。\n可惜的是，你無法在手機螢幕或畫作上看到 olo，目前唯一的方法就是透過 Oz。科學家希望這項研究有一天能幫助色盲的人。"
+  },
+  {
+   "from": 30,
+   "to": 32,
+   "passage": "The Note in the Library Book\nWhen Mia borrowed an old book from the school library, a small piece of paper fell out. On it, someone had written in neat handwriting: \"If you are reading this, you have good taste in books. Page 87 is my favorite part. —R.\"\nMia smiled and turned to page 87. It was the part where the main character, a shy girl, finally speaks up for her best friend. Mia read it twice. Then, on the back of the note, she wrote: \"Mine too. But I think page 120 is even better. —M.\" She put the note back in the book and returned it.\nTwo weeks later, Mia borrowed the book again, just to check. The note was still there, but now it had a new line: \"You're right about page 120. Have you read The Silver Door? —R.\"\nFor the rest of the school year, Mia and R. kept writing to each other in library books. They never met, and Mia never tried to find out who R. was. Somehow, that made it more fun.\nOn the last day of school, Mia went to return a book and found Mr. Reed, the old librarian, packing boxes. \"I'm retiring,\" he said. \"Forty years in this library.\" As she turned to leave, he added with a smile, \"By the way, page 120 really is better.\"\nMia stopped at the door. Then she laughed all the way home.\n* handwriting 筆跡；librarian 圖書館員；retire 退休",
+   "translation": "圖書館書裡的紙條\nMia 從學校圖書館借了一本舊書，一張小紙條掉了出來。上面有人用工整的字寫著：「如果你正在讀這張紙條，代表你很會挑書。第 87 頁是我最喜歡的部分。——R.」\nMia 笑了笑，翻到第 87 頁。那是書中害羞的女主角終於為她最好的朋友挺身而出的段落。Mia 讀了兩遍，然後在紙條背面寫：「我也是。不過我覺得第 120 頁更好。——M.」她把紙條放回書裡，還了書。\n兩個星期後，Mia 又借了那本書，只是想看看。紙條還在，但多了一行字：「你說得對，第 120 頁更好。你讀過《銀色的門》嗎？——R.」\n這個學年剩下的時間，Mia 和 R. 一直在圖書館的書裡互相寫信。他們從沒見過面，Mia 也從沒試著查出 R. 是誰。不知為什麼，這樣反而更有趣。\n學期最後一天，Mia 去還書，看見年長的圖書館員 Reed 先生正在打包箱子。「我要退休了，」他說，「在這間圖書館待了四十年。」她轉身要離開時，他笑著補了一句：「對了，第 120 頁真的比較好。」\nMia 在門口停下腳步，然後一路笑著回家。"
+  },
+  {
+   "from": 33,
+   "to": 35,
+   "passage": "[Group chat: Class 9-2 Party Team]\nJenny (7:02 p.m.): Hi, everyone! Kevin's birthday is this Friday. Let's give him a surprise party after school!\nLeo (7:05 p.m.): Great idea! Where?\nJenny (7:06 p.m.): Mr. Wang says we can use the music room from 4:30 to 6:00.\nAmy (7:10 p.m.): I'll bring a cake. Kevin loves chocolate, right?\nLeo (7:11 p.m.): No, he can't eat chocolate. It makes him sick. Strawberry is his favorite.\nAmy (7:12 p.m.): Oh, thanks for telling me! Strawberry, then.\nBen (7:20 p.m.): Bad news. Kevin has basketball practice until 5:00 on Fridays.\nJenny (7:22 p.m.): Hmm... Then let's start at 5:15. Leo, you're on his team. Can you bring him to the music room after practice? Tell him Mr. Wang needs help moving some chairs.\nLeo (7:23 p.m.): No problem. He'll never know!\nBen (7:25 p.m.): I'll buy drinks and paper cups. Let's all get there by 5:00 to get everything ready.\nJenny (7:26 p.m.): Perfect. And remember—don't say a word about this in class!",
+   "translation": "【群組：九年二班派對小組】\nJenny（晚上 7:02）：嗨，大家好！Kevin 這星期五生日，我們放學後幫他辦個驚喜派對吧！\nLeo（7:05）：好主意！在哪裡？\nJenny（7:06）：王老師說我們可以用音樂教室，4:30 到 6:00。\nAmy（7:10）：我帶蛋糕。Kevin 喜歡巧克力，對吧？\nLeo（7:11）：不，他不能吃巧克力，吃了會不舒服。他最喜歡草莓。\nAmy（7:12）：喔，謝謝你告訴我！那就草莓吧。\nBen（7:20）：壞消息，Kevin 每星期五籃球練習到 5:00。\nJenny（7:22）：嗯……那我們 5:15 開始。Leo，你和他同隊，練習完可以帶他到音樂教室嗎？就跟他說王老師需要人幫忙搬椅子。\nLeo（7:23）：沒問題，他絕對不會發現！\nBen（7:25）：我來買飲料和紙杯。大家 5:00 前到，先把東西準備好。\nJenny（7:26）：太好了。還有記得——上課時一個字都不能提！"
+  },
+  {
+   "from": 36,
+   "to": 39,
+   "passage": "[Text A] The Little Monster Everyone Wants\nWith its big eyes, pointed ears, and a smile full of sharp teeth, Labubu does not look like a typical cute toy. Yet in 2025, this little monster became one of the hottest toys in the world. People waited in long lines outside stores, and new Labubu figures often sold out very quickly.\nLabubu was created in 2015 by Kasing Lung, an artist born in Hong Kong. It started as one of the characters in his picture-book series The Monsters. In 2019, he began working with Pop Mart, a Chinese toy company, and Labubu figures started to be sold in \"blind boxes.\" When you buy a blind box, you don't know which figure is inside until you open it. Most series also include a rare \"secret\" figure that very few buyers get.\nThe craze grew so wild that in May 2025, Pop Mart stopped selling Labubu in its UK stores for a while after reports of customers fighting. In June, a mint-green Labubu about 1.3 meters tall was sold at an auction in Beijing for more than US$150,000. Fake Labubus, sometimes called \"Lafufus,\" also appeared everywhere.\n\n[Text B] Ask Ms. Grace\nDear Ms. Grace,\nI've spent almost all my savings on Labubu blind boxes. I've opened 14 boxes, but I keep getting the same figures, and I still don't have the secret one. All my friends say it's the best. My mom says I'm wasting money. Should I keep trying?\n—Jay, 14\n\nDear Jay,\nBlind boxes are made to keep you buying \"just one more.\" Before you buy the next box, ask yourself: Do I really like this toy, or do I just like the feeling of opening the box? Here are two ideas. First, set a limit—for example, one box a month. Second, trade your extra figures with friends. Many collectors swap the ones they have two of. You might get the one you want without buying another box.\n—Ms. Grace\n* figure 公仔；auction 拍賣；collector 收藏者",
+   "translation": "【文本 A】人人都想要的小怪獸\n大眼睛、尖耳朵，再加上滿口尖牙的笑容，Labubu 看起來不像一般可愛的玩具。然而在 2025 年，這個小怪獸成了全世界最熱門的玩具之一。人們在店外大排長龍，新款 Labubu 公仔常常很快就賣光。\nLabubu 是香港出生的藝術家龍家昇（Kasing Lung）在 2015 年創造的，原本是他的繪本系列《The Monsters》裡的角色之一。2019 年，他開始和中國玩具公司泡泡瑪特合作，Labubu 公仔開始以「盲盒」販售。買盲盒時，要打開才知道裡面是哪一個公仔。大部分系列還有一個很少人能抽到的稀有「隱藏款」。\n這股熱潮瘋狂到 2025 年 5 月，因為傳出顧客打架，泡泡瑪特一度暫停在英國門市販售 Labubu。6 月，一隻約 1.3 公尺高的薄荷綠 Labubu 在北京的拍賣會上以超過 15 萬美元賣出。被稱為「Lafufu」的仿冒 Labubu 也到處都是。\n\n【文本 B】問問 Grace 老師\n親愛的 Grace 老師：\n我幾乎把所有存款都花在 Labubu 盲盒上了。我已經開了 14 盒，卻一直抽到一樣的公仔，到現在還沒有隱藏款。我的朋友都說隱藏款最棒。媽媽說我在浪費錢。我該繼續抽嗎？——Jay，14 歲\n\n親愛的 Jay：\n盲盒的設計就是要讓你一直買「再一盒就好」。在買下一盒之前，先問問自己：我是真的喜歡這個玩具，還是只是喜歡拆盒的感覺？給你兩個建議：第一，設定上限，例如一個月一盒；第二，和朋友交換你多出來的公仔。很多收藏者會交換重複的公仔。這樣你也許不用再買一盒，就能拿到你想要的那一隻。——Grace 老師"
+  },
+  {
+   "from": 40,
+   "to": 43,
+   "passage": "Last year, my grandmother decided to learn to use a smartphone. \"Everyone in the family is sending photos and messages in our family group,\" she said. \"I'm tired of __40__.\"\nSo I became her teacher. It was harder than I thought. She pressed the screen too hard, and she was always afraid of __41__. \"What if I touch the wrong thing and the phone breaks?\" she asked again and again.\nI didn't want to keep telling her what to do, so I wrote down every step on small cards in big letters. __42__ When she forgot something, she didn't need to call me. She just looked at her cards.\nA month later, my phone beeped during dinner. It was a photo from Grandma: her garden full of flowers, with a message under it: \"Taken by me! Not bad for a beginner, right?\" Everyone at the table laughed. That night, Grandma sent twelve more photos. Now, she is the one who __43__.\n* beep 嗶嗶響；beginner 初學者",
+   "translation": "去年，我奶奶決定學用智慧型手機。「家裡每個人都在家族群組裡傳照片和訊息，」她說，「我受夠了每次都是最後一個知道家裡的消息。」\n於是我成了她的老師。這比我想的還難。她按螢幕按得太用力，而且總是很怕犯錯。「萬一我按錯東西，手機壞掉怎麼辦？」她一問再問。\n我不想一直告訴她要怎麼做，所以把每個步驟用大字寫在小卡片上。她不管走到哪裡，都把卡片放在手機旁邊。忘記什麼的時候，她不用打電話給我，只要看看卡片就好。\n一個月後，晚餐時我的手機嗶了一聲。是奶奶傳來的照片：她開滿花的花園，下面還有一行字：「我拍的！以初學者來說還不賴吧？」餐桌上的每個人都笑了。那天晚上，奶奶又傳了十二張照片。現在，她成了家族群組裡傳最多訊息的人。"
+  }
+ ],
+ "items": [
+  {
+   "qNo": 1,
+   "stem": "Look at the clock in the picture. It is ______ now.",
+   "options": [
+    "a quarter to eight",
+    "a quarter past seven",
+    "a quarter to seven",
+    "half past eight"
+   ],
+   "answer": "A",
+   "explanation": "【中譯】看圖中的時鐘，現在是＿＿＿。\n【解析】長針指著 9（45 分），短針在 7 和 8 之間、靠近 8，是 7:45，也就是「差一刻八點」a quarter to eight。(B) a quarter past seven 是 7:15，長針應指 3；(C) a quarter to seven 是 6:45，短針應在 6 和 7 之間；(D) half past eight 是 8:30，長針應指 6。故選 (A)。",
+   "figure": "ai/904/english/q01_clock.png"
+  },
+  {
+   "qNo": 2,
+   "stem": "Tina keeps her room clean and ______. Everything is in the right place, so she can always find what she needs quickly.",
+   "options": [
+    "noisy",
+    "tidy",
+    "empty",
+    "dark"
+   ],
+   "answer": "B",
+   "explanation": "【中譯】Tina 把房間保持得乾淨又整齊，每樣東西都放在對的位置，所以她總是能很快找到需要的東西。\n【解析】「每樣東西都在對的位置、很快找到」說明房間整齊，選 tidy（整齊的），也和 clean 意思相近、並列合理。(A) noisy（吵鬧的）與找東西無關；(C) empty（空的）與「每樣東西都在對的位置」矛盾；(D) dark（暗的）反而不容易找東西。故選 (B)。"
+  },
+  {
+   "qNo": 3,
+   "stem": "My grandpa doesn't hear very well, so please ______ when you talk to him.",
+   "options": [
+    "give up",
+    "look up",
+    "speak up",
+    "turn down"
+   ],
+   "answer": "C",
+   "explanation": "【中譯】我爺爺聽力不太好，所以跟他說話時請大聲一點。\n【解析】因為聽力不好，要「說大聲一點」，speak up。(A) give up 是「放棄」；(B) look up 是「查閱、抬頭看」；(D) turn down 是「關小聲、拒絕」，意思正好相反。故選 (C)。"
+  },
+  {
+   "qNo": 4,
+   "stem": "The bridge ______ over the river in 1990 is still the longest one in our town.",
+   "options": [
+    "building",
+    "built",
+    "was built",
+    "builds"
+   ],
+   "answer": "B",
+   "explanation": "【中譯】1990 年建在河上的那座橋，至今仍是我們鎮上最長的橋。\n【解析】句子的主要動詞是 is，空格到 1990 是修飾 The bridge 的形容詞片語。橋是「被建造」的，用過去分詞 built（＝which was built）。(A) building 是現在分詞，表示橋主動在蓋東西；(C) was built 是完整的動詞，句子會有兩個主要動詞（was built、is）；(D) builds 也是動詞，同樣不能再接 is。故選 (B)。"
+  },
+  {
+   "qNo": 5,
+   "stem": "Mom: Are you done with your science report?\nJack: Not yet. I ______ on it since four o'clock, and I still have two pages to write.",
+   "options": [
+    "worked",
+    "have worked",
+    "will work",
+    "am working"
+   ],
+   "answer": "B",
+   "explanation": "【中譯】媽媽：你的自然報告寫完了嗎？Jack：還沒。我從四點就開始寫了，還有兩頁要寫。\n【解析】since four o'clock 表示「從四點到現在」持續的動作，要用現在完成式 have worked。(A) worked 是過去式，不能和 since 連用來表示持續到現在；(C) will work 是未來式；(D) 現在進行式也不和 since 連用。故選 (B)。"
+  },
+  {
+   "qNo": 6,
+   "stem": "Of all the students in my class, Amy lives ______ from school. It takes her an hour to get here by bus.",
+   "options": [
+    "the farthest",
+    "farther",
+    "far",
+    "most far"
+   ],
+   "answer": "A",
+   "explanation": "【中譯】在我們班所有學生中，Amy 住得離學校最遠，她搭公車要一小時才能到。\n【解析】Of all the students in my class 是在全班中比較，要用最高級 the farthest。(B) farther 是比較級，用於兩者比較；(C) far 是原級，沒有比較的意思；(D) far 的最高級是 farthest，沒有 most far 的說法。故選 (A)。"
+  },
+  {
+   "qNo": 7,
+   "stem": "A: Would you mind if I opened the window?\nB: ______ It's really hot in here.",
+   "options": [
+    "Yes, I would. Thank you.",
+    "Sorry, I can't open it.",
+    "Of course not. I'm cold.",
+    "Not at all. Go ahead."
+   ],
+   "answer": "D",
+   "explanation": "【中譯】A：你介意我打開窗戶嗎？B：一點也不，請開吧。這裡真的很熱。\n【解析】Would you mind…? 問的是「你介意嗎」，同意要用否定回答 Not at all（一點也不介意）。B 接著說「這裡真熱」，表示希望開窗。(A) Yes, I would 是「我介意」，和「很熱」的理由矛盾；(B) A 是要自己開窗，不是請 B 開，B 回答「我打不開」答非所問；(C) Of course not 雖然表示不介意，但「我很冷」與後面「這裡真的很熱」矛盾。故選 (D)。"
+  },
+  {
+   "qNo": 8,
+   "stem": "Your sister hardly ever eats breakfast, ______?",
+   "options": [
+    "doesn't she",
+    "does she",
+    "is she",
+    "isn't she"
+   ],
+   "answer": "B",
+   "explanation": "【中譯】你妹妹幾乎從不吃早餐，對吧？\n【解析】hardly ever（幾乎從不）有否定意味，所以前句視為否定句，附加問句用肯定；動詞 eats 是一般動詞現在式第三人稱單數，用 does。故用 does she。(A) doesn't she 是把前句誤當肯定句；(C) is she、(D) isn't she 助動詞用錯，前句沒有 be 動詞。故選 (B)。"
+  },
+  {
+   "qNo": 9,
+   "stem": "Do you still remember the restaurant ______ we had dinner on your birthday?",
+   "options": [
+    "which",
+    "who",
+    "when",
+    "where"
+   ],
+   "answer": "D",
+   "explanation": "【中譯】你還記得我們在你生日時吃晚餐的那家餐廳嗎？\n【解析】空格後的子句 we had dinner on your birthday 已經完整，缺的是「在那家餐廳」這個地點，用關係副詞 where（＝at which）。(A) which 後面的子句要缺主詞或受詞，這裡不缺，要寫成 at which 才可以；(B) who 用來指人；(C) when 用來指時間，先行詞 restaurant 是地點。故選 (D)。"
+  },
+  {
+   "qNo": 10,
+   "stem": "______ it rained hard all morning, the baseball game still started on time.",
+   "options": [
+    "Because",
+    "Although",
+    "If",
+    "Unless"
+   ],
+   "answer": "B",
+   "explanation": "【中譯】雖然整個早上都下大雨，棒球比賽還是準時開始了。\n【解析】下大雨和比賽「還是」準時開始是相反的情況，用表示讓步的 Although（雖然）。(A) Because 表示因果，下雨不會是準時開打的原因；(C) If 是假設條件，但句子說的是已經發生的事；(D) Unless（除非）語意不通。故選 (B)。"
+  },
+  {
+   "qNo": 11,
+   "stem": "A sign at a swimming pool says:\n\"Open Tuesday to Sunday, 9 a.m. to 9 p.m. (closed on Mondays for cleaning)\nChildren under 10 must swim with an adult.\nNo food or drinks in the pool area.\"\nWhich of the following is allowed?",
+   "options": [
+    "A 12-year-old boy swimming by himself on Saturday morning.",
+    "An 8-year-old girl swimming by herself on Sunday afternoon.",
+    "A family having lunch next to the pool on Friday.",
+    "Two high school students swimming together on Monday evening."
+   ],
+   "answer": "A",
+   "explanation": "【中譯】游泳池的告示：「週二到週日上午 9 點到晚上 9 點開放（週一清潔休館）。10 歲以下兒童必須有大人陪同游泳。泳池區禁止飲食。」下列何者是允許的？\n【解析】12 歲已經不是「10 歲以下」，可以自己游；星期六上午也在開放時間內。(B) 8 歲未滿 10 歲，必須有大人陪；(C) 泳池區禁止飲食；(D) 星期一休館。故選 (A)。"
+  },
+  {
+   "qNo": 12,
+   "stem": "Grandma's story about how she came to Taipei with only a small bag and worked hard to raise five children was so ______ that many of us had tears in our eyes.",
+   "options": [
+    "boring",
+    "confusing",
+    "silly",
+    "touching"
+   ],
+   "answer": "D",
+   "explanation": "【中譯】奶奶說她當年只帶著一個小包包來到臺北，辛苦工作養大五個孩子，這個故事太感人了，我們很多人都眼眶泛淚。\n【解析】辛苦養大五個孩子的故事讓人「眼眶泛淚」，是令人感動的，選 touching（感人的）。(A) boring（無聊的）、(B) confusing（令人困惑的）、(C) silly（愚蠢的）都不會讓人感動落淚，也不符合故事的內容。故選 (D)。"
+  },
+  {
+   "qNo": 13,
+   "stem": "There ______ be a bookstore on this corner. Now it's a coffee shop.",
+   "options": [
+    "is used to",
+    "used to",
+    "uses to",
+    "was used to"
+   ],
+   "answer": "B",
+   "explanation": "【中譯】這個街角以前有一家書店，現在變成咖啡店了。\n【解析】「以前有、現在沒有」用 used to＋原形動詞（過去曾經），There used to be… 是「以前有……」。(A) be used to＋V-ing 是「習慣於」，後面不能接原形 be；(C) 沒有 uses to 的用法；(D) was used to 是「被用來」或「（過去）習慣」，都不合語意。故選 (B)。"
+  },
+  {
+   "qNo": 14,
+   "stem": "This box is ______ heavy for me to carry by myself. Can you give me a hand?",
+   "options": [
+    "so",
+    "very",
+    "too",
+    "enough"
+   ],
+   "answer": "C",
+   "explanation": "【中譯】這個箱子太重了，我一個人搬不動，你可以幫我一下嗎？\n【解析】too＋形容詞＋for 人＋to V 表示「太……而不能……」，需要別人幫忙，選 too。(A) so 要接 that 子句（so heavy that I can't…）；(B) very heavy 不能接 to carry 表示「搬不動」；(D) enough 要放在形容詞後面（heavy enough），而且意思是「夠重」，不合語意。故選 (C)。"
+  },
+  {
+   "qNo": 15,
+   "stem": "Most of my classmates go to cram school after class. ______, I go home and read the books I like.",
+   "options": [
+    "Besides",
+    "Instead",
+    "For example",
+    "As a result"
+   ],
+   "answer": "B",
+   "explanation": "【中譯】我大部分的同學放學後都去補習班。我則是回家讀自己喜歡的書。\n【解析】同學去補習班，我「不去補習班，而是」回家看書，用 Instead（取而代之、反而）。(A) Besides（此外）用來補充同方向的事，但「我回家」是和同學不同的選擇；(C) For example 後面應該舉「同學去補習」的例子；(D) As a result 表示結果，同學去補習不會造成我回家看書。故選 (B)。"
+  },
+  {
+   "qNo": 16,
+   "stem": "What must people do when they rent a bike?",
+   "options": [
+    "Pay NT$100 before they ride.",
+    "Buy a helmet at the counter.",
+    "Rent the bike before 10:00 a.m.",
+    "Leave an ID card at the counter."
+   ],
+   "answer": "D",
+   "explanation": "【中譯】租腳踏車時必須做什麼？\n【解析】RULES 第一條：租車時要把身分證件留在櫃檯。(A) 100 元是晚上 8 點後還車的加收費用，不是租車前要付的；(B) 安全帽是免費的，不用買；(C) 上午 10 點前是平日打折的時段，不是規定。故選 (D)。"
+  },
+  {
+   "qNo": 17,
+   "stem": "On Saturday, Leo, 14, rents a regular bike, and his sister Amy, 9, rents a kids' bike. They both ride from 2:00 to 4:00 p.m. and return the bikes on time. How much do they pay in all?",
+   "options": [
+    "NT$220",
+    "NT$120",
+    "NT$165",
+    "NT$132"
+   ],
+   "answer": "C",
+   "explanation": "【中譯】星期六，14 歲的 Leo 租一般腳踏車，9 歲的妹妹 Amy 租兒童腳踏車，兩人都從下午 2 點騎到 4 點並準時還車。他們總共要付多少錢？\n【解析】一般車 2 小時：第一小時 50 元，之後的 1 小時是 2 個「半小時」，30×2＝60，Leo 付 110 元；兒童車是一般車價格的一半，Amy 付 55 元；合計 165 元。(A) 220 元是忘了兒童車半價；(B) 120 元是把「每多半小時 30 元」看成「每多一小時 30 元」；(D) 132 元是又打了八折，但打折只限週一到週五上午 10 點前，星期六下午沒有折扣。故選 (C)。"
+  },
+  {
+   "qNo": 18,
+   "stem": "What did Annie do first on her first day at Happy Tails?",
+   "options": [
+    "She washed food bowls.",
+    "She cleaned dog cages.",
+    "She walked an old dog.",
+    "She played with puppies."
+   ],
+   "answer": "B",
+   "explanation": "【中譯】Annie 在快樂尾巴的第一天，最先做了什麼？\n【解析】第二段：First（首先）她花了兩個小時清狗籠。(A) 洗飼料碗是 Then（接著）才做的；(C) 帶老狗散步是下午的事；(D) 和小狗玩只是她原本以為會做的事（I thought…I was wrong），實際上沒有。故選 (B)。"
+  },
+  {
+   "qNo": 19,
+   "stem": "Why does Annie want to make a video about Lucky?",
+   "options": [
+    "She hopes it will help Lucky find a family.",
+    "She wants to show Mom that she is ready to have a dog.",
+    "She wants people to give money to Happy Tails.",
+    "She wants to show how hard the work at the shelter is."
+   ],
+   "answer": "A",
+   "explanation": "【中譯】Annie 為什麼想幫 Lucky 拍影片？\n【解析】林小姐說老狗通常最後才找到家，Annie「所以」決定拍片，並說「也許有人會看到牠有多可愛」——目的是讓 Lucky 被領養。(B) 文中沒有說她拍片是要說服媽媽讓她養狗；(C) 文中沒有提到募款；(D) 工作辛苦是第二段的內容，和拍 Lucky 的影片無關。故選 (A)。"
+  },
+  {
+   "qNo": 20,
+   "stem": "What does Annie mean when she says, \"Now I understand what she means\"?",
+   "options": [
+    "She has found out that most people prefer puppies.",
+    "She has learned that caring for animals takes a lot of work.",
+    "She agrees that Lucky is too old to find a home.",
+    "She thinks she should stop helping at the shelter."
+   ],
+   "answer": "B",
+   "explanation": "【中譯】Annie 說「現在我懂她的意思了」，是什麼意思？\n【解析】she 指媽媽，媽媽說的是「照顧寵物是一件大工程」。Annie 在收容所清籠子、洗碗、手臂痠痛，才真正體會照顧動物很辛苦。(A) 大部分人想要小狗是林小姐說的話，不是媽媽的意思；(C) Annie 反而想幫 Lucky 找家，並不認為牠找不到；(D) 她報名整個暑假每週末都去，文中沒有想放棄的意思。故選 (B)。"
+  },
+  {
+   "qNo": 21,
+   "stem": "What is true about the robots in the race?",
+   "options": [
+    "They ran the whole race without any help from people.",
+    "Tiangong Ultra was the only robot that finished the race.",
+    "They had to finish the race in less than two hours.",
+    "Most of them did not reach the finish line."
+   ],
+   "answer": "D",
+   "explanation": "【中譯】關於參賽的機器人，何者正確？\n【解析】21 台機器人只有 6 台抵達終點，大部分沒有跑完。(A) 每台機器人都有人類協助人員跟著，還要幫忙降溫、換電池；(B) 共有 6 台完賽，Tiangong Ultra 是「唯一在時限內」完賽的，不是唯一完賽的——這是粗心容易選的陷阱；(C) 時限是 3 小時 10 分，不是兩小時。故選 (D)。"
+  },
+  {
+   "qNo": 22,
+   "stem": "About how much more time did Tiangong Ultra need to finish the race than the fastest human runner?",
+   "options": [
+    "About 30 minutes",
+    "About 2 hours and 8 minutes",
+    "About 1 hour and 38 minutes",
+    "About 1 hour and 40 minutes"
+   ],
+   "answer": "C",
+   "explanation": "【中譯】Tiangong Ultra 跑完全程，比最快的人類跑者大約多花了多少時間？\n【解析】Tiangong Ultra 約 2 小時 40 分（160 分鐘），最快的人類約 1 小時 2 分（62 分鐘），相差 160－62＝98 分鐘，即 1 小時 38 分。(A) 30 分鐘是時限 3 小時 10 分減去 Tiangong Ultra 的成績；(B) 2 小時 8 分是時限減去人類的成績；(D) 1 小時 40 分是把人類成績當成剛好 1 小時。故選 (C)。"
+  },
+  {
+   "qNo": 23,
+   "stem": "What does the writer think about the race?",
+   "options": [
+    "It showed that robots will soon run faster than people.",
+    "It was a waste of time because most of the robots fell down.",
+    "Robots and humans should not run in the same race again.",
+    "It was useful because it showed what the robots still need to improve."
+   ],
+   "answer": "D",
+   "explanation": "【中譯】作者對這場比賽有什麼看法？\n【解析】最後一段：雖然有人嘲笑，但對工程師來說這是「有用的測試」，清楚顯示機器人還做不到什麼、接下來要改進什麼。(A) 文中最快的人類比機器人快了一個半小時以上，作者沒有說機器人很快就會超越人類；(B) 作者說的是「有人」嘲笑，自己的看法是比賽有用；(C) 文中沒有這樣的主張。故選 (D)。"
+  },
+  {
+   "qNo": 24,
+   "stem": "Besides the Star Show, which program can Sam join on Sunday?",
+   "options": [
+    "Make Your Own Robot",
+    "Kitchen Chemistry",
+    "Dinosaur Bones Tour",
+    "Night at the Museum"
+   ],
+   "answer": "C",
+   "explanation": "【中譯】除了星空秀，Sam 星期日還可以參加哪一項活動？\n【解析】Sam 7 歲，恐龍骨骼導覽「不限年齡」，可以參加。(A) 自己做機器人限 10–15 歲；(B) 廚房化學限 12 歲以上；(D) 博物館之夜只在星期六，而且限 8–12 歲，Sam 兩個條件都不符合。故選 (C)。"
+  },
+  {
+   "qNo": 25,
+   "stem": "How much will the family pay for the programs in their plan?",
+   "options": [
+    "NT$400",
+    "NT$500",
+    "NT$450",
+    "NT$300"
+   ],
+   "answer": "A",
+   "explanation": "【中譯】依照他們的計畫，全家參加活動總共要付多少錢？\n【解析】Kevin 自己做機器人 200 元，持學生證折 50 元，付 150 元；星空秀三人：Kevin 100－50＝50 元，Sam 和媽媽沒有學生證各 100 元。合計 150＋50＋100＋100＝400 元。(B) 500 元是完全沒有算學生證折扣；(C) 450 元是只折了一次 50 元，但折扣是「每項」收費活動都折；(D) 300 元是漏算了媽媽的星空秀門票。故選 (A)。"
+  },
+  {
+   "qNo": 26,
+   "stem": "Kevin also wants to join Kitchen Chemistry on Sunday. Why is that a problem with their plan?",
+   "options": [
+    "It happens at the same time as the 2:00 Star Show.",
+    "Kevin is too young to join it.",
+    "It is held only on Saturdays.",
+    "It takes place in the same room as Make Your Own Robot."
+   ],
+   "answer": "A",
+   "explanation": "【中譯】Kevin 星期日也想參加廚房化學，這和他們的計畫有什麼衝突？\n【解析】廚房化學是 1:30–3:00，計畫中全家要看 2:00–2:40 的星空秀，時間重疊。(B) 廚房化學限 12 歲以上，Kevin 13 歲可以參加；(C) 只在星期六的是博物館之夜；(D) 廚房化學在 105 教室，自己做機器人在 201 教室，而且時間也不同。故選 (A)。"
+  },
+  {
+   "qNo": 27,
+   "stem": "Why can't people see olo in everyday life?",
+   "options": [
+    "It only appears in the sky at certain times of the day.",
+    "Most people are color-blind to blue-green colors.",
+    "No light in the real world can turn on only the M cells.",
+    "Phone screens are not bright enough to show it."
+   ],
+   "answer": "C",
+   "explanation": "【中譯】為什麼人們在日常生活中看不到 olo？\n【解析】olo 是「只有 M 細胞開」才看得到的顏色，而第二段說現實世界中沒有任何光能只啟動 M 細胞（連純綠光也會啟動 L 細胞），所以只能靠 Oz 機器。(A) 開頭的天空只是引言，olo 和天空無關；(B) 文中說科學家「希望幫助色盲的人」，並沒有說大部分人是藍綠色盲；(D) 文中說手機上看不到，但原因不是亮度，而是任何螢幕發出的光都會同時啟動其他細胞——這是只看到最後一段的陷阱。故選 (C)。"
+  },
+  {
+   "qNo": 28,
+   "stem": "In the third paragraph, what does \"it\" in \"tried it\" mean?",
+   "options": [
+    "The machine called Oz.",
+    "The color olo.",
+    "Pure green light.",
+    "The back of the eye."
+   ],
+   "answer": "A",
+   "explanation": "【中譯】第三段 tried it 中的 it 指的是什麼？\n【解析】前一句說科學家做了一台叫 Oz 的機器、把雷射射進眼睛，接著「五個人試用了它」，it 指的是這台機器 Oz。(B) olo 是他們試用之後「看到」的顏色，不是被試用的東西；(C) 純綠光是第二段的例子；(D) 眼睛後方是細胞所在的位置，不能被「試用」。故選 (A)。"
+  },
+  {
+   "qNo": 29,
+   "stem": "If the scientists could turn on ONLY the L cells and the S cells, what would they probably call that color, following the same way of naming?",
+   "options": [
+    "olo",
+    "llo",
+    "oll",
+    "lol"
+   ],
+   "answer": "D",
+   "explanation": "【中譯】如果科學家能「只」啟動 L 細胞和 S 細胞，照同樣的命名方式，他們大概會把那個顏色叫做什麼？\n【解析】olo 來自 0-1-0，依序代表 L、M、S，開是 1（寫成 l）、關是 0（寫成 o）。L 開、M 關、S 開是 1-0-1，寫成 lol。(A) olo 是只有 M 開；(B) llo 是 L、M 開，S 關；(C) oll 是 M、S 開，L 關。故選 (D)。"
+  },
+  {
+   "qNo": 30,
+   "stem": "What did Mia do after she read the first note?",
+   "options": [
+    "She wrote a reply on the note and put it back in the book.",
+    "She showed the note to the librarian.",
+    "She tried to find out who had written the note.",
+    "She borrowed The Silver Door right away."
+   ],
+   "answer": "A",
+   "explanation": "【中譯】Mia 讀了第一張紙條之後做了什麼？\n【解析】第二段：她翻到第 87 頁讀完，就在紙條背面寫了回覆，再把紙條放回書裡還書。(B) 文中沒有說她把紙條拿給圖書館員看；(C) 第四段說她從沒試著查出 R. 是誰；(D) 《銀色的門》是後來 R. 在第二次的紙條上推薦的書，文中也沒說她去借。故選 (A)。"
+  },
+  {
+   "qNo": 31,
+   "stem": "Who was most likely R.?",
+   "options": [
+    "Mr. Reed, the librarian.",
+    "A shy girl in Mia's class.",
+    "The writer of The Silver Door.",
+    "A student who left the school that year."
+   ],
+   "answer": "A",
+   "explanation": "【中譯】R. 最可能是誰？\n【解析】Reed 先生的名字以 R 開頭，而且他說「第 120 頁真的比較好」——只有和 Mia 通信的 R. 才知道她們在討論第 120 頁，可見 R. 就是他。(B) 害羞的女孩是書中的主角，不是寫紙條的人；(C) 《銀色的門》是 R. 推薦的書，沒有說是他寫的；(D) 要離開學校的是退休的 Reed 先生，文中沒有提到其他要離開的學生。故選 (A)。"
+  },
+  {
+   "qNo": 32,
+   "stem": "Why did Mia laugh all the way home?",
+   "options": [
+    "She was glad that Mr. Reed could finally take a rest.",
+    "She suddenly understood who she had been writing to.",
+    "She found that page 120 was not really better than page 87.",
+    "She thought Mr. Reed did not understand the book at all."
+   ],
+   "answer": "B",
+   "explanation": "【中譯】Mia 為什麼一路笑著回家？\n【解析】Reed 先生的一句「第 120 頁真的比較好」讓 Mia 在門口停下來——她突然明白這一整年和她在書裡通信的 R. 就是他，覺得又驚喜又好笑。(A) 退休的事是他先說的，Mia 並沒有因此停下來，讓她停下來的是第 120 頁那句話；(C) 她自己就認為第 120 頁比較好；(D) Reed 先生和她的看法一樣，並沒有不懂這本書。故選 (B)。"
+  },
+  {
+   "qNo": 33,
+   "stem": "What time will the party most likely start?",
+   "options": [
+    "4:30 p.m.",
+    "5:00 p.m.",
+    "6:00 p.m.",
+    "5:15 p.m."
+   ],
+   "answer": "D",
+   "explanation": "【中譯】派對最可能幾點開始？\n【解析】Kevin 籃球練習到 5:00，所以 Jenny 改成 5:15 開始。(A) 4:30 是音樂教室可以開始使用的時間，但那時 Kevin 還在練球；(B) 5:00 是 Kevin 練習結束、也是大家要先到場布置的時間；(C) 6:00 是音樂教室使用時間結束。故選 (D)。"
+  },
+  {
+   "qNo": 34,
+   "stem": "What will Amy most likely bring to the party?",
+   "options": [
+    "A chocolate cake.",
+    "Drinks and paper cups.",
+    "A strawberry cake.",
+    "Some chairs from the music room."
+   ],
+   "answer": "C",
+   "explanation": "【中譯】Amy 最可能帶什麼到派對？\n【解析】Amy 說要帶蛋糕，原本想買巧克力的，Leo 說 Kevin 不能吃巧克力、最愛草莓，Amy 就改成草莓。(A) 巧克力是 Amy 原本的想法，後來改了；(B) 飲料和紙杯是 Ben 要買的；(D) 搬椅子只是 Leo 要騙 Kevin 去音樂教室的藉口。故選 (C)。"
+  },
+  {
+   "qNo": 35,
+   "stem": "How will they get Kevin to the music room?",
+   "options": [
+    "Leo will give him a reason to go there after practice.",
+    "Mr. Wang will ask him to help with the party.",
+    "Kevin will go there by himself at 4:30.",
+    "Ben will wait for him after basketball practice."
+   ],
+   "answer": "A",
+   "explanation": "【中譯】他們要怎麼讓 Kevin 到音樂教室？\n【解析】Jenny 請和 Kevin 同隊的 Leo 練習後帶他去，並告訴他「王老師需要人幫忙搬椅子」——Leo 會用這個理由（藉口）把他帶去。(B) 搬椅子只是 Leo 要說的藉口，王老師只是借教室，並沒有要去找 Kevin；(C) 4:30 Kevin 還在練球，而且這是驚喜派對，他不知道；(D) Ben 負責買飲料和紙杯，帶 Kevin 的是 Leo。故選 (A)。"
+  },
+  {
+   "qNo": 36,
+   "stem": "According to Text A, which is true about Labubu?",
+   "options": [
+    "It was created by Pop Mart in 2019.",
+    "It was first sold in stores in the UK.",
+    "Every blind box has a secret figure inside.",
+    "It first appeared in an artist's picture books."
+   ],
+   "answer": "D",
+   "explanation": "【中譯】根據文本 A，關於 Labubu 何者正確？\n【解析】第二段：Labubu 原本是藝術家龍家昇繪本系列《The Monsters》裡的角色。(A) Labubu 是 2015 年由龍家昇創造的，2019 年是他開始和泡泡瑪特合作的年份；(B) 英國只是 2025 年暫停販售的地點，文中沒有說最早在英國販售；(C) 是「大部分系列」有一個很少人抽得到的隱藏款，不是每一盒都有。故選 (D)。"
+  },
+  {
+   "qNo": 37,
+   "stem": "What does the word \"craze\" in Text A most likely mean?",
+   "options": [
+    "A kind of toy that looks like a monster.",
+    "A way of selling things in closed boxes.",
+    "A time when many people are extremely excited about something.",
+    "A fight between customers in a store."
+   ],
+   "answer": "C",
+   "explanation": "【中譯】文本 A 中 craze 這個字最可能是什麼意思？\n【解析】「這股 craze 瘋狂到店家暫停販售、公仔拍出天價、仿冒品到處都是」，加上第一段大排長龍、很快賣光，可知 craze 是「很多人一窩蜂狂熱的現象」（熱潮）。(A) 像怪獸的玩具是 Labubu 本身；(B) 用不透明盒子賣東西是 blind box（盲盒）；(D) 顧客打架只是這股熱潮造成的一件事，不是 craze 的意思。故選 (C)。"
+  },
+  {
+   "qNo": 38,
+   "stem": "What does Ms. Grace suggest Jay do?",
+   "options": [
+    "Stop collecting Labubu right away.",
+    "Buy one more box to get a better chance.",
+    "Sell his figures online to get his money back.",
+    "Trade the figures he doesn't need with other collectors."
+   ],
+   "answer": "D",
+   "explanation": "【中譯】Grace 老師建議 Jay 怎麼做？\n【解析】Grace 老師的第二個建議是和朋友交換多出來（重複）的公仔。(A) 她建議的是設定上限（一個月一盒），不是馬上停止收藏；(B) 她提醒盲盒就是要讓人一直買「再一盒」，並沒有建議再買；(C) 她沒有提到上網賣掉公仔。故選 (D)。"
+  },
+  {
+   "qNo": 39,
+   "stem": "Which idea can be found in BOTH Text A and Text B?",
+   "options": [
+    "Labubu figures are sold only in China.",
+    "Most buyers get the secret figure after a few tries.",
+    "Some people spend a lot of money on Labubu.",
+    "Fake Labubus are often sold in blind boxes."
+   ],
+   "answer": "C",
+   "explanation": "【中譯】哪一個看法在文本 A 和文本 B 中都找得到？\n【解析】文本 A：一隻 Labubu 在拍賣會上賣到超過 15 萬美元；文本 B：Jay 幾乎花光所有存款買盲盒。兩篇都顯示有人在 Labubu 上花很多錢。(A) 文本 A 提到英國門市也有賣，並非只在中國；(B) 文本 A 說隱藏款很少人抽得到，Jay 開了 14 盒也沒有，兩篇都與此相反；(D) 文本 A 只說仿冒品到處都是，沒有說裝在盲盒裡賣，文本 B 也沒提到仿冒品。故選 (C)。"
+  },
+  {
+   "qNo": 40,
+   "stem": "",
+   "options": [
+    "sending messages to the family",
+    "being the last one to hear the family news",
+    "seeing photos of my grandchildren",
+    "carrying a phone everywhere"
+   ],
+   "answer": "B",
+   "explanation": "【解析】奶奶看到家人都在群組裡傳照片和訊息，所以想學——她受夠的是「總是最後一個知道家裡的消息」。(A) 她正是想學會傳訊息給家人，不會說受夠了傳訊息；(C) 看孫子的照片正是她想要的；(D) 她決定學智慧型手機，以後反而會隨身帶手機，與上下文不合。故選 (B)。"
+  },
+  {
+   "qNo": 41,
+   "stem": "",
+   "options": [
+    "making mistakes",
+    "losing her glasses",
+    "talking to strangers",
+    "staying up late"
+   ],
+   "answer": "A",
+   "explanation": "【解析】下一句她一直問「萬一我按錯東西，手機壞掉怎麼辦？」，可見她怕的是「犯錯」，making mistakes。(B) 弄丟眼鏡、(C) 和陌生人說話、(D) 熬夜，都和後面「按錯東西、手機壞掉」的擔心無關。故選 (A)。"
+  },
+  {
+   "qNo": 42,
+   "stem": "",
+   "options": [
+    "She threw them away after the first lesson.",
+    "But she never read any of them.",
+    "She kept them next to her phone wherever she went.",
+    "Then I took them back to my room."
+   ],
+   "answer": "C",
+   "explanation": "【解析】空格後說「她忘記時不用打電話給我，只要看卡片」，可見卡片一直在她身邊，所以前一句是「她走到哪裡都把卡片放在手機旁」。(A) 卡片丟了就不能「看卡片」；(B) 從來沒讀，就和後面「看看卡片就好」矛盾；(D) 卡片被拿回我的房間，她就沒辦法看。故選 (C)。"
+  },
+  {
+   "qNo": 43,
+   "stem": "",
+   "options": [
+    "needs the most help with her phone",
+    "is afraid of breaking her phone",
+    "sends the most messages in our family group",
+    "never answers our messages"
+   ],
+   "answer": "C",
+   "explanation": "【解析】前面說奶奶傳了照片，當晚又傳了十二張，Now（現在）表示和過去的情況相反：原本總是最後知道消息的她，現在成了家族群組裡傳最多訊息的人。(A) 她已經不需要打電話問我，只要看卡片；(B) 怕手機壞掉是她剛開始學的時候，現在她敢傳很多照片了；(D) 她一晚就傳了十二張照片，「從不回訊息」與此相反。故選 (C)。"
+  }
+ ],
+ "verification": [
+  "2026-10-09 依 SPEC_AI2_AI3.md 的 AI-4（會考水準）規格出題，參照 114／115 年真題的題型、篇幅與難度；附圖（Q1 時鐘、Q24–26 課程表）由 tools/ai_sets/ai4_english.py 繪製並經人工檢視。",
+  "2026-10-09 獨立作答者 1（Claude Opus，看不到答案）43/43、獨立作答者 2（Claude Sonnet）43/43 與答案卷一致；兩題被指出的是時事細節，不影響答案。難度（同一評分標準）：114 年真題 2.42、本卷 Opus 2.56。",
+  "2026-10-09 獨立事實查核：北京人形機器人半程馬拉松、新顏色 olo、Labubu 逐條以網路來源確認；修正 olo 試看者中的作者人數（三位）與 Labubu 拍賣的尺寸金額寫法（約 1.3 公尺、超過 15 萬美元），答案不變。tools/check_ai_set.py 0 問題。"
+ ]
+}

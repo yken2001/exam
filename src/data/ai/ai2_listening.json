@@ -1,0 +1,585 @@
+{
+ "set": "AI-2",
+ "year": 902,
+ "subject": "英聽",
+ "title": "AI-2 英語（聽力）模擬卷（進階）",
+ "difficulty": "進階",
+ "note": "由 AI 依心測中心英語聽力架構（辨識句意 3 題、基本問答 8 題、言談理解 10 題，三選一）編寫，非會考真題；難度為「進階」（較 AI-1 提高約五成）：圖片要同時符合兩三個條件；回應要聽出說話者真正的意思（委婉拒絕、反話、慣用語）；對話較長，有計畫改變、說錯更正、時間與金額計算，誘答選項多用錄音中出現過的字詞或別人、別的時間的細節。第一部分的圖片由程式繪製（tools/ai_sets/ai2_listening.py），語音以錄音稿合成（非會考原音）。",
+ "topics": [
+  "2025 美國職棒世界大賽第七戰（2025/11/1）：道奇延長到 11 局以 5:4 擊敗藍鳥；山本由伸前一天（第六戰）先發投 6 局，第七戰後援投 2⅔ 局拿下最後出局數，獲選 MVP：https://en.wikipedia.org/wiki/Game_7_of_the_2025_World_Series",
+  "2026 米蘭–科爾蒂納冬季奧運 2026/2/6–2/22：https://en.wikipedia.org/wiki/2026_Winter_Olympics",
+  "2026 米蘭–科爾蒂納冬季帕運 2026/3/6–3/15：https://en.wikipedia.org/wiki/2026_Winter_Paralympics",
+  "吉祥物 Tina（冬奧）與 Milo（冬季帕運）是一對白鼬（stoat）手足：https://en.wikipedia.org/wiki/Tina_and_Milo",
+  "COP30 聯合國氣候大會 2025/11/10–21 在巴西亞馬遜地區的貝倫（Belém）舉行：https://en.wikipedia.org/wiki/COP30",
+  "對話中的人物、商店、車次、價格、Dr. Lin 的演講與校外教學皆為虛構情境"
+ ],
+ "groups": [],
+ "items": [
+  {
+   "qNo": 1,
+   "stem": "",
+   "options": [
+    "",
+    "",
+    ""
+   ],
+   "answer": "A",
+   "explanation": "【聽力稿】My bus leaves at a quarter to seven, so I still have twenty minutes to finish my drink.\n【中譯】我的公車六點四十五分開，所以我還有二十分鐘可以把飲料喝完。\n【解析】a quarter to seven 是「差十五分七點」＝6:45，三張圖的站牌都寫著下一班車 6:45；時鐘顯示的是「現在」的時間。「還有二十分鐘」，所以現在是 6:45 往前推二十分鐘＝6:25。(A) 長針指 5、短針在 6 和 7 之間，是 6:25，離 6:45 的車還有二十分鐘；(B) 時鐘是 6:45，公車現在就要開了，不是「還有二十分鐘」；(C) 時鐘是 7:05，把二十分鐘「往後加」了，公車早已開走。故選 (A)。",
+   "figure": "ai/902/listening/q01.png",
+   "transcript": [
+    [
+     "N",
+     "My bus leaves at a quarter to seven, so I still have twenty minutes to finish my drink."
+    ]
+   ]
+  },
+  {
+   "qNo": 2,
+   "stem": "",
+   "options": [
+    "",
+    "",
+    ""
+   ],
+   "answer": "A",
+   "explanation": "【聽力稿】Of the three girls, my sister is the one with short hair, and she's the only one without an umbrella.\n【中譯】這三個女孩當中，我姊姊（妹妹）是短頭髮的那一個，而且只有她沒有撐傘。\n【解析】要同時符合：姊姊是「短頭髮」的女孩、她「沒有撐傘」、而且她是「唯一（the only one）」沒撐傘的人。(A) 短髮女孩沒撐傘，另外兩個長髮女孩都撐著傘，三個條件都符合；(B) 短髮女孩撐著傘，沒撐傘的是左邊的長髮女孩；(C) 短髮女孩雖然沒撐傘，但右邊的長髮女孩也沒撐傘，她就不是「唯一」沒撐傘的人。故選 (A)。",
+   "figure": "ai/902/listening/q02.png",
+   "transcript": [
+    [
+     "N",
+     "Of the three girls, my sister is the one with short hair, and she's the only one without an umbrella."
+    ]
+   ]
+  },
+  {
+   "qNo": 3,
+   "stem": "",
+   "options": [
+    "",
+    "",
+    ""
+   ],
+   "answer": "B",
+   "explanation": "【聽力稿】I bought three apples and twice as many oranges. I wanted four bananas, but the store only had two left.\n【中譯】我買了三顆蘋果和兩倍數量的柳橙。我本來想買四根香蕉，但店裡只剩兩根。\n【解析】蘋果 3 顆；柳橙是蘋果的兩倍＝6 顆；香蕉「想買四根」，但店裡「只剩兩根」，所以只買到 2 根。(B) 蘋果 3、柳橙 6、香蕉 2，全部符合；(A) 蘋果 6、柳橙 3，把「兩倍」的對象弄反了；(C) 香蕉有 4 根，那是她「本來想買」的數量，不是實際買到的。故選 (B)。",
+   "figure": "ai/902/listening/q03.png",
+   "transcript": [
+    [
+     "N",
+     "I bought three apples and twice as many oranges. I wanted four bananas, but the store only had two left."
+    ]
+   ]
+  },
+  {
+   "qNo": 4,
+   "stem": "",
+   "options": [
+    "By MRT. It only took me twenty minutes.",
+    "My mom wouldn't let me go out on a school night.",
+    "Yes, I had a great time there."
+   ],
+   "answer": "B",
+   "explanation": "【聽力稿】How come you didn't come to Jenny's party last night? Everyone was asking about you.\n【中譯】你昨晚怎麼沒來 Jenny 的派對？大家都在問你。\n【解析】How come…? 是「為什麼…？」，問的是沒來的「原因」。(B)「我媽不准我在要上學的前一晚出門」說明了原因。(A) 把 How come 當成 How（怎麼去），回答交通方式，而且對方根本沒去；(C) 對方沒去派對，不可能「玩得很開心」。故選 (B)。",
+   "transcript": [
+    [
+     "N",
+     "How come you didn't come to Jenny's party last night? Everyone was asking about you."
+    ]
+   ]
+  },
+  {
+   "qNo": 5,
+   "stem": "",
+   "options": [
+    "Great! I'll save a seat for you, then.",
+    "Have a good time at the concert in Japan.",
+    "That's OK. I'll send you a video of it."
+   ],
+   "answer": "C",
+   "explanation": "【聽力稿】I wish I could come to your concert on Friday, but my family is flying to Japan that morning.\n【中譯】我真希望能去你星期五的音樂會，但我們家那天早上要飛去日本。\n【解析】I wish I could come… 表示「希望能來，但其實不能來」。(C)「沒關係，我會傳影片給你」回應了對方不能來。(A) 誤以為對方會來，還要幫他留位子；(B) 音樂會是「你」在這裡辦的，去日本的是對方全家，不是去日本聽音樂會。故選 (C)。",
+   "transcript": [
+    [
+     "N",
+     "I wish I could come to your concert on Friday, but my family is flying to Japan that morning."
+    ]
+   ]
+  },
+  {
+   "qNo": 6,
+   "stem": "",
+   "options": [
+    "Yes, I'd be happy to borrow them.",
+    "Of course not. But my handwriting is pretty messy.",
+    "No, I don't mind being sick."
+   ],
+   "answer": "B",
+   "explanation": "【聽力稿】Would you mind if I borrowed your notes from yesterday's science class? I was out sick.\n【中譯】你介意我借你昨天自然課的筆記嗎？我生病請假了。\n【解析】Would you mind if I…? 問「你介意我…嗎」，同意時要說「不介意」（Of course not／Not at all）。(B)「當然不介意，不過我的字很潦草」答應了，還補充提醒。(A) Yes 表示「介意」，而且要借筆記的是對方，不是你（borrow 和 lend 的方向弄反）；(C) 重複聽到的 mind 和 sick，卻變成「我不介意生病」，答非所問。故選 (B)。",
+   "transcript": [
+    [
+     "N",
+     "Would you mind if I borrowed your notes from yesterday's science class? I was out sick."
+    ]
+   ]
+  },
+  {
+   "qNo": 7,
+   "stem": "",
+   "options": [
+    "I already did. She couldn't figure it out either.",
+    "Because she fixed yours last month.",
+    "Sure. I'll look at hers tomorrow."
+   ],
+   "answer": "A",
+   "explanation": "【聽力稿】Why don't you ask Amy to look at your computer? She fixed mine last month.\n【中譯】你何不請 Amy 看看你的電腦？她上個月把我的修好了。\n【解析】Why don't you…? 是「你何不…」的建議，不是真的問原因。(A)「我已經問過了，她也查不出問題」回應了建議。(B) 當成問原因而用 Because 回答，只是重複對方的話；(C) 要被修的是「你的」電腦，不是去看 Amy 的電腦。故選 (A)。",
+   "transcript": [
+    [
+     "N",
+     "Why don't you ask Amy to look at your computer? She fixed mine last month."
+    ]
+   ]
+  },
+  {
+   "qNo": 8,
+   "stem": "",
+   "options": [
+    "Sure. Then I'll carry them for you.",
+    "OK. Which hand do you need?",
+    "Thanks, but they're mostly empty."
+   ],
+   "answer": "C",
+   "explanation": "【聽力稿】Those boxes look heavy. Let me give you a hand.\n【中譯】那些箱子看起來很重，我來幫你吧。\n【解析】give someone a hand 是「幫某人忙」。(C)「謝謝，不過箱子大多是空的」婉拒了好意並說明理由。(A) 先答應讓對方幫忙，接著卻說「那我幫你搬」，可是箱子本來就是你在搬、要幫忙的是對方，角色弄反了；(B) 把 hand 照字面當成「手」。故選 (C)。",
+   "transcript": [
+    [
+     "N",
+     "Those boxes look heavy. Let me give you a hand."
+    ]
+   ]
+  },
+  {
+   "qNo": 9,
+   "stem": "",
+   "options": [
+    "I know. We just had one on Monday.",
+    "I'm glad you're looking forward to it.",
+    "Really? How did you do on it?"
+   ],
+   "answer": "A",
+   "explanation": "【聽力稿】Oh, great. Another math test on Friday. Just what I needed.\n【中譯】喔，太好了，星期五又要考數學。這正是我需要的。\n【解析】說話者用的是反話：Oh, great 和 Just what I needed 其實是在抱怨「又要考試」。(A)「我懂，我們星期一才剛考過一次」附和了抱怨。(B) 把反話當真，以為對方很期待；(C) 考試是星期五「才要考」，還沒考，不能問考得怎麼樣。故選 (A)。",
+   "transcript": [
+    [
+     "N",
+     "Oh, great. Another math test on Friday. Just what I needed."
+    ]
+   ]
+  },
+  {
+   "qNo": 10,
+   "stem": "",
+   "options": [
+    "For about an hour each time.",
+    "At the pool near my school.",
+    "Almost every day, if it doesn't rain."
+   ],
+   "answer": "C",
+   "explanation": "【聽力稿】How often do you go swimming in the summer?\n【中譯】你夏天多久去游一次泳？\n【解析】How often 問「頻率（多久一次）」。(C)「幾乎每天，只要沒下雨」回答了頻率。(A) 回答的是每次游「多久」（How long）；(B) 回答的是在「哪裡」（Where）。故選 (C)。",
+   "transcript": [
+    [
+     "N",
+     "How often do you go swimming in the summer?"
+    ]
+   ]
+  },
+  {
+   "qNo": 11,
+   "stem": "",
+   "options": [
+    "Really? I didn't know he was in the Olympics.",
+    "When will the races in Italy start?",
+    "It sounds like the Games really got him interested."
+   ],
+   "answer": "C",
+   "explanation": "【聽力稿】My brother watched every ski race of the Winter Olympics in Italy, and now he wants to try skiing himself.\n【中譯】我哥哥（弟弟）看了義大利冬奧的每一場滑雪比賽，現在他想自己試試看滑雪。（2026 米蘭–科爾蒂納冬奧於 2026 年 2 月 6 日至 22 日舉行）\n【解析】對方的哥哥（弟弟）只是「看」比賽，看完之後想自己學滑雪。(C)「聽起來冬奧真的讓他產生了興趣」回應得當。(A) 誤以為他「參加」了奧運，其實他只是觀眾；(B) watched 是過去式，冬奧已經比完了，不能問什麼時候開始。故選 (C)。",
+   "transcript": [
+    [
+     "N",
+     "My brother watched every ski race of the Winter Olympics in Italy, and now he wants to try skiing himself."
+    ]
+   ]
+  },
+  {
+   "qNo": 12,
+   "stem": "",
+   "options": [
+    "The game lasted more than nine innings.",
+    "The woman watched the whole game.",
+    "Yamamoto pitched on two days in a row."
+   ],
+   "answer": "B",
+   "explanation": "【聽力稿】M: Did you see the last game of the World Series? I can't believe it went to eleven innings.\nW: Only the end of it. My dad woke me up when it was almost over.\nM: Then you saw Yamamoto get the final outs. He pitched six innings in the game the night before, you know.\nW: Really? I thought that last game was the only one he pitched in.\nM: No. He started the game the night before, and then he came back the very next day.\nW: No wonder they named him MVP.\nQuestion: Which of the following is NOT true?\n【中譯】男：妳有看世界大賽的最後一場嗎？真不敢相信打到了第十一局。女：只看了最後一段，我爸在比賽快結束時把我叫醒。男：那妳有看到山本（Yamamoto）投出最後幾個出局數。妳知道嗎，他前一晚的比賽才投了六局。女：真的嗎？我以為他只在最後那一場投球。男：不是。他前一晚先發，隔天又上場了。女：難怪他被選為最有價值球員。問題：下列何者「不」正確？\n【解析】題目問哪一項「不正確」，要逐一核對：女子說她「只看了最後一段」，是快結束時才被叫醒，所以 (B)「女子看了整場比賽」不正確。(A) 比賽打到第十一局，超過九局，正確；(C) 男子說山本前一晚先發、隔天又上場，連續兩天都有投球，正確（女子原本以為他只投一場，被男子糾正）。（2025 年世界大賽第七戰，道奇延長到 11 局擊敗藍鳥；山本由伸前一天先發第六戰投 6 局，第七戰後援，獲選 MVP。）故選 (B)。",
+   "transcript": [
+    [
+     "M",
+     "Did you see the last game of the World Series? I can't believe it went to eleven innings."
+    ],
+    [
+     "W",
+     "Only the end of it. My dad woke me up when it was almost over."
+    ],
+    [
+     "M",
+     "Then you saw Yamamoto get the final outs. He pitched six innings in the game the night before, you know."
+    ],
+    [
+     "W",
+     "Really? I thought that last game was the only one he pitched in."
+    ],
+    [
+     "M",
+     "No. He started the game the night before, and then he came back the very next day."
+    ],
+    [
+     "W",
+     "No wonder they named him MVP."
+    ],
+    [
+     "Q",
+     "Which of the following is NOT true?"
+    ]
+   ]
+  },
+  {
+   "qNo": 13,
+   "stem": "",
+   "options": [
+    "The 2:45 train, because it still has seats.",
+    "The 2:15 train, because she must arrive before five.",
+    "The 2:15 train, because the 2:45 train is full."
+   ],
+   "answer": "B",
+   "explanation": "【聽力稿】W: One ticket to Kaohsiung on the next train, please.\nM: The next one leaves at two fifteen, but there are no seats left. You'd have to stand.\nW: Stand all the way? No, thanks. What about the one after that?\nM: That's the two forty-five. It still has seats, and it gets in at four fifty.\nW: I promised my aunt I'd be there before five. OK, that works. One for the two forty-five, then.\nM: Oh, wait. I'm sorry, I was looking at the wrong line. The two forty-five gets in at five ten, not four fifty.\nW: Five ten? Then forget about the seat. Give me the two fifteen.\nQuestion: Which train will the woman take, and why?\n【中譯】女：請給我一張下一班到高雄的車票。男：下一班兩點十五分開，但已經沒有座位了，妳得站著。女：一路站到底？不了，謝謝。再下一班呢？男：是兩點四十五分那班，還有座位，四點五十分到。女：我答應我阿姨五點以前到……好，可以，那就兩點四十五分的。男：喔，等一下，抱歉，我看錯行了。兩點四十五分那班是五點十分到，不是四點五十分。女：五點十分？那座位就不管了，給我兩點十五分那班。問題：女子會搭哪一班車？為什麼？\n【解析】女子的選擇改了兩次：先因為沒座位不要 2:15，改選有座位的 2:45；售票員更正 2:45 那班是「五點十分」才到，她答應阿姨「五點以前」要到，只好改回 2:15 那班站著去。(A) 2:45 那班雖然有座位，但會太晚到，她最後沒有選；(C) 她確實搭 2:15，但原因說錯了：2:45 那班沒有客滿，沒座位的是 2:15 那班。故選 (B)。",
+   "transcript": [
+    [
+     "W",
+     "One ticket to Kaohsiung on the next train, please."
+    ],
+    [
+     "M",
+     "The next one leaves at two fifteen, but there are no seats left. You'd have to stand."
+    ],
+    [
+     "W",
+     "Stand all the way? No, thanks. What about the one after that?"
+    ],
+    [
+     "M",
+     "That's the two forty-five. It still has seats, and it gets in at four fifty."
+    ],
+    [
+     "W",
+     "I promised my aunt I'd be there before five. OK, that works. One for the two forty-five, then."
+    ],
+    [
+     "M",
+     "Oh, wait. I'm sorry, I was looking at the wrong line. The two forty-five gets in at five ten, not four fifty."
+    ],
+    [
+     "W",
+     "Five ten? Then forget about the seat. Give me the two fifteen."
+    ],
+    [
+     "Q",
+     "Which train will the woman take, and why?"
+    ]
+   ]
+  },
+  {
+   "qNo": 14,
+   "stem": "",
+   "options": [
+    "It was too boring for him to enjoy.",
+    "Its ending was the best part.",
+    "Its music was the worst part."
+   ],
+   "answer": "A",
+   "explanation": "【聽力稿】W: You saw the new space movie last night, didn't you? How was it?\nM: Well, the music was great, and the actors did their best.\nW: Hmm. That doesn't sound like you loved it.\nM: Let's just say I checked the time on my phone four times.\nW: Oh. What about the ending? Everyone online is talking about it.\nM: I couldn't tell you. I fell asleep before it.\nW: Ha! Then I'll wait until it's on TV.\nQuestion: What does the man think of the movie?\n【中譯】女：你昨晚去看了那部新的太空電影，對吧？好看嗎？男：嗯，音樂很棒，演員也很盡力了。女：嗯……聽起來你不是很喜歡。男：這麼說吧，我看了手機上的時間四次。女：喔。那結局呢？網路上大家都在討論。男：我沒辦法告訴妳，我在結局之前就睡著了。女：哈！那我等電視播再看好了。問題：男子覺得這部電影怎麼樣？\n【解析】男子只稱讚音樂和演員「很盡力」，又說看了四次時間、還在結局前睡著，言外之意是電影很無聊。(B) 結局是「網路上大家在討論」的，男子睡著了根本沒看到；(C) 男子說音樂「很棒」，不是最糟的部分。故選 (A)。",
+   "transcript": [
+    [
+     "W",
+     "You saw the new space movie last night, didn't you? How was it?"
+    ],
+    [
+     "M",
+     "Well, the music was great, and the actors did their best."
+    ],
+    [
+     "W",
+     "Hmm. That doesn't sound like you loved it."
+    ],
+    [
+     "M",
+     "Let's just say I checked the time on my phone four times."
+    ],
+    [
+     "W",
+     "Oh. What about the ending? Everyone online is talking about it."
+    ],
+    [
+     "M",
+     "I couldn't tell you. I fell asleep before it."
+    ],
+    [
+     "W",
+     "Ha! Then I'll wait until it's on TV."
+    ],
+    [
+     "Q",
+     "What does the man think of the movie?"
+    ]
+   ]
+  },
+  {
+   "qNo": 15,
+   "stem": "",
+   "options": [
+    "On Thursday afternoon, in the library.",
+    "On Friday morning, in the gym.",
+    "On Friday morning, in the library."
+   ],
+   "answer": "C",
+   "explanation": "【聽力稿】Good afternoon, students. Last November, a big United Nations meeting on climate change was held in Belém, a city in the Amazon area of Brazil. Dr. Lin, a scientist who went to the meeting, will visit our school to tell us what she saw there. The talk was planned for Thursday afternoon in the gym. However, Dr. Lin's flight has been changed, so the talk will now be on Friday morning at ten. And because the volleyball games will be held in the gym that morning, the talk will move to the library. The library has only eighty seats, so please sign up at the school office by Wednesday. Students who don't get a seat can watch the talk on the TV in their classroom.\nQuestion: When and where will the talk be held?\n【中譯】各位同學午安。去年十一月，一場討論氣候變遷的聯合國大型會議在巴西亞馬遜地區的城市貝倫舉行。參加過那場會議的科學家林博士（虛構人物）會來學校告訴我們她在那裡看到的事。演講原本安排在星期四下午、地點在體育館。但是林博士的班機改了，所以演講改到星期五早上十點。而且因為那天早上體育館要舉行排球比賽，演講會改到圖書館。圖書館只有八十個座位，請在星期三以前到學校辦公室報名。沒有拿到座位的同學可以在教室看電視轉播。問題：演講會在什麼時候、什麼地方舉行？\n【解析】時間和地點各改了一次：班機改了，時間從星期四下午改成「星期五早上」；那天早上體育館有排球賽，地點從體育館改到「圖書館」。(A) 地點對了，但星期四下午是原本的時間；(B) 時間對了，但體育館那天早上要比排球，已改到圖書館。（COP30 聯合國氣候大會於 2025 年 11 月在巴西貝倫舉行。）故選 (C)。",
+   "transcript": [
+    [
+     "N",
+     "Good afternoon, students. Last November, a big United Nations meeting on climate change was held in Belém, a city in the Amazon area of Brazil. Dr. Lin, a scientist who went to the meeting, will visit our school to tell us what she saw there. The talk was planned for Thursday afternoon in the gym. However, Dr. Lin's flight has been changed, so the talk will now be on Friday morning at ten. And because the volleyball games will be held in the gym that morning, the talk will move to the library. The library has only eighty seats, so please sign up at the school office by Wednesday. Students who don't get a seat can watch the talk on the TV in their classroom."
+    ],
+    [
+     "Q",
+     "When and where will the talk be held?"
+    ]
+   ]
+  },
+  {
+   "qNo": 16,
+   "stem": "",
+   "options": [
+    "Add the Paralympics and Milo to her poster.",
+    "Take Tina off her poster and use Milo instead.",
+    "Change the dates of the Olympics on her poster."
+   ],
+   "answer": "A",
+   "explanation": "【聽力稿】W: I'm making a poster about the Winter Olympics in Italy. Can you help me find a picture of the mascot?\nM: Sure. It was a cat, wasn't it?\nW: No, it's a stoat called Tina. And she has a brother, Milo. He was the mascot of the Paralympics.\nM: The Paralympics? I only watched the Olympics in February.\nW: The Paralympics came right after them, from March sixth to the fifteenth.\nM: Then shouldn't your poster have both? Right now it only says \"Winter Olympics.\"\nW: You're right. I'll add the Paralympics to the title and put Milo next to Tina.\nQuestion: What will the woman most likely do?\n【中譯】女：我在做一張關於義大利冬季奧運的海報，你可以幫我找吉祥物的圖片嗎？男：好啊。吉祥物是一隻貓，對吧？女：不是，是一隻叫 Tina 的白鼬。她還有一個兄弟叫 Milo，他是帕拉林匹克運動會（帕運）的吉祥物。男：帕運？我只看了二月的奧運。女：帕運緊接在奧運之後，從三月六日到十五日。男：那妳的海報不是應該兩個都放嗎？現在上面只寫了「冬季奧運」。女：你說得對。我會在標題加上帕運，並把 Milo 放在 Tina 旁邊。問題：女子最可能會做什麼？\n【解析】男子提醒海報只寫了冬奧，女子同意，要「在標題加上帕運」並「把 Milo 放在 Tina 旁邊」，也就是兩個都放。(B) 她是把 Milo「加在 Tina 旁邊」，不是拿掉 Tina；(C) 對話中沒有說奧運日期寫錯，三月六日到十五日是帕運的日期。（2026 米蘭–科爾蒂納冬奧 2 月 6–22 日、帕運 3 月 6–15 日；吉祥物 Tina 屬於冬奧、Milo 屬於帕運，是一對白鼬手足。）故選 (A)。",
+   "transcript": [
+    [
+     "W",
+     "I'm making a poster about the Winter Olympics in Italy. Can you help me find a picture of the mascot?"
+    ],
+    [
+     "M",
+     "Sure. It was a cat, wasn't it?"
+    ],
+    [
+     "W",
+     "No, it's a stoat called Tina. And she has a brother, Milo. He was the mascot of the Paralympics."
+    ],
+    [
+     "M",
+     "The Paralympics? I only watched the Olympics in February."
+    ],
+    [
+     "W",
+     "The Paralympics came right after them, from March sixth to the fifteenth."
+    ],
+    [
+     "M",
+     "Then shouldn't your poster have both? Right now it only says \"Winter Olympics.\""
+    ],
+    [
+     "W",
+     "You're right. I'll add the Paralympics to the title and put Milo next to Tina."
+    ],
+    [
+     "Q",
+     "What will the woman most likely do?"
+    ]
+   ]
+  },
+  {
+   "qNo": 17,
+   "stem": "",
+   "options": [
+    "Give Grace 150 dollars after Wednesday.",
+    "Buy a scarf with Amy this weekend.",
+    "Give Amy 150 dollars."
+   ],
+   "answer": "C",
+   "explanation": "【聽力稿】W: Hi, Tom. It's Grace. It's about the birthday present for Ms. Huang. Amy and I went to the bookstore yesterday, but the cookbook we wanted was sold out, so we're going to get her a scarf instead. Amy will buy it this weekend. It's six hundred dollars, and there are four of us, so we'll each pay the same amount. Could you give your money to Amy instead of me? I'll be away on the school trip until Wednesday. Thanks!\nQuestion: What does Grace want Tom to do?\n【中譯】嗨，Tom，我是 Grace。關於送黃老師的生日禮物：我和 Amy 昨天去了書店，但我們想買的那本食譜賣完了，所以改送她一條圍巾。Amy 這個週末會去買。圍巾六百元，我們有四個人，所以每個人出一樣多。你可以把錢交給 Amy 而不是我嗎？我去校外教學，到星期三才回來。謝謝！問題：Grace 希望 Tom 做什麼？\n【解析】圍巾 600 元、四個人平分，每人 600÷4＝150 元；Grace 要 Tom 把錢交給「Amy，不是她」。(A) Grace 明確說「交給 Amy 而不是我」，星期三是她校外教學回來的時間；(B) 圍巾是 Amy 這個週末自己去買，沒有要 Tom 一起去。故選 (C)。",
+   "transcript": [
+    [
+     "W",
+     "Hi, Tom. It's Grace. It's about the birthday present for Ms. Huang. Amy and I went to the bookstore yesterday, but the cookbook we wanted was sold out, so we're going to get her a scarf instead. Amy will buy it this weekend. It's six hundred dollars, and there are four of us, so we'll each pay the same amount. Could you give your money to Amy instead of me? I'll be away on the school trip until Wednesday. Thanks!"
+    ],
+    [
+     "Q",
+     "What does Grace want Tom to do?"
+    ]
+   ]
+  },
+  {
+   "qNo": 18,
+   "stem": "",
+   "options": [
+    "900 dollars.",
+    "800 dollars.",
+    "1050 dollars."
+   ],
+   "answer": "A",
+   "explanation": "【聽力稿】M: Hi. Two adults and three children for the night tour, please.\nW: Adult tickets are three hundred dollars, and children's tickets are half price.\nM: My youngest is only five. Does she need a ticket?\nW: No. Children under six get in free.\nM: Great. Oh, and can I use this coupon? It's a hundred dollars off.\nW: Sorry, that coupon is only for the day tour.\nM: Oh, well. Here you are.\nQuestion: How much will the man pay?\n【中譯】男：嗨，夜間導覽兩個大人、三個小孩。女：大人票三百元，小孩票半價。男：我最小的孩子才五歲，她需要買票嗎？女：不用，六歲以下免費。男：太好了。喔，還有，我可以用這張優惠券嗎？可以折一百元。女：抱歉，那張優惠券只能用在白天的導覽。男：喔，好吧。錢給妳。問題：男子要付多少錢？\n【解析】小孩票半價＝150 元；五歲的孩子免費，所以只要買兩張大人票、兩張小孩票：300×2＋150×2＝900 元；優惠券只限白天導覽，不能用。(B) 800 元是用了優惠券，但店員說夜間導覽不能用；(C) 1050 元是三個小孩都買票，忘了五歲以下免費。故選 (A)。",
+   "transcript": [
+    [
+     "M",
+     "Hi. Two adults and three children for the night tour, please."
+    ],
+    [
+     "W",
+     "Adult tickets are three hundred dollars, and children's tickets are half price."
+    ],
+    [
+     "M",
+     "My youngest is only five. Does she need a ticket?"
+    ],
+    [
+     "W",
+     "No. Children under six get in free."
+    ],
+    [
+     "M",
+     "Great. Oh, and can I use this coupon? It's a hundred dollars off."
+    ],
+    [
+     "W",
+     "Sorry, that coupon is only for the day tour."
+    ],
+    [
+     "M",
+     "Oh, well. Here you are."
+    ],
+    [
+     "Q",
+     "How much will the man pay?"
+    ]
+   ]
+  },
+  {
+   "qNo": 19,
+   "stem": "",
+   "options": [
+    "He had too much homework to do.",
+    "He didn't want others to find out he can't swim.",
+    "He thought it would rain on Saturday."
+   ],
+   "answer": "B",
+   "explanation": "【聽力稿】W: You're not coming to the beach with us on Saturday? Everyone's going.\nM: I'd like to, but I have a lot of homework.\nW: Homework? We only have one worksheet this week.\nM: Well... and it might rain.\nW: It's going to be sunny all weekend. Come on. What's the real reason?\nM: OK, OK. I never learned to swim, and I don't want everyone to laugh at me.\nW: Is that all? I can teach you. My little brother learned in one afternoon.\nQuestion: Why didn't the man want to go to the beach?\n【中譯】女：你星期六不跟我們去海邊嗎？大家都要去。男：我很想去，但我有很多功課。女：功課？這星期只有一張學習單。男：嗯……而且可能會下雨。女：整個週末都會是晴天。好啦，真正的原因是什麼？男：好啦好啦，我從來沒學會游泳，我不想被大家笑。女：就這樣？我可以教你，我弟弟一個下午就學會了。問題：男子為什麼不想去海邊？\n【解析】男子先後說「功課很多」「可能下雨」，都被女子一一推翻；女子追問「真正的原因」，他才承認是不會游泳、怕被大家笑。(A) 功課只是藉口，女子說這星期只有一張學習單；(C) 下雨也是藉口，女子說整個週末都是晴天。故選 (B)。",
+   "transcript": [
+    [
+     "W",
+     "You're not coming to the beach with us on Saturday? Everyone's going."
+    ],
+    [
+     "M",
+     "I'd like to, but I have a lot of homework."
+    ],
+    [
+     "W",
+     "Homework? We only have one worksheet this week."
+    ],
+    [
+     "M",
+     "Well... and it might rain."
+    ],
+    [
+     "W",
+     "It's going to be sunny all weekend. Come on. What's the real reason?"
+    ],
+    [
+     "M",
+     "OK, OK. I never learned to swim, and I don't want everyone to laugh at me."
+    ],
+    [
+     "W",
+     "Is that all? I can teach you. My little brother learned in one afternoon."
+    ],
+    [
+     "Q",
+     "Why didn't the man want to go to the beach?"
+    ]
+   ]
+  },
+  {
+   "qNo": 20,
+   "stem": "",
+   "options": [
+    "At 9:15.",
+    "At 9:30.",
+    "At 9:45."
+   ],
+   "answer": "C",
+   "explanation": "【聽力稿】Attention, ninth graders. Tomorrow's trip to the science park will go ahead as planned. However, because one of the roads was damaged in last week's typhoon, the bus ride will take about thirty minutes longer than the usual one hour. The buses will still leave at eight fifteen, so please be at the school gate by eight. Lunch will be served at the park, and we will start back to school at two.\nQuestion: What time will the students probably arrive at the science park?\n【中譯】九年級同學請注意。明天的科學園區校外教學照常舉行。不過因為有一條道路在上星期的颱風中受損，車程會比平常的一小時多大約三十分鐘。遊覽車仍然在八點十五分出發，所以請在八點以前到校門口集合。午餐在園區吃，兩點出發回學校。問題：學生大概幾點會抵達科學園區？\n【解析】車子 8:15 出發（8:00 是集合時間），車程平常一小時、這次多三十分鐘，共一個半小時：8:15＋1:30＝9:45。(A) 9:15 是沒有算進多出來的三十分鐘；(B) 9:30 是從 8:00 集合時間開始算，但車子 8:15 才開。故選 (C)。",
+   "transcript": [
+    [
+     "N",
+     "Attention, ninth graders. Tomorrow's trip to the science park will go ahead as planned. However, because one of the roads was damaged in last week's typhoon, the bus ride will take about thirty minutes longer than the usual one hour. The buses will still leave at eight fifteen, so please be at the school gate by eight. Lunch will be served at the park, and we will start back to school at two."
+    ],
+    [
+     "Q",
+     "What time will the students probably arrive at the science park?"
+    ]
+   ]
+  },
+  {
+   "qNo": 21,
+   "stem": "",
+   "options": [
+    "At 10:30, at the museum.",
+    "At 11:00, at the museum.",
+    "At 10:00, at the station."
+   ],
+   "answer": "B",
+   "explanation": "【聽力稿】W: Are we still meeting at the station at nine tomorrow?\nM: About that. Ben just told me he has a piano lesson until ten, so maybe we should all meet at ten instead.\nW: Ten? The museum will be really crowded by then. Why don't you and I go at nine, and Ben can meet us there later?\nM: Good idea. The bus from his piano school takes about thirty minutes, so he can be at the museum by half past ten.\nW: Wait. Tomorrow's Sunday, isn't it? The buses don't come very often on Sundays.\nM: You're right. Let's give him another half hour to be safe. I'll text him now.\nQuestion: When and where will Ben meet the others?\n【中譯】女：我們明天還是九點在車站碰面嗎？男：關於這個，Ben 剛跟我說他鋼琴課上到十點，所以也許我們大家改成十點碰面。女：十點？那時候博物館會很擠。不如你跟我九點先去，Ben 晚一點再到那裡跟我們會合？男：好主意。從他的鋼琴教室搭公車大約三十分鐘，所以他十點半就能到博物館。女：等等，明天是星期日，不是嗎？星期日公車班次不多。男：妳說得對，那為了保險再多給他半小時。我現在就傳訊息給他。問題：Ben 會在什麼時候、什麼地方和其他人會合？\n【解析】計畫改了三次：九點在車站 → 大家改十點碰面 → 女子提議兩人先去、Ben 直接到博物館會合，鋼琴課十點下課、搭車三十分鐘，是 10:30 → 星期日公車班次少，再多給半小時，所以是 11:00 在「博物館」。(A) 10:30 是還沒考慮星期日公車班次少之前的時間；(C) 十點在車站是第二個計畫，後來改成 Ben 直接去博物館。故選 (B)。",
+   "transcript": [
+    [
+     "W",
+     "Are we still meeting at the station at nine tomorrow?"
+    ],
+    [
+     "M",
+     "About that. Ben just told me he has a piano lesson until ten, so maybe we should all meet at ten instead."
+    ],
+    [
+     "W",
+     "Ten? The museum will be really crowded by then. Why don't you and I go at nine, and Ben can meet us there later?"
+    ],
+    [
+     "M",
+     "Good idea. The bus from his piano school takes about thirty minutes, so he can be at the museum by half past ten."
+    ],
+    [
+     "W",
+     "Wait. Tomorrow's Sunday, isn't it? The buses don't come very often on Sundays."
+    ],
+    [
+     "M",
+     "You're right. Let's give him another half hour to be safe. I'll text him now."
+    ],
+    [
+     "Q",
+     "When and where will Ben meet the others?"
+    ]
+   ]
+  }
+ ],
+ "verification": [
+  "2026-10-09 第一版經兩個模型盲解後評為難度不足（Opus 2.52／Sonnet 2.19），全卷 21 題依 SPEC_AI2_AI3.md 重寫（長對話、改變計畫、言外之意、時間金額計算）；第一部分 3 張圖由 tools/ai_sets/ai2_listening.py 繪製並經人工檢視。",
+  "2026-10-09 重寫版獨立作答：Claude Opus 21/21、Claude Sonnet 20/21（第 8 題）一致；Opus 指出第 1 題圖可能被理解為公車時間。已修正：三張圖都放上「NEXT BUS 6:45」站牌只改變時鐘；第 8 題誘答改為角色明顯相反。",
+  "2026-10-09 修正後重新獨立作答：Claude Opus 21/21、Claude Sonnet 21/21 與答案卷一致，0 題有異議。難度（同一評分標準）：AI-1 1.90、本卷 Opus 3.10／Sonnet 2.71。",
+  "2026-10-09 時事（2025 世界大賽第七戰、米蘭冬奧／帕運與吉祥物、COP30）由獨立查核者以網路來源逐條確認。tools/check_ai_set.py 0 問題；語音由 tools/gen_audio.py ai2 合成。"
+ ]
+}
